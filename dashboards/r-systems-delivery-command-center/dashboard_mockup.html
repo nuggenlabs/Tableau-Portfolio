@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professional Services Delivery Command Center</title>
+  <style>
+    :root {
+      --ink: #17202a;
+      --slate: #566573;
+      --muted: #85929e;
+      --cloud: #f6f8fa;
+      --line: #d6dbdf;
+      --panel: #ffffff;
+      --accent: #d71920;
+      --accent-soft: #fdecee;
+      --teal: #008c7a;
+      --teal-soft: #e6f4f1;
+      --amber: #f2a900;
+      --amber-soft: #fff5d8;
+      --risk: #c0392b;
+      --blue: #2471a3;
+      --purple: #7d3c98;
+      --shadow: 0 18px 44px rgba(23, 32, 42, 0.08);
+      --radius: 8px;
+      font-family: Aptos, "Segoe UI", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #ffffff 0%, #f8fafb 48%, #eef2f4 100%);
+      min-height: 100vh;
+    }
+
+    .app {
+      max-width: 1440px;
+      min-height: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: start;
+      gap: 24px;
+      padding: 8px 0 18px;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      background: var(--ink);
+      border-radius: 8px;
+      position: relative;
+      box-shadow: inset 0 -12px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 22px;
+      height: 22px;
+      border-left: 5px solid var(--accent);
+      border-top: 5px solid var(--accent);
+      transform: rotate(135deg);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.05;
+      letter-spacing: 0;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      color: var(--slate);
+      font-size: 13px;
+      margin: 0;
+    }
+
+    .meta-panel {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 8px;
+      align-items: center;
+      justify-content: end;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.78);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 12px;
+      color: var(--slate);
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 8px;
+      padding: 8px;
+      background: #eef2f4;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+    }
+
+    .tab {
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--slate);
+      border-radius: 6px;
+      padding: 11px 16px;
+      min-height: 42px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .tab.active {
+      background: var(--ink);
+      color: #ffffff;
+      box-shadow: var(--shadow);
+    }
+
+    .tab:not(.active):hover {
+      background: #ffffff;
+      border-color: var(--line);
+    }
+
+    .filters {
+      display: grid;
+      grid-template-columns: 1.3fr repeat(5, 1fr);
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .filter {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 9px 11px;
+      min-height: 48px;
+    }
+
+    .filter span,
+    .kpi-label,
+    .section-kicker {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .filter strong {
+      display: block;
+      font-size: 13px;
+      margin-top: 4px;
+      color: var(--ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .kpi {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      min-height: 118px;
+      box-shadow: 0 10px 26px rgba(23, 32, 42, 0.04);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .kpi::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: var(--line);
+    }
+
+    .kpi.good::before {
+      background: var(--teal);
+    }
+
+    .kpi.watch::before {
+      background: var(--amber);
+    }
+
+    .kpi.risk::before {
+      background: var(--accent);
+    }
+
+    .kpi-value {
+      display: block;
+      font-size: 29px;
+      line-height: 1;
+      margin: 14px 0 8px;
+      font-weight: 750;
+      letter-spacing: 0;
+    }
+
+    .delta {
+      font-size: 12px;
+      color: var(--slate);
+    }
+
+    .delta.good {
+      color: var(--teal);
+    }
+
+    .delta.risk {
+      color: var(--risk);
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: 1.65fr 0.9fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .grid-three {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: 0 10px 26px rgba(23, 32, 42, 0.04);
+      min-height: 260px;
+    }
+
+    .panel.compact {
+      min-height: 210px;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 12px;
+    }
+
+    .panel-title {
+      font-size: 15px;
+      font-weight: 750;
+      margin: 2px 0 0;
+    }
+
+    .panel-note {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .legend {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      color: var(--slate);
+      font-size: 11px;
+    }
+
+    .legend i {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border-radius: 99px;
+      margin-right: 5px;
+    }
+
+    .chart {
+      position: relative;
+      height: 190px;
+      border-left: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      margin: 18px 8px 2px 34px;
+    }
+
+    .chart svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .axis-label {
+      position: absolute;
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    .axis-label.y {
+      left: -34px;
+      top: -6px;
+    }
+
+    .axis-label.x {
+      right: 0;
+      bottom: -22px;
+    }
+
+    .risk-stack {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .risk-row {
+      display: grid;
+      grid-template-columns: 74px 1fr 36px;
+      gap: 10px;
+      align-items: center;
+      font-size: 12px;
+      color: var(--slate);
+    }
+
+    .bar-track {
+      height: 12px;
+      background: var(--cloud);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid #ecf0f1;
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+    }
+
+    .bars {
+      display: grid;
+      gap: 13px;
+      margin-top: 14px;
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: 150px 1fr 54px;
+      gap: 12px;
+      align-items: center;
+      font-size: 12px;
+    }
+
+    .bar-row strong {
+      font-size: 12px;
+      font-weight: 650;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      margin-top: 6px;
+    }
+
+    .table th {
+      text-align: left;
+      color: var(--muted);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .table td {
+      padding: 11px 8px;
+      border-bottom: 1px solid #edf0f2;
+      color: var(--slate);
+      white-space: nowrap;
+    }
+
+    .table td:first-child,
+    .table strong {
+      color: var(--ink);
+      font-weight: 650;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 700;
+      color: var(--slate);
+    }
+
+    .status::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 99px;
+      background: var(--muted);
+    }
+
+    .status.low::before,
+    .status.good::before {
+      background: var(--teal);
+    }
+
+    .status.medium::before,
+    .status.watch::before {
+      background: var(--amber);
+    }
+
+    .status.high::before,
+    .status.risk::before {
+      background: var(--risk);
+    }
+
+    .scatter {
+      position: relative;
+      height: 245px;
+      border-left: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      margin: 18px 18px 6px 40px;
+      background:
+        linear-gradient(to right, transparent 24%, rgba(214, 219, 223, 0.45) 25%, transparent 26%),
+        linear-gradient(to right, transparent 49%, rgba(214, 219, 223, 0.45) 50%, transparent 51%),
+        linear-gradient(to right, transparent 74%, rgba(214, 219, 223, 0.45) 75%, transparent 76%),
+        linear-gradient(to top, transparent 49%, rgba(214, 219, 223, 0.45) 50%, transparent 51%);
+    }
+
+    .dot {
+      position: absolute;
+      width: var(--size, 16px);
+      height: var(--size, 16px);
+      left: var(--x);
+      bottom: var(--y);
+      background: var(--color);
+      border: 2px solid #ffffff;
+      border-radius: 99px;
+      box-shadow: 0 8px 18px rgba(23, 32, 42, 0.16);
+    }
+
+    .heatmap {
+      display: grid;
+      grid-template-columns: 110px repeat(4, 1fr);
+      gap: 6px;
+      margin-top: 18px;
+      font-size: 12px;
+      align-items: stretch;
+    }
+
+    .heatmap div {
+      min-height: 42px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--slate);
+      font-weight: 650;
+    }
+
+    .heat-head {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      color: var(--muted) !important;
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    .h1 {
+      background: #eaf6f3;
+    }
+
+    .h2 {
+      background: #bfe5de;
+    }
+
+    .h3 {
+      background: #77c9bc;
+      color: #0d3b35 !important;
+    }
+
+    .h4 {
+      background: #008c7a;
+      color: #ffffff !important;
+    }
+
+    .matrix-wrap {
+      position: relative;
+      height: 275px;
+    }
+
+    .matrix-zone {
+      position: absolute;
+      inset: 18px 22px 34px 46px;
+      border-left: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(90deg, rgba(0, 140, 122, 0.08) 0 50%, rgba(192, 57, 43, 0.08) 50% 100%),
+        linear-gradient(0deg, rgba(192, 57, 43, 0.08) 0 50%, rgba(0, 140, 122, 0.08) 50% 100%);
+    }
+
+    .matrix-dot {
+      position: absolute;
+      left: var(--x);
+      bottom: var(--y);
+      width: var(--size);
+      height: var(--size);
+      background: var(--color);
+      border-radius: 99px;
+      border: 2px solid white;
+      box-shadow: 0 10px 22px rgba(23, 32, 42, 0.2);
+    }
+
+    .timeline {
+      display: grid;
+      gap: 11px;
+      margin-top: 16px;
+    }
+
+    .timeline-row {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 12px;
+      align-items: center;
+      font-size: 12px;
+      color: var(--slate);
+    }
+
+    .timeline-line {
+      height: 2px;
+      background: var(--line);
+      position: relative;
+    }
+
+    .mile {
+      position: absolute;
+      top: -5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 99px;
+      left: var(--pos);
+      background: var(--color);
+      border: 2px solid #ffffff;
+      box-shadow: 0 4px 10px rgba(23, 32, 42, 0.18);
+    }
+
+    .donut-wrap {
+      display: grid;
+      place-items: center;
+      min-height: 148px;
+    }
+
+    .donut {
+      width: 142px;
+      height: 142px;
+      border-radius: 50%;
+      background: conic-gradient(var(--teal) 0 55%, var(--amber) 55% 82%, var(--risk) 82% 100%);
+      display: grid;
+      place-items: center;
+      box-shadow: inset 0 0 0 1px rgba(23, 32, 42, 0.08);
+    }
+
+    .donut::after {
+      content: "56";
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      background: #ffffff;
+      display: grid;
+      place-items: center;
+      color: var(--ink);
+      font-size: 26px;
+      font-weight: 750;
+      box-shadow: 0 0 0 1px rgba(23, 32, 42, 0.05);
+    }
+
+    .footer-note {
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 12px;
+      text-align: right;
+    }
+
+    @media (max-width: 1100px) {
+      .app {
+        padding: 16px;
+      }
+
+      .topbar,
+      .filters,
+      .grid-two,
+      .grid-three {
+        grid-template-columns: 1fr;
+      }
+
+      .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav {
+        flex-wrap: wrap;
+      }
+
+      .meta-panel {
+        justify-content: start;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .kpi-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bar-row,
+      .risk-row,
+      .timeline-row {
+        grid-template-columns: 1fr;
+      }
+
+      .table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <div class="brand-row">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div>
+            <h1>Professional Services Delivery Command Center</h1>
+            <p class="subtitle" id="page-subtitle">Executive signal across financial performance, delivery health, and client sentiment</p>
+          </div>
+        </div>
+      </div>
+      <aside class="meta-panel" aria-label="Dashboard context">
+        <span class="pill">Mock portfolio concept</span>
+        <span class="pill">Jan 2025 - May 2026 delivery data</span>
+        <span class="pill">R Systems interview story</span>
+      </aside>
+    </header>
+
+    <nav class="nav" aria-label="Dashboard navigation">
+      <button class="tab active" type="button" data-page="overview">Executive Overview</button>
+      <button class="tab" type="button" data-page="consultants">Consultant Performance</button>
+      <button class="tab" type="button" data-page="risk">Project Risk & Client Health</button>
+    </nav>
+
+    <section class="filters" aria-label="Filters">
+      <div class="filter"><span>Date Range</span><strong>Jan 2024 - Dec 2025</strong></div>
+      <div class="filter"><span>Service Line</span><strong>All services</strong></div>
+      <div class="filter"><span>Region</span><strong>All regions</strong></div>
+      <div class="filter"><span>Industry</span><strong>All industries</strong></div>
+      <div class="filter"><span>Client Tier</span><strong>Enterprise + Growth</strong></div>
+      <div class="filter"><span>Status</span><strong>Completed + At Risk</strong></div>
+    </section>
+
+    <section class="page active" id="overview" aria-label="Executive Overview">
+      <div class="kpi-grid">
+        <article class="kpi watch"><span class="kpi-label">Revenue</span><strong class="kpi-value">$21.9M</strong><span class="delta risk">80.9% of plan</span></article>
+        <article class="kpi good"><span class="kpi-label">Gross Margin</span><strong class="kpi-value">47.9%</strong><span class="delta good">healthy delivery mix</span></article>
+        <article class="kpi good"><span class="kpi-label">Utilization</span><strong class="kpi-value">86.5%</strong><span class="delta good">above 80% target</span></article>
+        <article class="kpi watch"><span class="kpi-label">CSAT (1-5)</span><strong class="kpi-value">4.1</strong><span class="delta">healthy satisfaction</span></article>
+        <article class="kpi risk"><span class="kpi-label">High Risk Projects</span><strong class="kpi-value">9</strong><span class="delta risk">intervention watchlist</span></article>
+      </div>
+
+      <div class="grid-two">
+        <article class="panel">
+          <div class="panel-header">
+            <div><span class="section-kicker">Financial trajectory</span><h2 class="panel-title">Monthly Revenue and Margin Trend</h2></div>
+            <div class="legend"><span><i style="background: var(--blue)"></i>Revenue</span><span><i style="background: var(--teal)"></i>Margin %</span></div>
+          </div>
+          <div class="chart" aria-label="Line chart mockup">
+            <span class="axis-label y">$ / %</span>
+            <span class="axis-label x">Month</span>
+            <svg viewBox="0 0 640 190" role="img" aria-label="Monthly revenue and margin">
+              <path d="M0,156 C58,142 72,126 124,130 C182,134 200,96 250,104 C306,114 332,72 386,78 C442,84 464,46 516,58 C566,69 592,38 640,34" fill="none" stroke="#2471A3" stroke-width="4"/>
+              <path d="M0,114 C64,118 86,96 132,100 C190,104 214,84 262,88 C330,96 344,66 398,72 C456,78 482,62 530,58 C584,52 604,48 640,42" fill="none" stroke="#008C7A" stroke-width="4"/>
+              <path d="M0,156 C58,142 72,126 124,130 C182,134 200,96 250,104 C306,114 332,72 386,78 C442,84 464,46 516,58 C566,69 592,38 640,34 L640,190 L0,190 Z" fill="#2471A3" opacity="0.08"/>
+            </svg>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header">
+            <div><span class="section-kicker">Delivery health</span><h2 class="panel-title">Project Risk Mix</h2></div>
+            <span class="panel-note">56 engagements</span>
+          </div>
+          <div class="donut-wrap"><div class="donut" aria-label="Risk mix donut"></div></div>
+          <div class="risk-stack">
+            <div class="risk-row"><span>Low</span><div class="bar-track"><div class="bar-fill" style="width: 55%; background: var(--teal)"></div></div><strong>31</strong></div>
+            <div class="risk-row"><span>Medium</span><div class="bar-track"><div class="bar-fill" style="width: 27%; background: var(--amber)"></div></div><strong>18</strong></div>
+            <div class="risk-row"><span>High</span><div class="bar-track"><div class="bar-fill" style="width: 13%; background: var(--risk)"></div></div><strong>7</strong></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="grid-three">
+        <article class="panel compact">
+          <div class="panel-header"><div><span class="section-kicker">Capacity</span><h2 class="panel-title">Utilization by Service Line</h2></div></div>
+          <div class="bars">
+            <div class="bar-row"><strong>Data & AI</strong><div class="bar-track"><div class="bar-fill" style="width: 92%; background: var(--teal)"></div></div><span>92%</span></div>
+            <div class="bar-row"><strong>Product Engineering</strong><div class="bar-track"><div class="bar-fill" style="width: 89%; background: var(--teal)"></div></div><span>89%</span></div>
+            <div class="bar-row"><strong>Cloud Modernization</strong><div class="bar-track"><div class="bar-fill" style="width: 84%; background: var(--teal)"></div></div><span>84%</span></div>
+            <div class="bar-row"><strong>CX Transformation</strong><div class="bar-track"><div class="bar-fill" style="width: 78%; background: var(--amber)"></div></div><span>78%</span></div>
+          </div>
+        </article>
+
+        <article class="panel compact">
+          <div class="panel-header"><div><span class="section-kicker">Client sentiment</span><h2 class="panel-title">CSAT by Industry</h2></div></div>
+          <div class="bars">
+            <div class="bar-row"><strong>SaaS</strong><div class="bar-track"><div class="bar-fill" style="width: 88%; background: var(--teal)"></div></div><span>8.8</span></div>
+            <div class="bar-row"><strong>Healthcare</strong><div class="bar-track"><div class="bar-fill" style="width: 82%; background: var(--teal)"></div></div><span>8.2</span></div>
+            <div class="bar-row"><strong>Telecom</strong><div class="bar-track"><div class="bar-fill" style="width: 76%; background: var(--amber)"></div></div><span>7.6</span></div>
+            <div class="bar-row"><strong>Financial Svcs</strong><div class="bar-track"><div class="bar-fill" style="width: 72%; background: var(--amber)"></div></div><span>7.2</span></div>
+          </div>
+        </article>
+
+        <article class="panel compact">
+          <div class="panel-header">
+            <div><span class="section-kicker">KPI support</span><h2 class="panel-title">Monthly Utilization vs Target</h2></div>
+            <div class="legend"><span><i style="background: var(--teal)"></i>Utilization</span><span><i style="background: var(--amber)"></i>80% target</span></div>
+          </div>
+          <div class="chart" style="height: 142px; margin-top: 10px;" aria-label="Monthly utilization trend mockup">
+            <span class="axis-label y">Util. %</span>
+            <span class="axis-label x">Month</span>
+            <svg viewBox="0 0 420 142" role="img" aria-label="Monthly utilization compared with target">
+              <line x1="0" y1="78" x2="420" y2="78" stroke="#F2A900" stroke-width="3" stroke-dasharray="6 6"/>
+              <path d="M0,74 C36,68 52,55 86,61 C126,68 142,42 178,48 C218,54 234,36 270,41 C312,47 326,28 360,34 C386,38 402,30 420,26" fill="none" stroke="#008C7A" stroke-width="4"/>
+              <path d="M0,74 C36,68 52,55 86,61 C126,68 142,42 178,48 C218,54 234,36 270,41 C312,47 326,28 360,34 C386,38 402,30 420,26 L420,142 L0,142 Z" fill="#008C7A" opacity="0.10"/>
+            </svg>
+          </div>
+          <p class="panel-note" style="margin: 14px 0 0;">Use this to show whether the portfolio stayed above the utilization target over time, not just at a single KPI value.</p>
+        </article>
+      </div>
+
+      <article class="panel compact">
+        <div class="panel-header">
+          <div><span class="section-kicker">Engagement portfolio</span><h2 class="panel-title">Top Delivery Engagements by Revenue</h2></div>
+          <span class="panel-note">Clicking a row in Tableau would navigate to project health</span>
+        </div>
+        <table class="table">
+          <thead><tr><th>Project</th><th>Client</th><th>Service Line</th><th>Revenue</th><th>Margin</th><th>Burn</th><th>Risk</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Skyward Data & AI Platform Build</strong></td><td>Skyward Software</td><td>Data & AI</td><td>$1.42M</td><td>51.6%</td><td>91%</td><td><span class="status low">Low</span></td></tr>
+            <tr><td><strong>Aster Cloud Modernization</strong></td><td>Aster Health Network</td><td>Cloud Modernization</td><td>$1.28M</td><td>43.9%</td><td>97%</td><td><span class="status medium">Medium</span></td></tr>
+            <tr><td><strong>OakBridge CX Transformation</strong></td><td>OakBridge Bank</td><td>CX Transformation</td><td>$1.17M</td><td>38.4%</td><td>108%</td><td><span class="status high">High</span></td></tr>
+            <tr><td><strong>Vertex Product Engineering</strong></td><td>Vertex BioTech</td><td>Product Engineering</td><td>$1.04M</td><td>49.2%</td><td>86%</td><td><span class="status low">Low</span></td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="page" id="consultants" aria-label="Consultant Performance">
+      <div class="kpi-grid">
+        <article class="kpi"><span class="kpi-label">Consultants</span><strong class="kpi-value">120</strong><span class="delta">across 8 roles</span></article>
+        <article class="kpi good"><span class="kpi-label">Billable Hours</span><strong class="kpi-value">152.5K</strong><span class="delta good">86.5% utilization</span></article>
+        <article class="kpi watch"><span class="kpi-label">Non-Billable Hours</span><strong class="kpi-value">23.7K</strong><span class="delta">enablement + rework load</span></article>
+        <article class="kpi good"><span class="kpi-label">Avg Bill Rate</span><strong class="kpi-value">$146</strong><span class="delta good">weighted realized rate</span></article>
+        <article class="kpi risk"><span class="kpi-label">Below Target</span><strong class="kpi-value">18</strong><span class="delta risk">capacity review group</span></article>
+      </div>
+
+      <div class="grid-two">
+        <article class="panel">
+          <div class="panel-header">
+            <div><span class="section-kicker">Talent economics</span><h2 class="panel-title">Utilization vs Gross Margin</h2></div>
+            <div class="legend"><span><i style="background: var(--teal)"></i>Above target</span><span><i style="background: var(--amber)"></i>Watch</span><span><i style="background: var(--risk)"></i>Below target</span></div>
+          </div>
+          <div class="scatter">
+            <span class="axis-label y">Margin %</span><span class="axis-label x">Utilization %</span>
+            <span class="dot" style="--x: 72%; --y: 68%; --size: 24px; --color: var(--teal)"></span>
+            <span class="dot" style="--x: 84%; --y: 58%; --size: 18px; --color: var(--teal)"></span>
+            <span class="dot" style="--x: 63%; --y: 51%; --size: 22px; --color: var(--amber)"></span>
+            <span class="dot" style="--x: 48%; --y: 36%; --size: 18px; --color: var(--risk)"></span>
+            <span class="dot" style="--x: 78%; --y: 42%; --size: 20px; --color: var(--amber)"></span>
+            <span class="dot" style="--x: 91%; --y: 73%; --size: 16px; --color: var(--teal)"></span>
+            <span class="dot" style="--x: 37%; --y: 28%; --size: 14px; --color: var(--risk)"></span>
+            <span class="dot" style="--x: 69%; --y: 62%; --size: 19px; --color: var(--teal)"></span>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header"><div><span class="section-kicker">Lost capacity</span><h2 class="panel-title">Non-Billable Hours by Type</h2></div></div>
+          <div class="bars">
+            <div class="bar-row"><strong>Enablement</strong><div class="bar-track"><div class="bar-fill" style="width: 82%; background: var(--blue)"></div></div><span>7.4K</span></div>
+            <div class="bar-row"><strong>Internal</strong><div class="bar-track"><div class="bar-fill" style="width: 71%; background: var(--purple)"></div></div><span>6.5K</span></div>
+            <div class="bar-row"><strong>Rework</strong><div class="bar-track"><div class="bar-fill" style="width: 62%; background: var(--risk)"></div></div><span>5.6K</span></div>
+            <div class="bar-row"><strong>Admin</strong><div class="bar-track"><div class="bar-fill" style="width: 52%; background: var(--muted)"></div></div><span>4.7K</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="grid-two">
+        <article class="panel compact">
+          <div class="panel-header"><div><span class="section-kicker">Role mix</span><h2 class="panel-title">Utilization Heatmap by Role and Level</h2></div></div>
+          <div class="heatmap">
+            <div></div><div class="heat-head">Principal</div><div class="heat-head">Senior</div><div class="heat-head">Mid</div><div class="heat-head">Associate</div>
+            <div class="heat-head">Architect</div><div class="h2">79%</div><div class="h3">86%</div><div class="h2">81%</div><div class="h1">74%</div>
+            <div class="heat-head">Data Eng.</div><div class="h2">82%</div><div class="h4">91%</div><div class="h4">94%</div><div class="h3">87%</div>
+            <div class="heat-head">Designer</div><div class="h1">72%</div><div class="h2">80%</div><div class="h3">85%</div><div class="h2">78%</div>
+          </div>
+        </article>
+
+        <article class="panel compact">
+          <div class="panel-header"><div><span class="section-kicker">Consultant detail</span><h2 class="panel-title">Utilization Watchlist</h2></div></div>
+          <table class="table">
+            <thead><tr><th>Consultant</th><th>Role</th><th>Skill</th><th>Billable</th><th>Util.</th><th>Gap</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Maya Shah</strong></td><td>Data Engineer</td><td>SQL</td><td>1,642</td><td>93%</td><td><span class="status good">+13</span></td></tr>
+              <tr><td><strong>Priya Chen</strong></td><td>Designer</td><td>Tableau</td><td>1,318</td><td>82%</td><td><span class="status good">+2</span></td></tr>
+              <tr><td><strong>Noah Reed</strong></td><td>Architect</td><td>Cloud</td><td>1,104</td><td>76%</td><td><span class="status watch">-4</span></td></tr>
+              <tr><td><strong>Jordan Patel</strong></td><td>Consultant</td><td>UX/UI</td><td>902</td><td>69%</td><td><span class="status risk">-11</span></td></tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+    </section>
+
+    <section class="page" id="risk" aria-label="Project Risk and Client Health">
+      <div class="kpi-grid">
+        <article class="kpi"><span class="kpi-label">Engagements</span><strong class="kpi-value">56</strong><span class="delta">portfolio scope</span></article>
+        <article class="kpi risk"><span class="kpi-label">At-Risk / High</span><strong class="kpi-value">9</strong><span class="delta risk">leadership focus</span></article>
+        <article class="kpi watch"><span class="kpi-label">Budget Burn</span><strong class="kpi-value">88%</strong><span class="delta">weighted estimate</span></article>
+        <article class="kpi risk"><span class="kpi-label">Late Milestones</span><strong class="kpi-value">29%</strong><span class="delta risk">predictability drag</span></article>
+        <article class="kpi watch"><span class="kpi-label">CSAT (1-5)</span><strong class="kpi-value">4.1</strong><span class="delta">mixed by project</span></article>
+      </div>
+
+      <div class="grid-two">
+        <article class="panel">
+          <div class="panel-header">
+            <div><span class="section-kicker">Intervention priority</span><h2 class="panel-title">Project Risk Matrix</h2></div>
+            <div class="legend"><span><i style="background: var(--teal)"></i>Low</span><span><i style="background: var(--amber)"></i>Medium</span><span><i style="background: var(--risk)"></i>High</span></div>
+          </div>
+          <div class="matrix-wrap">
+            <div class="matrix-zone">
+              <span class="matrix-dot" style="--x: 22%; --y: 70%; --size: 18px; --color: var(--teal)"></span>
+              <span class="matrix-dot" style="--x: 38%; --y: 62%; --size: 22px; --color: var(--teal)"></span>
+              <span class="matrix-dot" style="--x: 58%; --y: 51%; --size: 28px; --color: var(--amber)"></span>
+              <span class="matrix-dot" style="--x: 72%; --y: 38%; --size: 34px; --color: var(--amber)"></span>
+              <span class="matrix-dot" style="--x: 84%; --y: 24%; --size: 30px; --color: var(--risk)"></span>
+              <span class="matrix-dot" style="--x: 63%; --y: 18%; --size: 24px; --color: var(--risk)"></span>
+            </div>
+            <span class="axis-label y" style="left: 10px; top: 12px;">CSAT</span>
+            <span class="axis-label x" style="right: 22px; bottom: 4px;">Budget Burn %</span>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header"><div><span class="section-kicker">Client pulse</span><h2 class="panel-title">CSAT and NPS Trend</h2></div></div>
+          <div class="chart" aria-label="CSAT and NPS trend mockup">
+            <span class="axis-label y">Score</span><span class="axis-label x">Quarter</span>
+            <svg viewBox="0 0 480 190" role="img" aria-label="CSAT and NPS line chart">
+              <path d="M0,96 C42,88 62,78 104,84 C148,92 164,70 206,76 C252,83 266,66 312,61 C356,57 384,84 426,78 C452,74 466,68 480,64" fill="none" stroke="#008C7A" stroke-width="4"/>
+              <path d="M0,140 C44,132 66,116 108,122 C152,128 178,104 220,112 C270,120 286,92 334,96 C386,100 406,112 480,104" fill="none" stroke="#2471A3" stroke-width="4"/>
+              <circle cx="426" cy="78" r="5" fill="#008C7A"></circle>
+              <circle cx="480" cy="104" r="5" fill="#2471A3"></circle>
+            </svg>
+          </div>
+        </article>
+      </div>
+
+      <article class="panel compact">
+        <div class="panel-header">
+          <div><span class="section-kicker">Predictability</span><h2 class="panel-title">Milestone Timeline</h2></div>
+          <div class="legend"><span><i style="background: var(--teal)"></i>On time</span><span><i style="background: var(--risk)"></i>Late</span><span><i style="background: var(--muted)"></i>Pending</span></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-row"><strong>OakBridge CX</strong><div class="timeline-line"><span class="mile" style="--pos: 12%; --color: var(--teal)"></span><span class="mile" style="--pos: 34%; --color: var(--teal)"></span><span class="mile" style="--pos: 56%; --color: var(--risk)"></span><span class="mile" style="--pos: 78%; --color: var(--risk)"></span></div></div>
+          <div class="timeline-row"><strong>Aster Cloud</strong><div class="timeline-line"><span class="mile" style="--pos: 18%; --color: var(--teal)"></span><span class="mile" style="--pos: 42%; --color: var(--amber)"></span><span class="mile" style="--pos: 66%; --color: var(--teal)"></span><span class="mile" style="--pos: 90%; --color: var(--muted)"></span></div></div>
+          <div class="timeline-row"><strong>Skyward AI</strong><div class="timeline-line"><span class="mile" style="--pos: 8%; --color: var(--teal)"></span><span class="mile" style="--pos: 31%; --color: var(--teal)"></span><span class="mile" style="--pos: 59%; --color: var(--teal)"></span><span class="mile" style="--pos: 86%; --color: var(--teal)"></span></div></div>
+          <div class="timeline-row"><strong>Vertex Product</strong><div class="timeline-line"><span class="mile" style="--pos: 16%; --color: var(--teal)"></span><span class="mile" style="--pos: 47%; --color: var(--teal)"></span><span class="mile" style="--pos: 71%; --color: var(--amber)"></span><span class="mile" style="--pos: 92%; --color: var(--teal)"></span></div></div>
+        </div>
+      </article>
+
+      <div class="grid-two">
+        <article class="panel compact">
+          <div class="panel-header"><div><span class="section-kicker">Delivery action list</span><h2 class="panel-title">Project Detail</h2></div></div>
+          <table class="table">
+            <thead><tr><th>Project</th><th>Status</th><th>Risk</th><th>Revenue</th><th>Burn</th><th>CSAT</th></tr></thead>
+            <tbody>
+              <tr><td><strong>OakBridge CX</strong></td><td>Completed</td><td><span class="status high">High</span></td><td>$1.17M</td><td>108%</td><td>6.9</td></tr>
+              <tr><td><strong>Aster Cloud</strong></td><td>Completed</td><td><span class="status medium">Medium</span></td><td>$1.28M</td><td>97%</td><td>7.6</td></tr>
+              <tr><td><strong>Skyward AI</strong></td><td>Completed</td><td><span class="status low">Low</span></td><td>$1.42M</td><td>91%</td><td>8.8</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="panel compact">
+          <div class="panel-header"><div><span class="section-kicker">Voice of client</span><h2 class="panel-title">Feedback Theme Breakdown</h2></div></div>
+          <div class="bars">
+            <div class="bar-row"><strong>Delivery Quality</strong><div class="bar-track"><div class="bar-fill" style="width: 84%; background: var(--teal)"></div></div><span>8.6</span></div>
+            <div class="bar-row"><strong>Technical Expertise</strong><div class="bar-track"><div class="bar-fill" style="width: 78%; background: var(--teal)"></div></div><span>8.2</span></div>
+            <div class="bar-row"><strong>Communication</strong><div class="bar-track"><div class="bar-fill" style="width: 67%; background: var(--amber)"></div></div><span>7.4</span></div>
+            <div class="bar-row"><strong>Change Mgmt.</strong><div class="bar-track"><div class="bar-fill" style="width: 58%; background: var(--risk)"></div></div><span>6.8</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <p class="footer-note">Static HTML design reference for Tableau build; values are derived from or styled to match the mock dataset.</p>
+  </main>
+
+  <script>
+    const subtitles = {
+      overview: "Executive signal across financial performance, delivery health, and client sentiment",
+      consultants: "Capacity, billability, role mix, and utilization gaps across the consulting team",
+      risk: "Milestone predictability, budget burn, satisfaction, and intervention priorities"
+    };
+
+    document.querySelectorAll(".tab").forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const pageId = tab.dataset.page;
+        document.querySelectorAll(".tab").forEach((item) => item.classList.toggle("active", item === tab));
+        document.querySelectorAll(".page").forEach((page) => page.classList.toggle("active", page.id === pageId));
+        document.getElementById("page-subtitle").textContent = subtitles[pageId];
+      });
+    });
+  </script>
+</body>
+</html>

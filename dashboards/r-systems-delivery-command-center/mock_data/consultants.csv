@@ -1,0 +1,121 @@
+consultant_id,consultant_name,role,level,home_region,primary_skill,bill_rate,cost_rate,utilization_target,hire_date
+CN001,Priya Mehta,Data Visualization Designer,Associate,APAC,QA Automation,149,60,0.85,2022-03-08
+CN002,Theo Patel,Senior Consultant,Mid,Europe,DevOps,157,60,0.82,2019-10-21
+CN003,Mina Nair,Consultant,Senior,North America,UX/UI,119,59,0.78,2022-02-10
+CN004,Talia Shah,Lead Consultant,Mid,APAC,UX/UI,184,77,0.82,2018-04-15
+CN005,Amara Morgan,QA Engineer,Senior,North America,SQL,101,54,0.78,2022-10-31
+CN006,Iris Nguyen,Consultant,Associate,Europe,Tableau,132,48,0.85,2019-01-31
+CN007,Marcus Nair,Lead Consultant,Senior,Europe,QA Automation,178,84,0.78,2024-06-24
+CN008,Theo Brooks,QA Engineer,Principal,Europe,SQL,115,50,0.72,2021-12-02
+CN009,Zara Cole,QA Engineer,Mid,Europe,Data Modeling,121,40,0.82,2023-01-14
+CN010,Grace Bennett,Senior Consultant,Mid,North America,QA Automation,138,69,0.82,2017-07-19
+CN011,Grace Khan,Senior Consultant,Mid,Europe,QA Automation,149,68,0.82,2018-10-05
+CN012,Caleb Khan,Solution Architect,Principal,APAC,SQL,185,89,0.72,2023-05-20
+CN013,Marcus Cole,QA Engineer,Mid,North America,Python,108,49,0.82,2017-08-02
+CN014,Marcus Khan,QA Engineer,Senior,Europe,DevOps,114,43,0.78,2018-08-10
+CN015,Lena Cole,Lead Consultant,Associate,Europe,DevOps,165,73,0.85,2018-04-04
+CN016,Ethan Garcia,QA Engineer,Mid,APAC,DevOps,121,54,0.82,2020-03-31
+CN017,Noah Brooks,Consultant,Mid,Europe,Tableau,123,60,0.82,2024-09-28
+CN018,Aria Patel,QA Engineer,Senior,North America,AI/ML,109,39,0.78,2021-02-23
+CN019,Kiara Hughes,Consultant,Mid,North America,Tableau,116,57,0.82,2019-12-25
+CN020,Elena Kim,Project Manager,Senior,North America,Cloud,162,73,0.78,2017-12-25
+CN021,Aria Garcia,Data Engineer,Mid,Europe,QA Automation,147,65,0.82,2018-01-24
+CN022,Diego Kim,Lead Consultant,Senior,APAC,SQL,177,74,0.78,2023-07-02
+CN023,Samir Brooks,Project Manager,Senior,North America,Python,144,82,0.78,2019-06-01
+CN024,Iris Bennett,Consultant,Senior,APAC,SQL,118,53,0.78,2022-03-02
+CN025,Aria Foster,Data Engineer,Principal,North America,UX/UI,160,77,0.72,2022-02-22
+CN026,Aria Bennett,Solution Architect,Senior,North America,Python,190,92,0.78,2018-10-25
+CN027,Caleb Nair,Solution Architect,Associate,Europe,Python,205,98,0.85,2022-09-20
+CN028,Sofia Garcia,Lead Consultant,Senior,North America,Python,168,70,0.78,2017-05-25
+CN029,Marcus Rivera,Project Manager,Mid,Europe,QA Automation,158,67,0.82,2020-07-07
+CN030,Sofia Hughes,Solution Architect,Senior,Europe,DevOps,209,84,0.78,2020-06-11
+CN031,Grace Cole,Data Visualization Designer,Associate,APAC,Cloud,146,57,0.85,2020-12-24
+CN032,Sofia Mehta,Solution Architect,Associate,APAC,Cloud,192,97,0.85,2022-10-18
+CN033,Zara Iyer,Senior Consultant,Senior,North America,AI/ML,151,63,0.78,2019-08-24
+CN034,Kiara Kim,Data Visualization Designer,Senior,Europe,QA Automation,126,61,0.78,2017-08-13
+CN035,Kiara Morgan,Data Visualization Designer,Mid,North America,UX/UI,137,50,0.82,2020-01-30
+CN036,Kiara Rivera,Lead Consultant,Senior,APAC,Python,193,79,0.78,2021-10-24
+CN037,Sofia Patel,Project Manager,Senior,North America,Python,155,65,0.78,2020-01-25
+CN038,Priya Rivera,Consultant,Mid,APAC,Data Modeling,132,48,0.82,2019-08-31
+CN039,Samir Patel,Data Visualization Designer,Principal,Europe,UX/UI,143,50,0.72,2023-09-15
+CN040,Talia Parker,Consultant,Senior,APAC,QA Automation,110,59,0.78,2019-06-10
+CN041,Amara Cole,Data Visualization Designer,Principal,APAC,Python,124,65,0.72,2018-08-17
+CN042,Nina Cole,Solution Architect,Associate,APAC,UX/UI,201,98,0.85,2021-07-15
+CN043,Owen Morgan,Consultant,Mid,Europe,Data Modeling,115,48,0.82,2018-11-19
+CN044,Mateo Hughes,Senior Consultant,Principal,North America,QA Automation,151,61,0.72,2019-12-29
+CN045,Aria Nguyen,Consultant,Associate,North America,Tableau,109,52,0.85,2018-06-04
+CN046,Mateo Khan,QA Engineer,Mid,Europe,DevOps,104,46,0.82,2021-02-23
+CN047,Avery Kim,Lead Consultant,Mid,Europe,Cloud,173,75,0.82,2024-06-26
+CN048,Maya Patel,Project Manager,Senior,North America,Python,143,81,0.78,2024-07-13
+CN049,Ethan Cole,Data Visualization Designer,Mid,Europe,AI/ML,129,59,0.82,2017-03-11
+CN050,Priya Nair,Senior Consultant,Mid,APAC,AI/ML,141,75,0.82,2024-10-29
+CN051,Daniel Brooks,Data Visualization Designer,Associate,Europe,UX/UI,139,55,0.85,2021-04-09
+CN052,Mina Mehta,Data Engineer,Senior,Europe,AI/ML,156,73,0.78,2024-07-24
+CN053,Julian Mehta,Data Engineer,Senior,North America,Tableau,150,61,0.78,2022-02-23
+CN054,Rohan Foster,Data Visualization Designer,Principal,Europe,SQL,141,53,0.72,2019-12-03
+CN055,Ethan Reed,Consultant,Principal,Europe,DevOps,134,59,0.72,2018-11-22
+CN056,Zara Foster,Consultant,Mid,North America,QA Automation,131,48,0.82,2021-01-07
+CN057,Mateo Brooks,Data Engineer,Mid,North America,DevOps,161,72,0.82,2024-04-11
+CN058,Mina Reed,Senior Consultant,Senior,North America,AI/ML,153,58,0.78,2022-10-07
+CN059,Caleb Shah,Senior Consultant,Mid,North America,Cloud,136,62,0.82,2022-09-16
+CN060,Iris Nair,Project Manager,Associate,North America,QA Automation,160,72,0.85,2020-12-29
+CN061,Zara Hughes,Consultant,Principal,Europe,Data Modeling,120,62,0.72,2018-01-31
+CN062,Owen Iyer,Consultant,Mid,APAC,DevOps,107,46,0.82,2022-07-14
+CN063,Grace Foster,QA Engineer,Associate,Europe,Cloud,111,51,0.85,2024-12-07
+CN064,Rohan Nair,Solution Architect,Mid,North America,SQL,183,99,0.82,2020-11-25
+CN065,Aria Nair,Project Manager,Associate,Europe,Tableau,160,68,0.85,2021-10-04
+CN066,Nina Garcia,Consultant,Senior,North America,Cloud,118,54,0.78,2018-08-01
+CN067,Owen Brooks,Senior Consultant,Mid,North America,Cloud,150,75,0.82,2017-03-08
+CN068,Elena Garcia,Lead Consultant,Associate,Europe,DevOps,193,87,0.85,2022-06-10
+CN069,Avery Rivera,Data Engineer,Mid,APAC,QA Automation,167,75,0.82,2022-11-02
+CN070,Caleb Bennett,QA Engineer,Associate,North America,AI/ML,103,55,0.85,2023-10-30
+CN071,Rohan Rivera,Solution Architect,Senior,North America,AI/ML,198,96,0.78,2019-04-10
+CN072,Zara Nair,Consultant,Associate,North America,Tableau,134,55,0.85,2025-03-12
+CN073,Aria Khan,Data Engineer,Associate,Europe,QA Automation,151,74,0.85,2024-06-29
+CN074,Nina Reed,Senior Consultant,Mid,Europe,Data Modeling,140,63,0.82,2021-12-21
+CN075,Noah Kim,Consultant,Mid,North America,Cloud,120,57,0.82,2023-04-12
+CN076,Avery Foster,Lead Consultant,Senior,Europe,Python,184,88,0.78,2017-05-05
+CN077,Owen Parker,Data Engineer,Mid,Europe,Cloud,163,64,0.82,2020-03-08
+CN078,Noah Reed,Lead Consultant,Senior,North America,Cloud,177,88,0.78,2019-09-23
+CN079,Ethan Brooks,Consultant,Senior,North America,Python,107,46,0.78,2018-11-21
+CN080,Talia Mehta,QA Engineer,Principal,APAC,QA Automation,108,52,0.72,2017-11-05
+CN081,Theo Cole,Project Manager,Associate,Europe,AI/ML,153,80,0.85,2019-11-02
+CN082,Jordan Nguyen,Project Manager,Senior,Europe,SQL,159,75,0.78,2020-02-03
+CN083,Samir Iyer,Project Manager,Associate,APAC,Cloud,158,70,0.85,2020-07-23
+CN084,Marcus Shah,Consultant,Principal,Europe,DevOps,133,53,0.72,2020-12-21
+CN085,Noah Cole,Senior Consultant,Associate,North America,Tableau,163,63,0.85,2019-10-14
+CN086,Milo Mehta,Project Manager,Senior,North America,AI/ML,151,68,0.78,2020-08-03
+CN087,Jordan Chen,Project Manager,Senior,North America,QA Automation,148,72,0.78,2019-03-18
+CN088,Lena Khan,Senior Consultant,Senior,North America,SQL,144,66,0.78,2018-11-25
+CN089,Amara Rivera,QA Engineer,Senior,Europe,UX/UI,104,50,0.78,2021-05-05
+CN090,Caleb Cole,Data Visualization Designer,Associate,APAC,Python,140,59,0.85,2017-12-01
+CN091,Maya Garcia,Lead Consultant,Mid,APAC,SQL,163,86,0.82,2017-08-31
+CN092,Ethan Nair,QA Engineer,Senior,Europe,Tableau,98,45,0.78,2024-11-30
+CN093,Marcus Singh,QA Engineer,Mid,APAC,SQL,104,40,0.82,2021-07-23
+CN094,Talia Patel,QA Engineer,Mid,APAC,QA Automation,122,50,0.82,2021-12-03
+CN095,Owen Cole,Data Visualization Designer,Mid,North America,AI/ML,142,62,0.82,2019-05-03
+CN096,Julian Brooks,QA Engineer,Mid,North America,Python,101,41,0.82,2020-08-23
+CN097,Priya Morgan,Consultant,Mid,North America,Python,106,59,0.82,2018-03-28
+CN098,Amara Hughes,Data Engineer,Senior,Europe,Tableau,163,68,0.78,2023-01-13
+CN099,Theo Foster,Solution Architect,Mid,North America,AI/ML,201,99,0.82,2023-09-30
+CN100,Daniel Bennett,Data Engineer,Senior,North America,QA Automation,153,63,0.78,2021-04-30
+CN101,Sofia Rivera,Lead Consultant,Associate,APAC,Data Modeling,180,87,0.85,2019-12-28
+CN102,Sofia Khan,Project Manager,Associate,Europe,UX/UI,163,78,0.85,2019-05-28
+CN103,Samir Parker,Consultant,Associate,APAC,AI/ML,136,51,0.85,2022-11-30
+CN104,Iris Kim,Data Engineer,Senior,North America,SQL,141,64,0.78,2022-01-21
+CN105,Ethan Singh,Project Manager,Mid,Europe,UX/UI,162,79,0.82,2024-03-26
+CN106,Zara Garcia,Data Visualization Designer,Mid,Europe,SQL,144,63,0.82,2022-05-04
+CN107,Grace Mehta,Data Visualization Designer,Senior,APAC,Cloud,144,63,0.78,2022-03-18
+CN108,Rohan Reed,Consultant,Associate,APAC,SQL,114,48,0.85,2019-05-26
+CN109,Isaac Kim,QA Engineer,Mid,Europe,Cloud,117,41,0.82,2017-06-21
+CN110,Milo Kim,Data Visualization Designer,Senior,Europe,QA Automation,150,50,0.78,2020-04-01
+CN111,Elena Khan,Data Engineer,Principal,APAC,QA Automation,153,70,0.72,2021-11-07
+CN112,Elena Brooks,Consultant,Senior,North America,DevOps,121,60,0.78,2017-02-25
+CN113,Sofia Nair,QA Engineer,Associate,APAC,Cloud,125,51,0.85,2020-01-08
+CN114,Ethan Mehta,Data Engineer,Mid,North America,UX/UI,161,61,0.82,2023-03-01
+CN115,Lena Garcia,QA Engineer,Senior,North America,QA Automation,101,50,0.78,2021-04-25
+CN116,Iris Mehta,Data Visualization Designer,Associate,Europe,SQL,125,55,0.85,2023-03-27
+CN117,Marcus Mehta,QA Engineer,Mid,Europe,DevOps,106,55,0.82,2020-10-16
+CN118,Elena Morgan,Senior Consultant,Mid,North America,Data Modeling,150,63,0.82,2023-08-05
+CN119,Lena Chen,Consultant,Mid,APAC,SQL,128,52,0.82,2023-04-07
+CN120,Priya Foster,Data Engineer,Senior,North America,DevOps,153,74,0.78,2023-07-26

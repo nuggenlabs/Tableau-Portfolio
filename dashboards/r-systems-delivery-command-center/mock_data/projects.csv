@@ -1,0 +1,57 @@
+project_id,project_name,client_id,service_line,project_type,delivery_model,project_region,start_date,planned_end_date,actual_or_forecast_end_date,status,budget_hours,budget_revenue,risk_level
+PR0001,UnionSquare Product Engineering Platform Build,CL019,Product Engineering,Implementation,Hybrid,North America,2025-03-24,2025-09-02,2025-08-20,Completed,4060,629300,Low
+PR0002,TerraWorks QA Automation Implementation,CL018,QA Automation,Modernization,Hybrid,Europe,2025-04-02,2025-06-04,2025-05-20,Completed,1260,199080,Low
+PR0003,Evergreen Product Engineering Advisory,CL005,Product Engineering,Platform Build,Hybrid,APAC,2025-04-20,2025-10-03,2025-09-18,Completed,2940,520380,Low
+PR0004,Foresight CX Transformation Platform Build,CL006,CX Transformation,Managed Services,Hybrid,North America,2025-07-11,2026-03-25,2026-04-15,Completed,3900,581100,Low
+PR0005,CedarPoint DevSecOps Modernization,CL003,DevSecOps,Managed Services,Hybrid,North America,2025-02-21,2025-10-13,2025-10-04,Completed,3740,504900,Low
+PR0006,Juniper DevSecOps Managed Services,CL008,DevSecOps,Implementation,Hybrid,APAC,2024-09-29,2025-06-07,2025-06-19,Completed,4460,713600,Low
+PR0007,Vertex DevSecOps Implementation,CL020,DevSecOps,Implementation,Hybrid,APAC,2025-11-03,2026-02-16,2026-02-21,Completed,2460,437880,Low
+PR0008,Lighthouse Cloud Modernization Advisory,CL009,Cloud Modernization,Managed Services,Remote,APAC,2026-01-27,2026-10-02,2026-10-12,Active,3100,551800,Low
+PR0009,Northstar Product Engineering Modernization,CL011,Product Engineering,Managed Services,Remote,North America,2025-03-04,2025-10-06,2025-11-18,Completed,2540,441960,Low
+PR0010,Pacific Product Engineering Managed Services,CL013,Product Engineering,Implementation,Remote,North America,2026-01-17,2026-08-01,2026-07-30,Active,4460,691300,Low
+PR0011,Aster CX Transformation Implementation,CL001,CX Transformation,Managed Services,Remote,Europe,2025-08-02,2025-12-24,2026-01-18,Completed,5340,736920,High
+PR0012,CedarPoint Product Engineering Modernization,CL003,Product Engineering,Implementation,Remote,North America,2025-08-14,2026-04-20,2026-04-29,Completed,2540,353060,Low
+PR0013,Meridian Cloud Modernization Modernization,CL010,Cloud Modernization,Implementation,Hybrid,North America,2025-02-03,2025-06-05,2025-06-19,Completed,3020,471120,Low
+PR0014,ClearPath CX Transformation Platform Build,CL023,CX Transformation,Implementation,Hybrid,North America,2025-12-17,2026-08-24,2026-09-05,At Risk,860,125560,Low
+PR0015,Elevate Data & AI Managed Services,CL004,Data & AI,Advisory,Onsite,APAC,2025-02-20,2025-06-03,2025-06-08,Completed,1740,243600,Medium
+PR0016,HelioCare Cloud Modernization Advisory,CL027,Cloud Modernization,Modernization,Onsite,North America,2024-10-23,2025-01-03,2025-01-30,Completed,2220,301920,Low
+PR0017,Pacific DevSecOps Platform Build,CL013,DevSecOps,Platform Build,Hybrid,North America,2024-11-21,2025-06-15,2025-06-29,Completed,2460,366540,High
+PR0018,Meridian Product Engineering Managed Services,CL010,Product Engineering,Modernization,Onsite,North America,2025-06-07,2025-12-23,2026-01-05,Completed,3420,581400,Medium
+PR0019,BluePeak Product Engineering Platform Build,CL022,Product Engineering,Advisory,Onsite,North America,2024-09-16,2025-01-28,2025-03-01,Completed,2620,408720,Low
+PR0020,Skyward QA Automation Advisory,CL016,QA Automation,Advisory,Onsite,North America,2025-01-08,2025-03-28,2025-04-11,Completed,2700,407700,Medium
+PR0021,Quantum Product Engineering Advisory,CL024,Product Engineering,Modernization,Remote,Europe,2026-01-12,2026-04-02,2026-04-17,Completed,4700,846000,Medium
+PR0022,Quantum DevSecOps Managed Services,CL024,DevSecOps,Managed Services,Onsite,Europe,2024-09-27,2025-03-25,2025-03-25,Completed,2780,505960,Medium
+PR0023,Foresight CX Transformation Managed Services,CL006,CX Transformation,Managed Services,Hybrid,North America,2025-02-24,2025-05-02,2025-06-08,Completed,4940,716300,High
+PR0024,Mosaic Data & AI Modernization,CL026,Data & AI,Implementation,Remote,APAC,2025-10-08,2026-06-21,2026-07-03,At Risk,3180,550140,Medium
+PR0025,ClearPath Cloud Modernization Managed Services,CL023,Cloud Modernization,Modernization,Remote,North America,2026-01-14,2026-07-07,2026-08-21,Active,4140,579600,Medium
+PR0026,Pioneer DevSecOps Implementation,CL014,DevSecOps,Managed Services,Hybrid,North America,2024-11-30,2025-02-05,2025-02-06,Completed,3260,567240,Medium
+PR0027,Evergreen QA Automation Implementation,CL005,QA Automation,Advisory,Hybrid,APAC,2025-11-26,2026-04-22,2026-05-28,Completed,3420,591660,Medium
+PR0028,Summit Data & AI Implementation,CL017,Data & AI,Managed Services,Hybrid,North America,2025-02-04,2025-09-14,2025-09-26,Completed,4940,696540,Low
+PR0029,UnionSquare QA Automation Modernization,CL019,QA Automation,Implementation,Remote,North America,2025-10-08,2026-04-30,2026-04-28,Completed,2860,431860,Low
+PR0030,Brightline DevSecOps Platform Build,CL002,DevSecOps,Modernization,Hybrid,Europe,2025-10-25,2026-03-14,2026-03-26,Completed,3580,583540,Medium
+PR0031,Harbor Data & AI Modernization,CL007,Data & AI,Managed Services,Hybrid,Europe,2024-12-22,2025-05-23,2025-06-29,Completed,3340,577820,High
+PR0032,Juniper Cloud Modernization Advisory,CL008,Cloud Modernization,Managed Services,Hybrid,APAC,2025-11-24,2026-05-20,2026-05-22,Completed,1820,311220,High
+PR0033,Aster DevSecOps Advisory,CL001,DevSecOps,Platform Build,Onsite,Europe,2025-11-04,2026-06-18,2026-06-12,Active,1420,220100,Low
+PR0034,Northstar CX Transformation Modernization,CL011,CX Transformation,Platform Build,Onsite,North America,2025-04-28,2025-11-10,2025-10-29,Completed,1180,194700,High
+PR0035,Skyward Data & AI Managed Services,CL016,Data & AI,Platform Build,Hybrid,North America,2025-12-11,2026-08-18,2026-08-16,Active,3900,694200,Low
+PR0036,Skyward Cloud Modernization Advisory,CL016,Cloud Modernization,Platform Build,Onsite,North America,2024-10-23,2025-06-01,2025-07-12,Completed,780,116220,Medium
+PR0037,Quantum Cloud Modernization Managed Services,CL024,Cloud Modernization,Managed Services,Onsite,Europe,2026-02-01,2026-09-12,2026-10-22,Active,3180,464280,High
+PR0038,HelioCare CX Transformation Managed Services,CL027,CX Transformation,Advisory,Remote,North America,2024-10-08,2025-02-17,2025-02-02,Completed,1900,258400,Medium
+PR0039,Aster Cloud Modernization Platform Build,CL001,Cloud Modernization,Implementation,Onsite,Europe,2025-03-16,2025-09-04,2025-10-08,Completed,1900,243200,High
+PR0040,CedarPoint DevSecOps Advisory,CL003,DevSecOps,Platform Build,Onsite,North America,2024-11-12,2025-03-25,2025-04-23,Completed,5340,950520,Low
+PR0041,BluePeak CX Transformation Platform Build,CL022,CX Transformation,Platform Build,Onsite,North America,2024-12-03,2025-04-08,2025-03-30,Completed,2780,403100,Medium
+PR0042,OakBridge Product Engineering Advisory,CL012,Product Engineering,Modernization,Hybrid,North America,2025-12-01,2026-04-14,2026-03-30,Completed,700,112000,Low
+PR0043,Meridian CX Transformation Managed Services,CL010,CX Transformation,Managed Services,Hybrid,North America,2025-06-08,2025-09-11,2025-10-26,Completed,700,88900,Medium
+PR0044,Nexa DevSecOps Modernization,CL025,DevSecOps,Platform Build,Remote,North America,2025-02-14,2025-09-09,2025-10-15,Completed,3180,524700,Low
+PR0045,HelioCare Cloud Modernization Platform Build,CL027,Cloud Modernization,Advisory,Hybrid,North America,2025-01-23,2025-04-19,2025-04-13,Completed,5340,854400,Low
+PR0046,Vertex DevSecOps Implementation,CL020,DevSecOps,Managed Services,Remote,APAC,2025-01-29,2025-07-05,2025-07-18,Completed,2460,364080,Medium
+PR0047,Atlas QA Automation Platform Build,CL028,QA Automation,Platform Build,Remote,North America,2025-01-25,2025-08-18,2025-09-09,Completed,4540,758180,Low
+PR0048,Juniper DevSecOps Implementation,CL008,DevSecOps,Implementation,Onsite,APAC,2025-09-14,2025-11-16,2025-11-10,Completed,2460,361620,Low
+PR0049,Juniper Data & AI Advisory,CL008,Data & AI,Implementation,Onsite,APAC,2025-01-10,2025-04-11,2025-03-26,Completed,3260,472700,Medium
+PR0050,ClearPath Data & AI Implementation,CL023,Data & AI,Managed Services,Remote,North America,2025-04-12,2025-10-21,2025-11-15,Completed,780,120900,Low
+PR0051,Nexa CX Transformation Managed Services,CL025,CX Transformation,Implementation,Onsite,North America,2025-10-05,2025-12-28,2025-12-15,Completed,1740,243600,Medium
+PR0052,Riverstone Cloud Modernization Modernization,CL015,Cloud Modernization,Implementation,Onsite,Europe,2026-01-31,2026-06-23,2026-06-30,Active,4860,855360,Low
+PR0053,Nexa Product Engineering Advisory,CL025,Product Engineering,Managed Services,Hybrid,North America,2024-11-23,2025-05-19,2025-06-03,Completed,5580,859320,Medium
+PR0054,Harbor Product Engineering Advisory,CL007,Product Engineering,Managed Services,Hybrid,Europe,2025-11-03,2026-03-28,2026-03-20,Completed,2940,382200,Medium
+PR0055,Lighthouse Product Engineering Managed Services,CL009,Product Engineering,Platform Build,Hybrid,APAC,2026-01-19,2026-06-09,2026-06-01,Active,3180,464280,High
+PR0056,TerraWorks QA Automation Managed Services,CL018,QA Automation,Modernization,Onsite,Europe,2025-06-15,2025-12-20,2026-01-16,Completed,4940,859560,Medium

@@ -1,0 +1,29 @@
+client_id,client_name,industry,client_region,strategic_tier,account_owner
+CL001,Aster Health Network,Media,Europe,Emerging,N. Wallace
+CL002,Brightline Telecom,Media,Europe,Emerging,T. Mehra
+CL003,CedarPoint Financial,SaaS,North America,Enterprise,D. Ellis
+CL004,Elevate Media Group,SaaS,APAC,Enterprise,S. Alvarez
+CL005,Evergreen Manufacturing,SaaS,APAC,Emerging,S. Alvarez
+CL006,Foresight SaaS,Telecom,North America,Growth,D. Ellis
+CL007,Harbor Retail Partners,Financial Services,Europe,Growth,T. Mehra
+CL008,Juniper Insurance,Financial Services,APAC,Emerging,N. Wallace
+CL009,Lighthouse Energy,Manufacturing,APAC,Growth,T. Mehra
+CL010,Meridian Analytics,Media,North America,Growth,K. Romano
+CL011,Northstar Logistics,Telecom,North America,Growth,T. Mehra
+CL012,OakBridge Bank,Manufacturing,North America,Growth,D. Ellis
+CL013,Pacific Learning,Media,North America,Emerging,T. Mehra
+CL014,Pioneer Devices,Manufacturing,North America,Emerging,T. Mehra
+CL015,Riverstone Health,SaaS,Europe,Growth,D. Ellis
+CL016,Skyward Software,Manufacturing,North America,Enterprise,N. Wallace
+CL017,Summit Mobility,Telecom,North America,Growth,N. Wallace
+CL018,TerraWorks Industrial,Telecom,Europe,Growth,S. Alvarez
+CL019,UnionSquare Payments,Manufacturing,North America,Enterprise,T. Mehra
+CL020,Vertex BioTech,Financial Services,APAC,Enterprise,S. Alvarez
+CL021,Westhaven Hospitality,Healthcare,North America,Growth,K. Romano
+CL022,BluePeak Platforms,Manufacturing,North America,Emerging,S. Alvarez
+CL023,ClearPath Cloud,SaaS,North America,Growth,S. Alvarez
+CL024,Quantum CX Labs,Financial Services,Europe,Growth,D. Ellis
+CL025,Nexa Manufacturing,SaaS,North America,Growth,K. Romano
+CL026,Mosaic Media,SaaS,APAC,Growth,K. Romano
+CL027,HelioCare Systems,Media,North America,Growth,N. Wallace
+CL028,Atlas Subscription Co.,Healthcare,North America,Growth,K. Romano
