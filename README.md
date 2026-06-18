@@ -1,52 +1,20 @@
-# Tableau Portfolio
+# Tableau Portfolio — Calvin Nguyen
 
-This repository contains Tableau dashboard projects, mock datasets, design references, Tableau build guides, and portfolio presentation notes.
+Tableau Public dashboard portfolio. Each project contains mock data, wireframes, a Tableau build guide, and a LinkedIn post in the CN content series.
 
-Each dashboard project is organized as a self-contained folder under `dashboards/`.
+See [DASHBOARD_ROADMAP.md](DASHBOARD_ROADMAP.md) for the content backlog and series format.
 
-## Dashboard Projects
+## Published Dashboards
 
-### R Systems Delivery Command Center
-
-Folder:
-
-`dashboards/r-systems-delivery-command-center`
-
-Portfolio focus:
-
-- Professional services delivery
-- Project risk
-- Delivery team utilization
-- Revenue and gross margin
-- Client satisfaction
-- Executive dashboard design
-- Tableau wireframing and storytelling
-
-Start here:
-
-`dashboards/r-systems-delivery-command-center/README.md`
-
-## Resources
-
-Reusable prompts and portfolio-building assets live in `resources/`.
-
-Current resources:
-
-- `resources/tableau_mock_dashboard_prompt.md`
+| Dashboard | Tableau Public | Post |
+|-----------|---------------|------|
+| [Executive Delivery Analytics](dashboards/r-systems-delivery-command-center) | [View](https://public.tableau.com) | — |
 
 ## Repository Structure
 
-```text
-Tableau Portfolio/
-  dashboards/
-    r-systems-delivery-command-center/
-      mock_data/
-      wireframes/
-      README.md
-      tableau_build_guide.md
-      dashboard_mockup.html
-      r_systems_delivery_palette.tps
-  resources/
-    tableau_mock_dashboard_prompt.md
 ```
-
+dashboards/          ← one folder per dashboard build
+resources/           ← reusable prompts and portfolio assets
+CLAUDE.md            ← AI context file
+DASHBOARD_ROADMAP.md ← content backlog and series format
+```
