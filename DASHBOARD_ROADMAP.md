@@ -23,6 +23,7 @@ Every published dashboard and its accompanying LinkedIn post follows this struct
 | # | Title | Tableau Public | LinkedIn Post | Status |
 |---|-------|---------------|---------------|--------|
 | 1 | Executive Delivery Analytics | [link] | [link] | Published |
+| 7 | SaaS RevOps Command Center | — | — | In Progress — data + docs complete, Tableau build not started |
 
 ---
 
@@ -83,6 +84,17 @@ Every published dashboard and its accompanying LinkedIn post follows this struct
 
 ---
 
+### 7 — SaaS Revenue Operations — Pipeline and Forecast Command Center
+**Use case:** GTM leadership visibility into pipeline health, forecast accuracy, and revenue performance for a SaaS business. Audience: CRO, VP Sales, VP Account Management, RevOps leadership. Replaces weekly manual slide decks with a governed, self-refreshing reporting layer that answers three questions: Is the pipeline healthy? Is forecast tracking to plan? Where are we losing revenue?
+
+**Design angle:** Three-tab architecture separating pipeline health (leading indicators), forecast accuracy (trailing performance), and revenue waterfall (ARR composition). Each tab is executive-first: one dominant number, supporting context, and one click to the rep or deal level. Operational detail lives in tooltips and a drill-through sheet rather than on the summary view.
+
+**Feature highlight:** LOD expressions for pipeline coverage ratios — using FIXED to calculate coverage per quota segment so the ratio holds correctly when users filter by region, segment, or rep without double-counting deals. Secondary: dashboard tooltips on the stage funnel showing average days-in-stage and historical win rate per stage on hover, eliminating the need for a separate operational table.
+
+**Viz types to demonstrate:** CRM pipeline funnel (multi-stage), stage duration bar chart (avg days vs benchmark), ARR waterfall (New + Expansion - Churn - Contraction = Net ARR), forecast vs actual trend (6-quarter rolling), pipeline coverage scorecard by segment, deal aging table with conditional formatting.
+
+---
+
 ## Capabilities Checklist
 
 Use this to ensure new dashboards don't repeat the same viz types. Each new build should demonstrate something not yet covered.
@@ -99,8 +111,8 @@ Use this to ensure new dashboards don't repeat the same viz types. Each new buil
 - [ ] Funnel chart (quote-to-bind)
 - [ ] Geospatial map (staffing, visit coverage)
 - [ ] Treemap (question hierarchy, dealer performance)
-- [ ] CRM pipeline funnel (multi-stage)
-- [ ] Stage duration bar chart
+- [x] CRM pipeline funnel (multi-stage) — Dashboard 7
+- [x] Stage duration bar chart — Dashboard 7
 - [ ] Red/green compliance grid
 - [ ] Photo-integrated reporting (URL actions)
 - [ ] Forward-looking schedule view
@@ -113,11 +125,11 @@ Use this to ensure new dashboards don't repeat the same viz types. Each new buil
 - [ ] Salesforce SOQL connector
 - [ ] Parameter actions + dynamic zone visibility
 - [ ] Table calculations (YoY retention)
-- [ ] Reference lines/bands with dynamic targets
+- [x] Reference lines/bands with dynamic targets — Dashboard 7
 - [ ] URL actions for image display
-- [ ] Level of Detail (LOD) expressions
-- [ ] Set actions
-- [ ] Dashboard tooltips
+- [x] Level of Detail (LOD) expressions — Dashboard 7
+- [x] Set actions — Dashboard 7
+- [x] Dashboard tooltips — Dashboard 7
 
 ### Industries Covered
 - [x] Analytics consulting / professional services
@@ -126,6 +138,7 @@ Use this to ensure new dashboards don't repeat the same viz types. Each new buil
 - [ ] Automotive F&I
 - [ ] Telecom / consumer electronics retail
 - [ ] Manufacturing / production operations
+- [x] SaaS / Revenue Operations — Dashboard 7
 
 ---
 
