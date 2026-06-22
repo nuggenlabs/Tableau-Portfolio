@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "mock_data"
 DATA_DIR.mkdir(exist_ok=True)
 
-TODAY = date(2026, 6, 18)
+TODAY = date(2026, 6, 22)
 
 # ---------------------------------------------------------------------------
 # Reference tables
@@ -344,9 +344,10 @@ def build_opp(outcome: str):
         final_arr_type   = arr_type_raw
         stages_traversed = ALL_STAGES[: stage_idx + 1]
 
+        # Keep stale pipeline visible without making half the book look inactive.
         days_ago    = random.choices(
             [random.randint(1, 10), random.randint(11, 26), random.randint(27, 55)],
-            weights=[0.53, 0.31, 0.16]
+            weights=[0.63, 0.27, 0.10]
         )[0]
         last_activity = TODAY - timedelta(days=days_ago)
 
@@ -497,9 +498,9 @@ print(f"  Example quarterly quota : ${q_quota_all:>12,.0f}  (Q1 2025, all reps)"
 print(f"  Coverage vs Q1 2025     : {total_open_acv / q_quota_all:.1f}x")
 
 print("\n--- Deal aging (open deals) ---")
-green  = sum(1 for o in open_list if o["DaysSinceActivity"] <  14)
-yellow = sum(1 for o in open_list if 14 <= o["DaysSinceActivity"] <= 30)
-red    = sum(1 for o in open_list if o["DaysSinceActivity"] >  30)
-print(f"  Green  (<14d) : {green}")
-print(f"  Yellow (14-30): {yellow}")
-print(f"  Red    (>30d) : {red}")
+green  = sum(1 for o in open_list if o["DaysSinceActivity"] <  15)
+yellow = sum(1 for o in open_list if 15 <= o["DaysSinceActivity"] <= 29)
+red    = sum(1 for o in open_list if o["DaysSinceActivity"] >= 30)
+print(f"  Green  (<15d) : {green}")
+print(f"  Yellow (15-29): {yellow}")
+print(f"  Red    (30d+) : {red}")
