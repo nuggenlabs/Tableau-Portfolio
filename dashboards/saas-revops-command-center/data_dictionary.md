@@ -7,6 +7,7 @@
 | `opportunities.csv` | 500 | One row per opportunity | `OpportunityID` |
 | `stage_history.csv` | ~1,675 | One row per stage per opportunity | `OpportunityID` + `StageName` |
 | `quotas.csv` | 154 | One row per rep per quarter | `Owner` + `Quarter` |
+| `quotas_by_segment.csv` | 33 | One row per segment per quarter | `Segment` + `Quarter` |
 
 ---
 
@@ -79,13 +80,30 @@
 
 ---
 
+## quotas_by_segment.csv
+
+Use this table as a scaffold for Segment x Quarter visuals such as Pipeline Coverage and Manager Focus.
+
+| Field | Type | Values | Tableau Role | Notes |
+|-------|------|--------|--------------|-------|
+| `Quarter` | String | Q1 2024 – Q3 2026 | Dimension | FK to opportunities.[CloseQuarter] |
+| `QuarterStart` | Date | first day of quarter | Dimension / Date | |
+| `QuarterEnd` | Date | last day of quarter | Dimension / Date | |
+| `Segment` | String | SMB / Mid-Market / Enterprise | Dimension | FK to opportunities.[Segment] |
+| `Quota` | Integer | segment-level quota total | Measure | Sum of rep quotas by Segment x Quarter |
+| `RepCount` | Integer | 4 / 6 / 4 | Measure | Number of reps contributing to the segment quota |
+
+**Relationship:** `quotas_by_segment.[Segment]` = `opportunities.[Segment]` AND `quotas_by_segment.[Quarter]` = `opportunities.[CloseQuarter]`
+
+---
+
 ## Tableau data type assignments
 
 | Field | Set to |
 |-------|--------|
 | ACV, Quota, DaysInStage, DaysInCurrentStage | Measure (continuous) |
 | CloseDate, CreatedDate, LastActivityDate, EnteredDate, ExitedDate, EnteredCurrentStage | Date |
-| IsWon, IsClosed, IsCurrentStage | String (treat as filter dimension; do not convert to boolean) |
+| IsWon, IsClosed, IsCurrentStage | Boolean — compare using `TRUE` / `FALSE` (no quotes) |
 | OpportunityID, Owner, AccountName, StageName, etc. | Dimension |
 | DaysSinceActivity | Measure — but re-derive in Tableau (see calc `[Days Since Activity]`) |
 

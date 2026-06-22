@@ -1,501 +1,501 @@
 OpportunityID,HighestStage,AccountName,StageName,ACV,CloseDate,Owner,Segment,Region,CreatedDate,LastActivityDate,DaysSinceActivity,ForecastCategory,IsWon,IsClosed,ARRType,CreatedQuarter,CloseQuarter,EnteredCurrentStage,DaysInCurrentStage
-OPP-00001,Commit,TaxJar Cloud,Closed Won,58000,2024-03-25,Jordan Kelly,Mid-Market,Central,2023-12-19,2024-03-28,812,Closed,true,true,New,Q4 2023,Q1 2024,2024-03-07,18
-OPP-00002,Proposal,Aha Software,Closed Lost,100000,2025-05-21,Jordan Kelly,Mid-Market,Central,2025-04-03,2025-05-21,393,Omit,false,true,New,Q2 2025,Q2 2025,2025-05-05,16
-OPP-00003,Prospect,Bigeye Solutions,Prospect,318000,2026-04-29,Zara Mitchell,Enterprise,East,2025-11-22,2026-06-15,3,Omit,false,false,Expansion,Q4 2025,Q2 2026,2025-11-22,208
-OPP-00004,Prospect,Amplitude Systems,Closed Lost,357000,2023-10-04,Priya Kapoor,Enterprise,West,2023-09-08,2023-10-04,988,Omit,false,true,New,Q3 2023,Q4 2023,2023-09-08,26
-OPP-00005,Qualified,Airbyte Data,Qualified,359000,2026-04-06,Zara Mitchell,Enterprise,East,2026-01-07,2026-06-09,9,Best Case,false,false,New,Q1 2026,Q2 2026,2026-01-26,143
-OPP-00006,Commit,Mosaic Cloud,Closed Won,84000,2025-12-30,Diego Fernandez,Mid-Market,East,2025-10-12,2025-12-31,169,Closed,true,true,Expansion,Q4 2025,Q4 2025,2025-12-15,15
-OPP-00007,Proposal,Chorus Analytics,Closed Lost,334000,2025-03-01,Ethan Brooks,Enterprise,West,2024-10-08,2025-03-03,472,Omit,false,true,New,Q4 2024,Q1 2025,2025-01-17,43
-OPP-00008,Qualified,ClientSuccess Data,Qualified,477000,2026-07-19,Priya Kapoor,Enterprise,West,2026-03-29,2026-06-15,3,Best Case,false,false,New,Q1 2026,Q3 2026,2026-04-21,58
-OPP-00009,Commit,Craft Platform,Commit,572000,2026-08-09,Zara Mitchell,Enterprise,East,2026-03-25,2026-06-02,16,Commit,false,false,New,Q1 2026,Q3 2026,2026-05-22,27
-OPP-00010,Prospect,Productboard Systems,Closed Lost,449000,2024-12-13,Noah Patel,Enterprise,Central,2024-11-10,2024-12-14,551,Omit,false,true,New,Q4 2024,Q4 2024,2024-11-10,33
-OPP-00011,Prospect,Ironclad Platforms,Prospect,479000,2026-06-17,Marcus Webb,Enterprise,Central,2026-02-01,2026-06-11,7,Omit,false,false,New,Q1 2026,Q2 2026,2026-02-01,137
-OPP-00012,Proposal,Castor Analytics,Proposal,34000,2026-08-07,Liam Chen,SMB,West,2026-06-22,2026-06-09,9,Best Case,false,false,New,Q2 2026,Q3 2026,2026-08-02,0
-OPP-00013,Commit,Craft Platform,Closed Won,318000,2025-12-20,Noah Patel,Enterprise,Central,2025-07-22,2025-12-21,179,Closed,true,true,New,Q3 2025,Q4 2025,2025-11-23,27
-OPP-00014,Qualified,ZoomInfo Data,Closed Lost,367000,2024-11-07,Zara Mitchell,Enterprise,East,2024-09-21,2024-11-07,588,Omit,false,true,New,Q3 2024,Q4 2024,2024-10-19,19
-OPP-00015,Qualified,Zuora Platform,Qualified,74000,2026-06-16,Diego Fernandez,Mid-Market,East,2026-03-29,2026-06-13,5,Best Case,false,false,New,Q1 2026,Q2 2026,2026-04-18,61
-OPP-00016,Demo,Blissfully Cloud,Demo,57000,2026-05-28,Ethan Brooks,Mid-Market,West,2026-03-01,2026-06-15,3,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-21,89
-OPP-00017,Proposal,Torii Platform,Proposal,14000,2026-09-14,Elena Okafor,SMB,East,2026-07-24,2026-06-06,12,Best Case,false,false,New,Q3 2026,Q3 2026,2026-08-28,0
-OPP-00018,Commit,Drift Cloud,Closed Won,85000,2024-01-31,Liam Chen,Mid-Market,West,2023-11-11,2024-02-02,867,Closed,true,true,Expansion,Q4 2023,Q1 2024,2024-01-16,15
-OPP-00019,Prospect,TaxJar Cloud,Closed Lost,80000,2023-11-12,Aria Stephens,Mid-Market,East,2023-10-30,2023-11-15,946,Omit,false,true,Churn,Q4 2023,Q4 2023,2023-10-30,13
-OPP-00020,Commit,Bigeye Solutions,Closed Won,108000,2024-08-13,Ethan Brooks,Mid-Market,West,2024-05-13,2024-08-15,672,Closed,true,true,New,Q2 2024,Q3 2024,2024-07-27,17
-OPP-00021,Commit,Sovos Analytics,Closed Won,18000,2024-02-25,Avery Singh,SMB,Central,2023-12-28,2024-02-25,844,Closed,true,true,New,Q4 2023,Q1 2024,2024-02-14,11
-OPP-00022,Commit,Torii Platform,Closed Won,82000,2025-01-07,Caleb Nguyen,Mid-Market,East,2024-10-14,2025-01-09,525,Closed,true,true,New,Q4 2024,Q1 2025,2024-12-22,16
-OPP-00023,Prospect,Selectstar Inc,Prospect,124000,2026-01-02,Liam Chen,Mid-Market,West,2025-10-23,2026-05-12,37,Omit,false,false,New,Q4 2025,Q1 2026,2025-10-23,238
-OPP-00024,Demo,Blissfully Cloud,Demo,49000,2026-06-22,Aria Stephens,Mid-Market,East,2026-04-10,2026-05-24,25,Best Case,false,false,New,Q2 2026,Q2 2026,2026-05-16,33
-OPP-00025,Prospect,Rippling Networks,Prospect,668000,2026-04-07,Zara Mitchell,Enterprise,East,2025-11-18,2026-06-17,1,Omit,false,false,New,Q4 2025,Q2 2026,2025-11-18,212
-OPP-00026,Demo,Notion Labs,Closed Lost,35000,2024-10-05,Liam Chen,SMB,West,2024-09-18,2024-10-06,620,Omit,false,true,New,Q3 2024,Q4 2024,2024-09-30,5
-OPP-00027,Prospect,Torii Platform,Prospect,22418,2026-09-16,Aria Stephens,Mid-Market,East,2026-07-18,2026-06-01,17,Omit,false,false,Expansion,Q3 2026,Q3 2026,2026-07-18,0
-OPP-00028,Qualified,Gainsight Cloud,Closed Lost,91000,2025-03-24,Caleb Nguyen,Mid-Market,East,2025-02-11,2025-03-26,449,Omit,false,true,New,Q1 2025,Q1 2025,2025-03-07,17
-OPP-00029,Commit,Devrev Systems,Commit,481000,2026-06-03,Marcus Webb,Enterprise,Central,2026-01-20,2026-05-27,22,Commit,false,false,New,Q1 2026,Q2 2026,2026-03-26,84
-OPP-00030,Commit,ZoomInfo Data,Commit,126000,2026-01-13,Noah Patel,Mid-Market,Central,2025-10-17,2026-06-12,6,Commit,false,false,New,Q4 2025,Q1 2026,2025-12-07,193
-OPP-00031,Qualified,Grafana Ops,Qualified,450000,2026-06-02,Zara Mitchell,Enterprise,East,2025-12-20,2026-06-12,6,Best Case,false,false,New,Q4 2025,Q2 2026,2026-01-06,163
-OPP-00032,Demo,Aha Software,Demo,22000,2026-06-14,Jordan Kelly,SMB,Central,2026-05-08,2026-06-12,6,Best Case,false,false,New,Q2 2026,Q2 2026,2026-06-15,3
-OPP-00033,Prospect,HighSpot Systems,Closed Lost,122000,2024-01-06,Ethan Brooks,Mid-Market,West,2023-12-24,2024-01-07,893,Omit,false,true,New,Q4 2023,Q1 2024,2023-12-24,13
-OPP-00034,Prospect,Mutiny Systems,Closed Lost,151000,2024-10-27,Diego Fernandez,Mid-Market,East,2024-10-06,2024-10-28,598,Omit,false,true,New,Q4 2024,Q4 2024,2024-10-06,21
-OPP-00035,Qualified,Atlan Platform,Qualified,30000,2026-01-03,Ethan Brooks,SMB,West,2025-12-02,2026-05-28,21,Best Case,false,false,New,Q4 2025,Q1 2026,2025-12-19,181
-OPP-00036,Commit,Tidio Platform,Closed Won,22000,2024-09-01,Avery Singh,SMB,Central,2024-07-13,2024-09-01,655,Closed,true,true,New,Q3 2024,Q3 2024,2024-08-22,10
-OPP-00037,Demo,Seismic Analytics,Demo,99000,2026-04-03,Jordan Kelly,Mid-Market,Central,2026-01-06,2026-06-11,7,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-12,126
-OPP-00038,Commit,Fivetran Systems,Closed Won,535000,2024-11-03,Marcus Webb,Enterprise,Central,2024-06-26,2024-11-06,589,Closed,true,true,New,Q2 2024,Q4 2024,2024-10-10,24
-OPP-00039,Qualified,Baremetrics Cloud,Qualified,62000,2026-04-17,Sofia Ramirez,Mid-Market,West,2026-01-26,2026-06-10,8,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-09,129
-OPP-00040,Prospect,Airbyte Data,Closed Lost,113000,2025-02-06,Sofia Ramirez,Mid-Market,West,2025-01-22,2025-02-07,496,Omit,false,true,Expansion,Q1 2025,Q1 2025,2025-01-22,15
-OPP-00041,Demo,Cognism Platform,Demo,352000,2026-06-22,Priya Kapoor,Enterprise,West,2026-03-03,2026-06-13,5,Best Case,false,false,New,Q1 2026,Q2 2026,2026-04-02,77
-OPP-00042,Proposal,Apollo Cloud,Proposal,22000,2026-07-27,Liam Chen,SMB,West,2026-06-21,2026-06-09,9,Best Case,false,false,New,Q2 2026,Q3 2026,2026-07-22,0
-OPP-00043,Commit,ProfitWell Systems,Closed Won,74000,2024-07-07,Avery Singh,Mid-Market,Central,2024-04-28,2024-07-10,708,Closed,true,true,Expansion,Q2 2024,Q3 2024,2024-06-23,14
-OPP-00044,Prospect,Gladly Cloud,Closed Lost,461000,2025-04-13,Zara Mitchell,Enterprise,East,2025-03-20,2025-04-15,429,Omit,false,true,New,Q1 2025,Q2 2025,2025-03-20,24
-OPP-00045,Prospect,Fivetran Systems,Prospect,31000,2026-01-09,Elena Okafor,SMB,East,2025-11-28,2026-06-03,15,Omit,false,false,Renewal,Q4 2025,Q1 2026,2025-11-28,202
-OPP-00046,Proposal,Retool Software,Proposal,455000,2026-04-18,Priya Kapoor,Enterprise,West,2026-02-02,2026-06-04,14,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-12,98
-OPP-00047,Commit,Sovos Analytics,Commit,7196,2026-06-20,Mia Torres,SMB,West,2026-05-16,2026-06-16,2,Commit,false,false,Expansion,Q2 2026,Q2 2026,2026-07-28,0
-OPP-00048,Commit,Notion Labs,Closed Won,433000,2025-10-19,Diego Fernandez,Enterprise,East,2025-07-02,2025-10-22,239,Closed,true,true,New,Q3 2025,Q4 2025,2025-09-28,21
-OPP-00049,Prospect,Tidio Platform,Closed Lost,231428,2025-10-01,Ethan Brooks,Enterprise,West,2025-09-09,2025-10-04,257,Omit,false,true,Expansion,Q3 2025,Q4 2025,2025-09-09,22
-OPP-00050,Prospect,Vertex SaaS,Closed Lost,321000,2025-05-11,Mia Torres,Enterprise,West,2025-04-17,2025-05-13,401,Omit,false,true,New,Q2 2025,Q2 2025,2025-04-17,24
-OPP-00051,Commit,Apexon Digital,Closed Lost,85000,2024-06-28,Diego Fernandez,Mid-Market,East,2024-03-06,2024-06-30,718,Omit,false,true,New,Q1 2024,Q2 2024,2024-06-07,21
-OPP-00052,Demo,Qualified Platform,Demo,693000,2026-06-06,Marcus Webb,Enterprise,Central,2026-01-24,2026-05-02,47,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-27,111
-OPP-00053,Commit,Airbyte Data,Closed Won,92000,2025-10-30,Caleb Nguyen,Mid-Market,East,2025-08-24,2025-10-31,230,Closed,true,true,Expansion,Q3 2025,Q4 2025,2025-10-18,12
-OPP-00054,Commit,Ramp Analytics,Closed Won,546000,2025-06-13,Zara Mitchell,Enterprise,East,2025-02-22,2025-06-15,368,Closed,true,true,New,Q1 2025,Q2 2025,2025-05-24,20
-OPP-00055,Commit,Lusha Analytics,Closed Won,33000,2025-07-24,Liam Chen,SMB,West,2025-06-16,2025-07-27,326,Closed,true,true,New,Q2 2025,Q3 2025,2025-07-16,8
-OPP-00056,Prospect,Sovos Analytics,Prospect,70328,2026-08-17,Caleb Nguyen,Mid-Market,East,2026-06-05,2026-06-04,14,Omit,false,false,Expansion,Q2 2026,Q3 2026,2026-06-05,13
-OPP-00057,Commit,Bombora Systems,Closed Won,60000,2024-02-25,Ethan Brooks,Mid-Market,West,2024-01-05,2024-02-25,844,Closed,true,true,New,Q1 2024,Q1 2024,2024-02-14,11
-OPP-00058,Demo,Recurly Systems,Demo,34000,2026-02-24,Mia Torres,SMB,West,2026-01-10,2026-05-28,21,Best Case,false,false,New,Q1 2026,Q1 2026,2026-02-13,125
-OPP-00059,Prospect,Freshdesk Systems,Closed Lost,71000,2025-03-09,Diego Fernandez,Mid-Market,East,2025-02-25,2025-03-12,463,Omit,false,true,New,Q1 2025,Q1 2025,2025-02-25,12
-OPP-00060,Commit,Endgame Platform,Closed Lost,24000,2025-08-14,Elena Okafor,SMB,East,2025-07-06,2025-08-15,307,Omit,false,true,Expansion,Q3 2025,Q3 2025,2025-08-06,8
-OPP-00061,Demo,Catalyst Platform,Closed Lost,803000,2024-05-29,Priya Kapoor,Enterprise,West,2024-03-09,2024-05-30,749,Omit,false,true,New,Q1 2024,Q2 2024,2024-05-09,20
-OPP-00062,Commit,Airbyte Data,Closed Won,95930,2024-05-14,Priya Kapoor,Enterprise,West,2024-02-19,2024-05-15,764,Closed,true,true,Expansion,Q1 2024,Q2 2024,2024-04-28,16
-OPP-00063,Proposal,ClientSuccess Data,Proposal,20000,2026-09-14,Elena Okafor,SMB,East,2026-08-05,2026-06-13,5,Best Case,false,false,New,Q3 2026,Q3 2026,2026-08-28,0
-OPP-00064,Commit,Totango Analytics,Closed Won,531000,2024-12-28,Priya Kapoor,Enterprise,West,2024-08-28,2024-12-28,537,Closed,true,true,New,Q3 2024,Q4 2024,2024-12-06,22
-OPP-00065,Demo,Drift Cloud,Closed Lost,501000,2024-08-30,Noah Patel,Enterprise,Central,2024-06-24,2024-09-01,655,Omit,false,true,Churn,Q2 2024,Q3 2024,2024-08-13,17
-OPP-00066,Commit,HighSpot Systems,Commit,124000,2026-01-20,Priya Kapoor,Mid-Market,West,2025-11-08,2026-05-14,35,Commit,false,false,Expansion,Q4 2025,Q1 2026,2026-01-01,168
-OPP-00067,Qualified,Planhat Systems,Qualified,146000,2026-05-01,Jordan Kelly,Mid-Market,Central,2026-02-14,2026-04-29,50,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-11,99
-OPP-00068,Commit,Catalyst Platform,Closed Won,25000,2024-02-21,Elena Okafor,SMB,East,2024-01-07,2024-02-22,847,Closed,true,true,New,Q1 2024,Q1 2024,2024-02-12,9
-OPP-00069,Qualified,Avalara Systems,Closed Lost,85000,2024-06-14,Aria Stephens,Mid-Market,East,2024-05-16,2024-06-14,734,Omit,false,true,New,Q2 2024,Q2 2024,2024-06-02,12
-OPP-00070,Proposal,Torii Platform,Proposal,18000,2026-05-28,Sofia Ramirez,SMB,West,2026-04-13,2026-06-05,13,Best Case,false,false,Renewal,Q2 2026,Q2 2026,2026-05-19,30
-OPP-00071,Commit,Warmly Cloud,Commit,83000,2026-06-01,Ethan Brooks,Mid-Market,West,2026-03-08,2026-06-03,15,Commit,false,false,New,Q1 2026,Q2 2026,2026-04-29,50
-OPP-00072,Qualified,Chargebee Cloud,Closed Lost,26000,2025-03-07,Liam Chen,SMB,West,2025-02-16,2025-03-10,465,Omit,false,true,New,Q1 2025,Q1 2025,2025-02-27,8
-OPP-00073,Commit,Retool Software,Closed Lost,60000,2024-07-10,Aria Stephens,Mid-Market,East,2024-05-17,2024-07-11,707,Omit,false,true,New,Q2 2024,Q3 2024,2024-06-29,11
-OPP-00074,Commit,Common Room,Closed Won,522000,2025-01-03,Noah Patel,Enterprise,Central,2024-09-10,2025-01-05,529,Closed,true,true,New,Q3 2024,Q1 2025,2024-12-12,22
-OPP-00075,Commit,Productboard Systems,Commit,642000,2026-02-20,Noah Patel,Enterprise,Central,2025-09-30,2026-06-17,1,Commit,false,false,New,Q3 2025,Q1 2026,2025-11-28,202
-OPP-00076,Demo,Castor Analytics,Demo,17000,2026-02-05,Sofia Ramirez,SMB,West,2025-12-26,2026-06-07,11,Best Case,false,false,New,Q4 2025,Q1 2026,2026-01-22,147
-OPP-00077,Commit,Tidio Platform,Closed Won,185007,2025-02-07,Elena Okafor,Enterprise,East,2024-08-20,2025-02-10,493,Closed,true,true,Expansion,Q3 2024,Q1 2025,2025-01-08,30
-OPP-00078,Commit,Helix Data,Closed Won,57000,2025-06-10,Aria Stephens,Mid-Market,East,2025-03-16,2025-06-13,370,Closed,true,true,New,Q1 2025,Q2 2025,2025-05-24,17
-OPP-00079,Commit,Outreach Systems,Closed Won,129000,2025-06-16,Jordan Kelly,Mid-Market,Central,2025-04-12,2025-06-16,367,Closed,true,true,Expansion,Q2 2025,Q2 2025,2025-06-02,14
-OPP-00080,Qualified,Front Systems,Closed Lost,111000,2025-07-22,Aria Stephens,Mid-Market,East,2025-06-18,2025-07-23,330,Omit,false,true,Expansion,Q2 2025,Q3 2025,2025-07-08,14
-OPP-00081,Commit,Intercom Platform,Commit,25000,2026-04-12,Jordan Kelly,SMB,Central,2026-03-03,2026-06-14,4,Commit,false,false,Expansion,Q1 2026,Q2 2026,2026-05-12,37
-OPP-00082,Qualified,Front Systems,Qualified,13000,2026-04-03,Liam Chen,SMB,West,2026-02-14,2026-05-29,20,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-25,113
-OPP-00083,Commit,Devrev Systems,Closed Won,646000,2024-06-14,Zara Mitchell,Enterprise,East,2023-12-31,2024-06-16,732,Closed,true,true,New,Q4 2023,Q2 2024,2024-05-16,29
-OPP-00084,Proposal,Planhat Systems,Proposal,28000,2026-06-09,Liam Chen,SMB,West,2026-05-03,2026-05-25,24,Best Case,false,false,New,Q2 2026,Q2 2026,2026-06-11,7
-OPP-00085,Demo,Seismic Analytics,Demo,13000,2026-03-14,Liam Chen,SMB,West,2026-02-09,2026-06-15,3,Best Case,false,false,Expansion,Q1 2026,Q1 2026,2026-03-12,98
-OPP-00086,Demo,Apollo Cloud,Demo,99000,2026-06-05,Priya Kapoor,Mid-Market,West,2026-03-18,2026-05-29,20,Best Case,false,false,New,Q1 2026,Q2 2026,2026-04-01,78
-OPP-00087,Qualified,Synder Platform,Qualified,57000,2026-09-10,Diego Fernandez,Mid-Market,East,2026-07-04,2026-06-09,9,Best Case,false,false,New,Q3 2026,Q3 2026,2026-07-27,0
-OPP-00088,Commit,Recurly Systems,Closed Won,52000,2024-03-21,Liam Chen,Mid-Market,West,2023-12-22,2024-03-24,816,Closed,true,true,New,Q4 2023,Q1 2024,2024-03-04,17
-OPP-00089,Commit,Gainsight Cloud,Closed Won,444000,2024-08-30,Caleb Nguyen,Enterprise,East,2024-04-09,2024-09-02,654,Closed,true,true,New,Q2 2024,Q3 2024,2024-08-05,25
-OPP-00090,Demo,Airfocus Cloud,Demo,34000,2026-02-11,Mia Torres,SMB,West,2026-01-06,2026-05-18,31,Best Case,false,false,New,Q1 2026,Q1 2026,2026-02-08,130
-OPP-00091,Commit,Lusha Analytics,Closed Won,402000,2024-12-17,Priya Kapoor,Enterprise,West,2024-08-01,2024-12-19,546,Closed,true,true,Renewal,Q3 2024,Q4 2024,2024-11-22,25
-OPP-00092,Qualified,Devrev Systems,Qualified,140254,2026-07-05,Noah Patel,Enterprise,Central,2026-03-17,2026-06-10,8,Best Case,false,false,Expansion,Q1 2026,Q3 2026,2026-03-31,79
-OPP-00093,Proposal,Brex Platform,Closed Lost,92000,2025-04-13,Jordan Kelly,Mid-Market,Central,2025-01-31,2025-04-13,431,Omit,false,true,New,Q1 2025,Q2 2025,2025-03-21,23
-OPP-00094,Qualified,Devrev Systems,Closed Lost,282000,2024-03-21,Jordan Kelly,Enterprise,Central,2024-02-16,2024-03-22,818,Omit,false,true,Churn,Q1 2024,Q1 2024,2024-03-07,14
-OPP-00095,Commit,Gainsight Cloud,Commit,63000,2026-06-25,Sofia Ramirez,Mid-Market,West,2026-03-31,2026-06-07,11,Commit,false,false,Renewal,Q1 2026,Q2 2026,2026-05-13,36
-OPP-00096,Prospect,Productboard Systems,Prospect,78000,2026-04-07,Sofia Ramirez,Mid-Market,West,2025-12-31,2026-06-17,1,Omit,false,false,New,Q4 2025,Q2 2026,2025-12-31,169
-OPP-00097,Qualified,Figment Cloud,Closed Lost,17000,2024-10-22,Sofia Ramirez,SMB,West,2024-09-30,2024-10-25,601,Omit,false,true,New,Q3 2024,Q4 2024,2024-10-13,9
-OPP-00098,Commit,Pocus Systems,Closed Won,18000,2025-12-11,Ethan Brooks,SMB,West,2025-10-30,2025-12-12,188,Closed,true,true,New,Q4 2025,Q4 2025,2025-12-02,9
-OPP-00099,Qualified,Apexon Digital,Closed Lost,122000,2024-12-13,Diego Fernandez,Mid-Market,East,2024-10-23,2024-12-16,549,Omit,false,true,New,Q4 2024,Q4 2024,2024-11-22,21
-OPP-00100,Commit,Bigeye Solutions,Closed Won,374000,2024-04-13,Avery Singh,Enterprise,Central,2023-12-19,2024-04-13,796,Closed,true,true,Renewal,Q4 2023,Q2 2024,2024-03-23,21
-OPP-00101,Commit,Qualified Platform,Commit,119000,2026-05-14,Diego Fernandez,Mid-Market,East,2026-02-14,2026-05-20,29,Commit,false,false,New,Q1 2026,Q2 2026,2026-04-10,69
-OPP-00102,Prospect,Monte Carlo Data,Closed Lost,103000,2025-04-28,Marcus Webb,Mid-Market,Central,2025-04-05,2025-04-30,414,Omit,false,true,New,Q2 2025,Q2 2025,2025-04-05,23
-OPP-00103,Demo,Mutiny Systems,Closed Lost,15000,2025-07-22,Mia Torres,SMB,West,2025-06-19,2025-07-23,330,Omit,false,true,New,Q2 2025,Q3 2025,2025-07-14,8
-OPP-00104,Qualified,Airbyte Data,Qualified,285285,2026-09-26,Ethan Brooks,Enterprise,West,2026-05-01,2026-06-12,6,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-05-25,24
-OPP-00105,Commit,Pulsar Systems,Closed Won,391000,2024-12-28,Zara Mitchell,Enterprise,East,2024-08-18,2024-12-31,534,Closed,true,true,Expansion,Q3 2024,Q4 2024,2024-12-06,22
-OPP-00106,Qualified,Vitally CS,Qualified,127000,2026-03-10,Diego Fernandez,Mid-Market,East,2025-11-21,2026-05-20,29,Best Case,false,false,New,Q4 2025,Q1 2026,2025-12-13,187
-OPP-00107,Qualified,Tidio Platform,Qualified,108000,2026-08-18,Avery Singh,Mid-Market,Central,2026-05-14,2026-04-25,54,Best Case,false,false,Renewal,Q2 2026,Q3 2026,2026-06-04,14
-OPP-00108,Qualified,Gong Revenue,Qualified,729000,2026-04-12,Noah Patel,Enterprise,Central,2025-11-19,2026-06-07,11,Best Case,false,false,New,Q4 2025,Q2 2026,2025-12-11,189
-OPP-00109,Commit,Craft Platform,Closed Won,81319,2025-02-23,Priya Kapoor,Enterprise,West,2024-09-24,2025-02-26,477,Closed,true,true,Expansion,Q3 2024,Q1 2025,2025-01-26,28
-OPP-00110,Commit,Notion Labs,Closed Won,23000,2025-04-04,Caleb Nguyen,SMB,East,2025-02-21,2025-04-06,438,Closed,true,true,Renewal,Q1 2025,Q2 2025,2025-03-26,9
-OPP-00111,Qualified,Clearbit Technologies,Closed Lost,88000,2025-03-05,Caleb Nguyen,Mid-Market,East,2025-02-11,2025-03-07,468,Omit,false,true,New,Q1 2025,Q1 2025,2025-02-24,9
-OPP-00112,Proposal,Qualified Platform,Closed Lost,637000,2025-11-21,Ethan Brooks,Enterprise,West,2025-07-16,2025-11-22,208,Omit,false,true,New,Q3 2025,Q4 2025,2025-10-12,40
-OPP-00113,Qualified,Zuora Platform,Qualified,28000,2026-08-09,Liam Chen,SMB,West,2026-07-03,2026-05-23,26,Best Case,false,false,New,Q3 2026,Q3 2026,2026-07-16,0
-OPP-00114,Demo,GreatX Corp,Closed Lost,24000,2024-08-02,Mia Torres,SMB,West,2024-06-28,2024-08-05,682,Omit,false,true,New,Q2 2024,Q3 2024,2024-07-24,9
-OPP-00115,Commit,Salesloft Platform,Closed Won,259000,2025-11-12,Mia Torres,Enterprise,West,2025-08-26,2025-11-14,216,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-28,15
-OPP-00116,Proposal,Amplitude Systems,Proposal,779000,2026-07-13,Jordan Kelly,Enterprise,Central,2026-04-23,2026-06-12,6,Best Case,false,false,New,Q2 2026,Q3 2026,2026-05-25,24
-OPP-00117,Commit,Fivetran Systems,Closed Won,61000,2024-04-26,Diego Fernandez,Mid-Market,East,2024-03-06,2024-04-28,781,Closed,true,true,Renewal,Q1 2024,Q2 2024,2024-04-15,11
-OPP-00118,Commit,Helix Data,Closed Won,15431,2025-01-15,Mia Torres,SMB,West,2024-12-01,2025-01-15,519,Closed,true,true,Expansion,Q4 2024,Q1 2025,2025-01-06,9
-OPP-00119,Commit,Torii Platform,Closed Won,101000,2024-10-25,Marcus Webb,Mid-Market,Central,2024-07-13,2024-10-26,600,Closed,true,true,Renewal,Q3 2024,Q4 2024,2024-10-06,19
-OPP-00120,Proposal,Temporal Cloud,Proposal,455000,2026-05-16,Liam Chen,Enterprise,West,2025-11-27,2026-06-13,5,Best Case,false,false,New,Q4 2025,Q2 2026,2025-12-21,179
-OPP-00121,Qualified,Temporal Cloud,Closed Lost,86000,2025-09-16,Jordan Kelly,Mid-Market,Central,2025-08-05,2025-09-16,275,Omit,false,true,New,Q3 2025,Q3 2025,2025-08-30,17
-OPP-00122,Proposal,Common Room,Proposal,26000,2026-09-28,Mia Torres,SMB,West,2026-08-01,2026-06-13,5,Best Case,false,false,Renewal,Q3 2026,Q3 2026,2026-09-09,0
-OPP-00123,Demo,Runway Financial,Closed Lost,70000,2025-05-27,Diego Fernandez,Mid-Market,East,2025-04-05,2025-05-29,385,Omit,false,true,New,Q2 2025,Q2 2025,2025-05-15,12
-OPP-00124,Prospect,Front Systems,Closed Lost,89000,2025-09-01,Jordan Kelly,Mid-Market,Central,2025-08-15,2025-09-01,290,Omit,false,true,New,Q3 2025,Q3 2025,2025-08-15,17
-OPP-00125,Commit,Warmly Cloud,Closed Won,59000,2025-09-17,Diego Fernandez,Mid-Market,East,2025-07-04,2025-09-18,273,Closed,true,true,New,Q3 2025,Q3 2025,2025-09-03,14
-OPP-00126,Demo,Secoda Data,Demo,87000,2026-08-15,Sofia Ramirez,Mid-Market,West,2026-04-30,2026-06-12,6,Best Case,false,false,New,Q2 2026,Q3 2026,2026-05-24,25
-OPP-00127,Qualified,Ironclad Platforms,Closed Lost,23000,2025-11-01,Elena Okafor,SMB,East,2025-10-13,2025-11-01,229,Omit,false,true,New,Q4 2025,Q4 2025,2025-10-24,8
-OPP-00128,Commit,dbt Labs,Closed Won,120000,2025-12-26,Caleb Nguyen,Mid-Market,East,2025-09-27,2025-12-28,172,Closed,true,true,New,Q3 2025,Q4 2025,2025-12-09,17
-OPP-00129,Commit,Cobalt Security,Closed Won,34000,2024-07-02,Diego Fernandez,SMB,East,2024-05-10,2024-07-03,715,Closed,true,true,New,Q2 2024,Q3 2024,2024-06-21,11
-OPP-00130,Demo,Brex Platform,Demo,83000,2026-05-02,Jordan Kelly,Mid-Market,Central,2026-01-17,2026-06-12,6,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-02-23,115
-OPP-00131,Demo,Cognism Platform,Closed Lost,151000,2025-07-31,Noah Patel,Mid-Market,Central,2025-06-27,2025-08-02,320,Omit,false,true,New,Q2 2025,Q3 2025,2025-07-22,9
-OPP-00132,Proposal,Correlated SaaS,Proposal,657000,2026-09-09,Priya Kapoor,Enterprise,West,2026-05-07,2026-05-31,18,Best Case,false,false,New,Q2 2026,Q3 2026,2026-06-08,10
-OPP-00133,Proposal,Selectstar Inc,Proposal,327000,2026-08-23,Avery Singh,Enterprise,Central,2026-04-29,2026-05-24,25,Best Case,false,false,New,Q2 2026,Q3 2026,2026-06-03,15
-OPP-00134,Commit,ChurnZero Analytics,Closed Won,107000,2025-01-07,Diego Fernandez,Mid-Market,East,2024-10-16,2025-01-09,525,Closed,true,true,Expansion,Q4 2024,Q1 2025,2024-12-23,15
-OPP-00135,Commit,Kustomer Analytics,Commit,247000,2026-03-23,Marcus Webb,Enterprise,Central,2025-12-02,2026-06-13,5,Commit,false,false,New,Q4 2025,Q1 2026,2026-01-23,146
-OPP-00136,Commit,Maxio Platform,Closed Won,73000,2025-01-06,Jordan Kelly,Mid-Market,Central,2024-10-26,2025-01-08,526,Closed,true,true,New,Q4 2024,Q1 2025,2024-12-23,14
-OPP-00137,Demo,Lattice Software,Closed Lost,87000,2025-09-24,Caleb Nguyen,Mid-Market,East,2025-07-22,2025-09-24,267,Omit,false,true,New,Q3 2025,Q3 2025,2025-09-08,16
-OPP-00138,Qualified,Monte Carlo Data,Closed Lost,116000,2025-10-26,Ethan Brooks,Mid-Market,West,2025-09-30,2025-10-27,234,Omit,false,true,New,Q3 2025,Q4 2025,2025-10-15,11
-OPP-00139,Commit,Maxio Platform,Closed Won,10792,2025-11-21,Elena Okafor,SMB,East,2025-10-24,2025-11-24,206,Closed,true,true,Expansion,Q4 2025,Q4 2025,2025-11-14,7
-OPP-00140,Prospect,Brex Platform,Prospect,426000,2026-09-07,Mia Torres,Enterprise,West,2026-06-19,2026-05-27,22,Omit,false,false,New,Q2 2026,Q3 2026,2026-06-19,0
-OPP-00141,Proposal,Pocus Systems,Proposal,230342,2026-04-28,Sofia Ramirez,Enterprise,West,2025-12-20,2026-06-13,5,Best Case,false,false,Expansion,Q4 2025,Q2 2026,2026-01-31,138
-OPP-00142,Qualified,Notion Labs,Qualified,13000,2026-03-21,Liam Chen,SMB,West,2026-02-12,2026-06-13,5,Best Case,false,false,Renewal,Q1 2026,Q1 2026,2026-02-25,113
-OPP-00143,Commit,Baremetrics Cloud,Closed Won,721000,2025-05-21,Noah Patel,Enterprise,Central,2025-02-02,2025-05-23,391,Closed,true,true,New,Q1 2025,Q2 2025,2025-05-01,20
-OPP-00144,Proposal,Airbyte Data,Proposal,29000,2026-05-14,Liam Chen,SMB,West,2026-04-04,2026-06-09,9,Best Case,false,false,Renewal,Q2 2026,Q2 2026,2026-05-11,38
-OPP-00145,Demo,Fivetran Systems,Demo,153143,2026-03-16,Zara Mitchell,Enterprise,East,2025-11-03,2026-06-12,6,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-12-01,199
-OPP-00146,Proposal,Synder Platform,Closed Lost,389000,2025-01-29,Marcus Webb,Enterprise,Central,2024-10-23,2025-01-29,505,Omit,false,true,New,Q4 2024,Q1 2025,2024-12-31,29
-OPP-00147,Qualified,Maxio Platform,Qualified,5000,2026-05-20,Elena Okafor,SMB,East,2026-03-21,2026-05-06,43,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-07,72
-OPP-00148,Proposal,Common Room,Closed Lost,125136,2025-05-15,Priya Kapoor,Enterprise,West,2025-02-04,2025-05-17,397,Omit,false,true,Expansion,Q1 2025,Q2 2025,2025-04-14,31
-OPP-00149,Commit,Pulsar Systems,Closed Won,37796,2024-02-21,Avery Singh,Mid-Market,Central,2023-10-25,2024-02-24,845,Closed,true,true,Expansion,Q4 2023,Q1 2024,2024-01-30,22
-OPP-00150,Qualified,Qualified Platform,Closed Lost,108000,2024-09-09,Sofia Ramirez,Mid-Market,West,2024-08-07,2024-09-11,645,Omit,false,true,New,Q3 2024,Q3 2024,2024-08-26,14
-OPP-00151,Prospect,Grafana Ops,Closed Lost,94000,2025-01-18,Marcus Webb,Mid-Market,Central,2024-12-31,2025-01-18,516,Omit,false,true,Expansion,Q4 2024,Q1 2025,2024-12-31,18
-OPP-00152,Commit,Chorus Analytics,Closed Won,80000,2024-03-24,Marcus Webb,Mid-Market,Central,2023-12-30,2024-03-24,816,Closed,true,true,New,Q4 2023,Q1 2024,2024-03-08,16
-OPP-00153,Demo,Ada Support,Demo,463000,2026-06-01,Diego Fernandez,Enterprise,East,2026-02-01,2026-06-05,13,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-03-13,97
-OPP-00154,Commit,Totango Analytics,Commit,5292,2026-04-14,Mia Torres,SMB,West,2026-03-07,2026-06-09,9,Commit,false,false,Expansion,Q1 2026,Q2 2026,2026-04-25,54
-OPP-00155,Commit,dbt Labs,Closed Won,40000,2025-07-09,Elena Okafor,SMB,East,2025-06-10,2025-07-10,343,Closed,true,true,Renewal,Q2 2025,Q3 2025,2025-07-02,7
-OPP-00156,Proposal,Apollo Cloud,Closed Lost,124000,2024-03-02,Elena Okafor,Mid-Market,East,2023-12-08,2024-03-04,836,Omit,false,true,New,Q4 2023,Q1 2024,2024-02-04,27
-OPP-00157,Commit,Roadmunk Analytics,Closed Won,30000,2024-05-04,Liam Chen,SMB,West,2024-03-19,2024-05-07,772,Closed,true,true,New,Q1 2024,Q2 2024,2024-04-25,9
-OPP-00158,Commit,Intercom Platform,Closed Won,20000,2024-06-23,Diego Fernandez,SMB,East,2024-05-07,2024-06-24,724,Closed,true,true,New,Q2 2024,Q2 2024,2024-06-13,10
-OPP-00159,Qualified,Orbit Platform,Closed Lost,153000,2024-03-25,Avery Singh,Mid-Market,Central,2024-03-01,2024-03-25,815,Omit,false,true,New,Q1 2024,Q1 2024,2024-03-15,10
-OPP-00160,Commit,Cognism Platform,Closed Won,25000,2024-07-28,Noah Patel,SMB,Central,2024-06-21,2024-07-30,688,Closed,true,true,New,Q2 2024,Q3 2024,2024-07-20,8
-OPP-00161,Commit,Blissfully Cloud,Closed Won,436000,2025-03-28,Marcus Webb,Enterprise,Central,2024-11-18,2025-03-30,445,Closed,true,true,New,Q4 2024,Q1 2025,2025-03-04,24
-OPP-00162,Qualified,Gong Revenue,Qualified,122000,2026-07-05,Liam Chen,Mid-Market,West,2026-04-03,2026-06-01,17,Best Case,false,false,New,Q2 2026,Q3 2026,2026-04-16,63
-OPP-00163,Qualified,Notion Labs,Qualified,14000,2026-09-23,Liam Chen,SMB,West,2026-07-28,2026-05-29,20,Best Case,false,false,Renewal,Q3 2026,Q3 2026,2026-08-14,0
-OPP-00164,Qualified,Tidio Platform,Qualified,8913,2026-06-09,Noah Patel,SMB,Central,2026-05-05,2026-06-11,7,Best Case,false,false,Expansion,Q2 2026,Q2 2026,2026-05-27,22
-OPP-00165,Demo,Drift Cloud,Demo,13000,2026-04-17,Aria Stephens,SMB,East,2026-02-27,2026-04-25,54,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-03-20,90
-OPP-00166,Prospect,Intercom Platform,Prospect,120449,2026-04-17,Priya Kapoor,Enterprise,West,2025-12-01,2026-06-16,2,Omit,false,false,Expansion,Q4 2025,Q2 2026,2025-12-01,199
-OPP-00167,Prospect,Ironclad Platforms,Prospect,139000,2026-05-21,Ethan Brooks,Mid-Market,West,2026-01-25,2026-06-02,16,Omit,false,false,New,Q1 2026,Q2 2026,2026-01-25,144
-OPP-00168,Demo,Zuora Platform,Demo,27000,2026-05-23,Elena Okafor,SMB,East,2026-04-05,2026-06-17,1,Best Case,false,false,New,Q2 2026,Q2 2026,2026-04-28,51
-OPP-00169,Prospect,Atlan Platform,Prospect,388000,2026-02-03,Marcus Webb,Enterprise,Central,2025-09-11,2026-06-03,15,Omit,false,false,New,Q3 2025,Q1 2026,2025-09-11,280
-OPP-00170,Demo,Intercom Platform,Demo,93000,2026-02-01,Sofia Ramirez,Mid-Market,West,2025-11-07,2026-05-17,32,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2025-11-28,202
-OPP-00171,Commit,Roadmunk Analytics,Closed Won,35000,2024-11-03,Marcus Webb,SMB,Central,2024-09-19,2024-11-04,591,Closed,true,true,Renewal,Q3 2024,Q4 2024,2024-10-25,9
-OPP-00172,Commit,GreatX Corp,Closed Won,89000,2024-04-23,Sofia Ramirez,Mid-Market,West,2024-02-11,2024-04-23,786,Closed,true,true,New,Q1 2024,Q2 2024,2024-04-09,14
-OPP-00173,Commit,Rippling Networks,Closed Won,136000,2025-01-31,Jordan Kelly,Mid-Market,Central,2024-11-26,2025-02-01,502,Closed,true,true,New,Q4 2024,Q1 2025,2025-01-20,11
-OPP-00174,Prospect,Bigeye Solutions,Prospect,45845,2026-01-28,Jordan Kelly,Mid-Market,Central,2025-11-09,2026-06-12,6,Omit,false,false,Expansion,Q4 2025,Q1 2026,2025-11-09,221
-OPP-00175,Proposal,Grafana Ops,Proposal,312000,2026-08-31,Caleb Nguyen,Enterprise,East,2026-05-25,2026-06-13,5,Best Case,false,false,New,Q2 2026,Q3 2026,2026-06-23,0
-OPP-00176,Prospect,ClientSuccess Data,Closed Lost,117000,2025-02-20,Sofia Ramirez,Mid-Market,West,2025-02-05,2025-02-20,483,Omit,false,true,Expansion,Q1 2025,Q1 2025,2025-02-05,15
-OPP-00177,Prospect,Avalara Systems,Prospect,73000,2026-05-01,Avery Singh,Mid-Market,Central,2026-02-01,2026-04-29,50,Omit,false,false,New,Q1 2026,Q2 2026,2026-02-01,137
-OPP-00178,Prospect,Sovos Analytics,Closed Lost,14241,2024-10-31,Liam Chen,SMB,West,2024-10-24,2024-11-02,593,Omit,false,true,Expansion,Q4 2024,Q4 2024,2024-10-24,7
-OPP-00179,Qualified,Paddle Analytics,Closed Lost,12000,2024-01-02,Liam Chen,SMB,West,2023-12-12,2024-01-02,898,Omit,false,true,New,Q4 2023,Q1 2024,2023-12-24,9
-OPP-00180,Commit,Avalara Systems,Closed Won,104000,2024-04-11,Diego Fernandez,Mid-Market,East,2024-01-16,2024-04-14,795,Closed,true,true,New,Q1 2024,Q2 2024,2024-03-25,17
-OPP-00181,Commit,Castor Analytics,Closed Won,529000,2025-10-03,Aria Stephens,Enterprise,East,2025-05-16,2025-10-04,257,Closed,true,true,Expansion,Q2 2025,Q4 2025,2025-09-08,25
-OPP-00182,Prospect,Quolum SaaS,Prospect,118000,2026-03-17,Noah Patel,Mid-Market,Central,2026-01-13,2026-06-11,7,Omit,false,false,New,Q1 2026,Q1 2026,2026-01-13,156
-OPP-00183,Prospect,Selectstar Inc,Closed Lost,122000,2025-02-08,Aria Stephens,Mid-Market,East,2025-01-27,2025-02-10,493,Omit,false,true,New,Q1 2025,Q1 2025,2025-01-27,12
-OPP-00184,Proposal,Apexon Digital,Closed Lost,35000,2025-06-03,Diego Fernandez,SMB,East,2025-04-23,2025-06-03,380,Omit,false,true,New,Q2 2025,Q2 2025,2025-05-20,14
-OPP-00185,Commit,Temporal Cloud,Closed Won,153000,2024-05-21,Caleb Nguyen,Mid-Market,East,2024-02-10,2024-05-23,756,Closed,true,true,Expansion,Q1 2024,Q2 2024,2024-05-02,19
-OPP-00186,Demo,Amplitude Systems,Closed Lost,109000,2025-02-13,Ethan Brooks,Mid-Market,West,2024-12-10,2025-02-13,490,Omit,false,true,New,Q4 2024,Q1 2025,2025-01-29,15
-OPP-00187,Demo,Aha Software,Demo,39000,2026-06-09,Sofia Ramirez,SMB,West,2026-05-10,2026-05-11,38,Best Case,false,false,Expansion,Q2 2026,Q2 2026,2026-06-15,3
-OPP-00188,Commit,Planhat Systems,Commit,327000,2026-06-26,Marcus Webb,Enterprise,Central,2026-02-17,2026-05-28,21,Commit,false,false,New,Q1 2026,Q2 2026,2026-04-20,59
-OPP-00189,Prospect,Apollo Cloud,Prospect,457000,2026-01-13,Marcus Webb,Enterprise,Central,2025-08-28,2026-05-24,25,Omit,false,false,New,Q3 2025,Q1 2026,2025-08-28,294
-OPP-00190,Qualified,Mosaic Cloud,Qualified,24000,2026-02-13,Mia Torres,SMB,West,2026-01-24,2026-06-07,11,Best Case,false,false,New,Q1 2026,Q1 2026,2026-02-13,125
-OPP-00191,Proposal,Selectstar Inc,Proposal,71000,2026-08-30,Noah Patel,Mid-Market,Central,2026-06-13,2026-06-09,9,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-07-21,0
-OPP-00192,Commit,Amplitude Systems,Closed Won,314000,2024-05-01,Liam Chen,Enterprise,West,2023-12-24,2024-05-04,775,Closed,true,true,New,Q4 2023,Q2 2024,2024-04-08,23
-OPP-00193,Prospect,Selectstar Inc,Prospect,361000,2026-06-09,Noah Patel,Enterprise,Central,2026-03-01,2026-06-17,1,Omit,false,false,New,Q1 2026,Q2 2026,2026-03-01,109
-OPP-00194,Commit,Selectstar Inc,Closed Won,111000,2024-01-13,Sofia Ramirez,Mid-Market,West,2023-10-19,2024-01-15,885,Closed,true,true,New,Q4 2023,Q1 2024,2023-12-27,17
-OPP-00195,Prospect,Correlated SaaS,Closed Lost,25000,2024-06-02,Elena Okafor,SMB,East,2024-05-22,2024-06-02,746,Omit,false,true,New,Q2 2024,Q2 2024,2024-05-22,11
-OPP-00196,Commit,GreatX Corp,Closed Won,259828,2024-11-23,Diego Fernandez,Enterprise,East,2024-07-04,2024-11-24,571,Closed,true,true,Expansion,Q3 2024,Q4 2024,2024-10-28,26
-OPP-00197,Commit,Chartmogul Analytics,Commit,100000,2026-07-05,Diego Fernandez,Mid-Market,East,2026-04-08,2026-06-02,16,Commit,false,false,New,Q2 2026,Q3 2026,2026-05-31,18
-OPP-00198,Proposal,Torii Platform,Proposal,163784,2026-01-15,Zara Mitchell,Enterprise,East,2025-09-18,2026-05-01,48,Best Case,false,false,Expansion,Q3 2025,Q1 2026,2025-10-17,244
-OPP-00199,Qualified,Orbit Platform,Qualified,59000,2026-01-31,Jordan Kelly,Mid-Market,Central,2025-10-31,2026-06-12,6,Best Case,false,false,New,Q4 2025,Q1 2026,2025-11-19,211
-OPP-00200,Proposal,Warmly Cloud,Proposal,139000,2026-04-02,Aria Stephens,Mid-Market,East,2026-01-29,2026-06-02,16,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-03-05,105
-OPP-00201,Commit,Salesloft Platform,Closed Won,213257,2025-08-02,Priya Kapoor,Enterprise,West,2025-03-06,2025-08-02,320,Closed,true,true,Expansion,Q1 2025,Q3 2025,2025-07-07,26
-OPP-00202,Qualified,Chartmogul Analytics,Closed Lost,24000,2025-01-24,Mia Torres,SMB,West,2025-01-07,2025-01-26,508,Omit,false,true,New,Q1 2025,Q1 2025,2025-01-17,7
-OPP-00203,Qualified,Helix Data,Qualified,259592,2026-03-22,Noah Patel,Enterprise,Central,2025-10-19,2026-05-27,22,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-10-31,230
-OPP-00204,Demo,Brex Platform,Closed Lost,17000,2024-06-09,Zara Mitchell,SMB,East,2024-05-18,2024-06-11,737,Omit,false,true,New,Q2 2024,Q2 2024,2024-06-03,6
-OPP-00205,Prospect,Zuora Platform,Prospect,13000,2026-05-29,Priya Kapoor,SMB,West,2026-04-26,2026-05-28,21,Omit,false,false,New,Q2 2026,Q2 2026,2026-04-26,53
-OPP-00206,Commit,Devrev Systems,Closed Lost,108000,2025-02-22,Sofia Ramirez,Mid-Market,West,2024-11-09,2025-02-22,481,Omit,false,true,Churn,Q4 2024,Q1 2025,2025-02-03,19
-OPP-00207,Demo,Warmly Cloud,Demo,89000,2026-07-23,Aria Stephens,Mid-Market,East,2026-04-13,2026-06-12,6,Best Case,false,false,Renewal,Q2 2026,Q3 2026,2026-05-09,40
-OPP-00208,Demo,Maxio Platform,Demo,378000,2026-04-15,Caleb Nguyen,Enterprise,East,2026-01-06,2026-06-12,6,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-01-25,144
-OPP-00209,Commit,Clearbit Technologies,Closed Won,26000,2025-10-01,Liam Chen,SMB,West,2025-08-21,2025-10-03,258,Closed,true,true,New,Q3 2025,Q4 2025,2025-09-22,9
-OPP-00210,Proposal,ProfitWell Systems,Closed Lost,298000,2024-08-03,Noah Patel,Enterprise,Central,2024-04-19,2024-08-04,683,Omit,false,true,New,Q2 2024,Q3 2024,2024-07-02,32
-OPP-00211,Prospect,Apollo Cloud,Closed Lost,27000,2023-12-22,Elena Okafor,SMB,East,2023-12-12,2023-12-22,909,Omit,false,true,New,Q4 2023,Q4 2023,2023-12-12,10
-OPP-00212,Commit,Craft Platform,Closed Won,16000,2025-10-05,Mia Torres,SMB,West,2025-08-22,2025-10-05,256,Closed,true,true,New,Q3 2025,Q4 2025,2025-09-27,8
-OPP-00213,Demo,Mosaic Cloud,Demo,153587,2026-02-08,Marcus Webb,Enterprise,Central,2025-10-31,2026-06-16,2,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-12-06,194
-OPP-00214,Demo,Baremetrics Cloud,Closed Lost,402000,2024-11-08,Zara Mitchell,Enterprise,East,2024-08-23,2024-11-10,585,Omit,false,true,Churn,Q3 2024,Q4 2024,2024-10-20,19
-OPP-00215,Commit,Qualified Platform,Closed Won,94000,2025-10-27,Jordan Kelly,Mid-Market,Central,2025-07-20,2025-10-28,233,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-10,17
-OPP-00216,Proposal,Totango Analytics,Proposal,10819,2026-01-25,Diego Fernandez,SMB,East,2025-12-20,2026-06-11,7,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2026-02-02,136
-OPP-00217,Demo,Vitally CS,Demo,69000,2026-04-16,Sofia Ramirez,Mid-Market,West,2026-01-04,2026-05-16,33,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-03,135
-OPP-00218,Commit,Seismic Analytics,Closed Won,406000,2024-07-09,Liam Chen,Enterprise,West,2024-03-29,2024-07-11,707,Closed,true,true,New,Q1 2024,Q3 2024,2024-06-19,20
-OPP-00219,Commit,Endgame Platform,Closed Won,12000,2025-08-29,Aria Stephens,SMB,East,2025-07-12,2025-08-31,291,Closed,true,true,New,Q3 2025,Q3 2025,2025-08-19,10
-OPP-00220,Commit,Metaphor Networks,Closed Won,23000,2025-10-20,Mia Torres,SMB,West,2025-09-18,2025-10-23,238,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-12,8
-OPP-00221,Commit,Apexon Digital,Closed Won,655000,2025-02-27,Mia Torres,Enterprise,West,2024-10-28,2025-02-28,475,Closed,true,true,Expansion,Q4 2024,Q1 2025,2025-02-05,22
-OPP-00222,Commit,Lattice Software,Closed Won,125000,2025-09-30,Sofia Ramirez,Mid-Market,West,2025-06-30,2025-10-02,259,Closed,true,true,New,Q2 2025,Q3 2025,2025-09-13,17
-OPP-00223,Qualified,Freshdesk Systems,Closed Lost,68000,2025-05-04,Sofia Ramirez,Mid-Market,West,2025-03-28,2025-05-06,408,Omit,false,true,New,Q1 2025,Q2 2025,2025-04-19,15
-OPP-00224,Proposal,Chisel Analytics,Proposal,221000,2026-04-26,Sofia Ramirez,Enterprise,West,2025-11-09,2026-06-04,14,Best Case,false,false,New,Q4 2025,Q2 2026,2025-12-20,180
-OPP-00225,Commit,Mutiny Systems,Closed Won,16000,2025-04-17,Liam Chen,SMB,West,2025-03-07,2025-04-20,424,Closed,true,true,New,Q1 2025,Q2 2025,2025-04-08,9
-OPP-00226,Commit,Airfocus Cloud,Closed Won,368000,2024-05-10,Noah Patel,Enterprise,Central,2023-12-12,2024-05-10,769,Closed,true,true,Expansion,Q4 2023,Q2 2024,2024-04-13,27
-OPP-00227,Demo,Zuora Platform,Demo,380000,2026-06-13,Priya Kapoor,Enterprise,West,2026-02-26,2026-05-29,20,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-03-21,89
-OPP-00228,Commit,Ramp Analytics,Closed Won,5000,2025-04-09,Elena Okafor,SMB,East,2025-02-21,2025-04-09,435,Closed,true,true,Expansion,Q1 2025,Q2 2025,2025-03-30,10
-OPP-00229,Commit,Warmly Cloud,Closed Won,273098,2025-08-26,Priya Kapoor,Enterprise,West,2025-04-28,2025-08-28,294,Closed,true,true,Expansion,Q2 2025,Q3 2025,2025-08-04,22
-OPP-00230,Prospect,Secoda Data,Prospect,27000,2026-02-21,Elena Okafor,SMB,East,2026-01-07,2026-05-20,29,Omit,false,false,New,Q1 2026,Q1 2026,2026-01-07,162
-OPP-00231,Commit,Seismic Analytics,Closed Won,5000,2025-12-05,Mia Torres,SMB,West,2025-10-13,2025-12-05,195,Closed,true,true,Expansion,Q4 2025,Q4 2025,2025-11-24,11
-OPP-00232,Demo,Gladly Cloud,Closed Lost,71000,2023-12-02,Diego Fernandez,Mid-Market,East,2023-10-06,2023-12-05,926,Omit,false,true,Expansion,Q4 2023,Q4 2023,2023-11-18,14
-OPP-00233,Qualified,dbt Labs,Qualified,36587,2026-09-30,Caleb Nguyen,Mid-Market,East,2026-07-09,2026-05-27,22,Best Case,false,false,Expansion,Q3 2026,Q3 2026,2026-07-25,0
-OPP-00234,Commit,Runway Financial,Closed Lost,119000,2024-03-05,Aria Stephens,Mid-Market,East,2023-12-27,2024-03-07,833,Omit,false,true,New,Q4 2023,Q1 2024,2024-02-20,14
-OPP-00235,Prospect,Productboard Systems,Closed Lost,96000,2024-08-28,Jordan Kelly,Mid-Market,Central,2024-08-10,2024-08-31,656,Omit,false,true,New,Q3 2024,Q3 2024,2024-08-10,18
-OPP-00236,Proposal,Planhat Systems,Proposal,37000,2026-01-20,Zara Mitchell,SMB,East,2025-12-11,2026-05-31,18,Best Case,false,false,New,Q4 2025,Q1 2026,2026-01-01,168
-OPP-00237,Commit,Secoda Data,Closed Won,288000,2024-11-23,Aria Stephens,Enterprise,East,2024-06-30,2024-11-26,569,Closed,true,true,New,Q2 2024,Q4 2024,2024-10-27,27
-OPP-00238,Proposal,Alation Analytics,Proposal,78000,2026-04-03,Diego Fernandez,Mid-Market,East,2026-01-24,2026-06-17,1,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-26,112
-OPP-00239,Prospect,Mutiny Systems,Prospect,75703,2026-03-10,Aria Stephens,Enterprise,East,2025-10-22,2026-05-01,48,Omit,false,false,Expansion,Q4 2025,Q1 2026,2025-10-22,239
-OPP-00240,Commit,Rippling Networks,Closed Won,20000,2024-02-14,Ethan Brooks,SMB,West,2023-12-30,2024-02-17,852,Closed,true,true,Renewal,Q4 2023,Q1 2024,2024-02-05,9
-OPP-00241,Proposal,Front Systems,Proposal,33000,2026-05-29,Elena Okafor,SMB,East,2026-04-03,2026-05-23,26,Best Case,false,false,New,Q2 2026,Q2 2026,2026-05-06,43
-OPP-00242,Proposal,Rippling Networks,Proposal,492000,2026-04-29,Aria Stephens,Enterprise,East,2025-12-20,2026-06-11,7,Best Case,false,false,New,Q4 2025,Q2 2026,2026-02-03,135
-OPP-00243,Demo,Anomalo Systems,Closed Lost,14000,2024-09-16,Avery Singh,SMB,Central,2024-08-26,2024-09-18,638,Omit,false,true,New,Q3 2024,Q3 2024,2024-09-10,6
-OPP-00244,Commit,Maxio Platform,Closed Won,12955,2024-09-14,Mia Torres,SMB,West,2024-08-09,2024-09-14,642,Closed,true,true,Expansion,Q3 2024,Q3 2024,2024-09-05,9
-OPP-00245,Proposal,Metaphor Networks,Proposal,194159,2026-06-08,Priya Kapoor,Enterprise,West,2026-01-24,2026-06-11,7,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-03-03,107
-OPP-00246,Prospect,Brex Platform,Prospect,598000,2026-06-23,Priya Kapoor,Enterprise,West,2026-03-08,2026-05-28,21,Omit,false,false,New,Q1 2026,Q2 2026,2026-03-08,102
-OPP-00247,Qualified,Tidio Platform,Qualified,149000,2026-05-20,Aria Stephens,Mid-Market,East,2026-02-24,2026-06-08,10,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-19,91
-OPP-00248,Qualified,Seismic Analytics,Qualified,90000,2026-09-27,Aria Stephens,Mid-Market,East,2026-07-17,2026-05-26,23,Best Case,false,false,New,Q3 2026,Q3 2026,2026-07-26,0
-OPP-00249,Commit,Salesloft Platform,Closed Won,34714,2024-11-25,Diego Fernandez,Mid-Market,East,2024-09-09,2024-11-28,567,Closed,true,true,Expansion,Q3 2024,Q4 2024,2024-11-11,14
-OPP-00250,Commit,Torii Platform,Closed Won,51627,2024-02-28,Liam Chen,Mid-Market,West,2023-12-10,2024-02-28,841,Closed,true,true,Expansion,Q4 2023,Q1 2024,2024-02-12,16
-OPP-00251,Commit,Atlan Platform,Closed Won,440000,2025-07-07,Ethan Brooks,Enterprise,West,2025-03-15,2025-07-08,345,Closed,true,true,New,Q1 2025,Q3 2025,2025-06-16,21
-OPP-00252,Commit,ProfitWell Systems,Closed Won,22000,2025-11-26,Liam Chen,SMB,West,2025-10-06,2025-11-26,204,Closed,true,true,Renewal,Q4 2025,Q4 2025,2025-11-15,11
-OPP-00253,Demo,Airfocus Cloud,Closed Lost,218668,2024-10-06,Marcus Webb,Enterprise,Central,2024-06-30,2024-10-06,620,Omit,false,true,Expansion,Q2 2024,Q4 2024,2024-09-13,23
-OPP-00254,Demo,Retool Software,Demo,534000,2026-04-20,Zara Mitchell,Enterprise,East,2025-12-04,2026-06-10,8,Best Case,false,false,New,Q4 2025,Q2 2026,2026-01-04,165
-OPP-00255,Commit,Paddle Analytics,Closed Won,104000,2025-06-05,Aria Stephens,Mid-Market,East,2025-03-03,2025-06-07,376,Closed,true,true,New,Q1 2025,Q2 2025,2025-05-18,18
-OPP-00256,Prospect,Intercom Platform,Prospect,179847,2026-07-15,Avery Singh,Enterprise,Central,2026-02-24,2026-05-15,34,Omit,false,false,Expansion,Q1 2026,Q3 2026,2026-02-24,114
-OPP-00257,Qualified,Fivetran Systems,Qualified,55814,2026-01-02,Zara Mitchell,Mid-Market,East,2025-09-14,2026-06-14,4,Best Case,false,false,Expansion,Q3 2025,Q1 2026,2025-09-26,265
-OPP-00258,Commit,Notion Labs,Commit,18000,2026-01-25,Elena Okafor,SMB,East,2025-12-15,2026-06-05,13,Commit,false,false,Renewal,Q4 2025,Q1 2026,2026-02-04,134
-OPP-00259,Proposal,Warmly Cloud,Proposal,788000,2026-01-21,Zara Mitchell,Enterprise,East,2025-09-20,2026-06-09,9,Best Case,false,false,New,Q3 2025,Q1 2026,2025-10-27,234
-OPP-00260,Commit,Planhat Systems,Closed Won,329000,2024-02-26,Zara Mitchell,Enterprise,East,2023-11-17,2024-02-29,840,Closed,true,true,New,Q4 2023,Q1 2024,2024-02-07,19
-OPP-00261,Qualified,Seismic Analytics,Qualified,8354,2026-09-03,Elena Okafor,SMB,East,2026-07-28,2026-05-30,19,Best Case,false,false,Expansion,Q3 2026,Q3 2026,2026-08-19,0
-OPP-00262,Proposal,Recurly Systems,Closed Lost,71678,2025-10-23,Sofia Ramirez,Mid-Market,West,2025-08-27,2025-10-25,236,Omit,false,true,Expansion,Q3 2025,Q4 2025,2025-10-05,18
-OPP-00263,Proposal,Chartmogul Analytics,Proposal,89000,2026-07-30,Caleb Nguyen,Mid-Market,East,2026-04-18,2026-05-14,35,Best Case,false,false,New,Q2 2026,Q3 2026,2026-05-29,20
-OPP-00264,Demo,GreatX Corp,Demo,390000,2026-04-12,Marcus Webb,Enterprise,Central,2025-10-29,2026-06-13,5,Best Case,false,false,Renewal,Q4 2025,Q2 2026,2025-11-26,204
-OPP-00265,Commit,Secoda Data,Closed Won,96823,2025-06-06,Zara Mitchell,Enterprise,East,2025-02-06,2025-06-09,374,Closed,true,true,Expansion,Q1 2025,Q2 2025,2025-05-15,22
-OPP-00266,Prospect,Zuora Platform,Closed Lost,64000,2025-05-31,Aria Stephens,Mid-Market,East,2025-05-10,2025-05-31,383,Omit,false,true,New,Q2 2025,Q2 2025,2025-05-10,21
-OPP-00267,Commit,Warmly Cloud,Closed Won,124854,2024-09-03,Noah Patel,Enterprise,Central,2024-04-12,2024-09-03,653,Closed,true,true,Expansion,Q2 2024,Q3 2024,2024-08-08,26
-OPP-00268,Commit,Gong Revenue,Closed Won,17000,2025-04-15,Jordan Kelly,SMB,Central,2025-03-09,2025-04-18,426,Closed,true,true,New,Q1 2025,Q2 2025,2025-04-07,8
-OPP-00269,Commit,Figment Cloud,Closed Won,22000,2025-12-20,Elena Okafor,SMB,East,2025-11-09,2025-12-21,179,Closed,true,true,Expansion,Q4 2025,Q4 2025,2025-12-11,9
-OPP-00270,Qualified,Lusha Analytics,Qualified,120237,2026-03-01,Noah Patel,Enterprise,Central,2025-09-26,2026-05-26,23,Best Case,false,false,Expansion,Q3 2025,Q1 2026,2025-10-16,245
-OPP-00271,Commit,Planhat Systems,Closed Won,182779,2024-08-17,Aria Stephens,Enterprise,East,2024-03-03,2024-08-17,670,Closed,true,true,Expansion,Q1 2024,Q3 2024,2024-07-18,30
-OPP-00272,Commit,Metaphor Networks,Closed Won,75810,2025-04-24,Jordan Kelly,Mid-Market,Central,2025-02-05,2025-04-24,420,Closed,true,true,Expansion,Q1 2025,Q2 2025,2025-04-09,15
-OPP-00273,Commit,Ada Support,Closed Won,698000,2024-07-26,Avery Singh,Enterprise,Central,2024-03-21,2024-07-27,691,Closed,true,true,New,Q1 2024,Q3 2024,2024-07-03,23
-OPP-00274,Commit,Runway Financial,Commit,335000,2026-06-23,Noah Patel,Enterprise,Central,2026-02-10,2026-06-13,5,Commit,false,false,New,Q1 2026,Q2 2026,2026-04-09,70
-OPP-00275,Commit,Chargebee Cloud,Commit,13000,2026-01-11,Avery Singh,SMB,Central,2025-12-17,2026-06-04,14,Commit,false,false,New,Q4 2025,Q1 2026,2026-02-17,121
-OPP-00276,Demo,Catalyst Platform,Demo,6485,2026-06-03,Mia Torres,SMB,West,2026-04-26,2026-06-09,9,Best Case,false,false,Expansion,Q2 2026,Q2 2026,2026-05-21,28
-OPP-00277,Proposal,ProfitWell Systems,Proposal,27000,2026-08-30,Priya Kapoor,SMB,West,2026-07-24,2026-06-17,1,Best Case,false,false,New,Q3 2026,Q3 2026,2026-08-27,0
-OPP-00278,Commit,Synder Platform,Closed Won,76000,2025-11-03,Caleb Nguyen,Mid-Market,East,2025-07-24,2025-11-03,227,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-14,20
-OPP-00279,Qualified,Warmly Cloud,Qualified,9518,2026-03-23,Mia Torres,SMB,West,2026-02-12,2026-06-12,6,Best Case,false,false,Expansion,Q1 2026,Q1 2026,2026-03-03,107
-OPP-00280,Qualified,Cobalt Security,Qualified,17711,2026-01-27,Sofia Ramirez,Mid-Market,West,2025-10-28,2026-06-01,17,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-11-19,211
-OPP-00281,Commit,Synder Platform,Closed Won,578000,2024-12-08,Jordan Kelly,Enterprise,Central,2024-07-11,2024-12-08,557,Closed,true,true,Renewal,Q3 2024,Q4 2024,2024-11-11,27
-OPP-00282,Demo,Soda Analytics,Demo,24000,2026-02-15,Avery Singh,SMB,Central,2026-01-04,2026-05-02,47,Best Case,false,false,Expansion,Q1 2026,Q1 2026,2026-02-12,126
-OPP-00283,Demo,Metaphor Networks,Demo,22000,2026-09-15,Liam Chen,SMB,West,2026-07-23,2026-06-11,7,Best Case,false,false,Renewal,Q3 2026,Q3 2026,2026-08-04,0
-OPP-00284,Commit,Bigeye Solutions,Closed Won,129000,2025-05-18,Sofia Ramirez,Mid-Market,West,2025-03-12,2025-05-21,393,Closed,true,true,New,Q1 2025,Q2 2025,2025-05-06,12
-OPP-00285,Demo,Gladly Cloud,Closed Lost,365000,2024-08-09,Diego Fernandez,Enterprise,East,2024-05-13,2024-08-12,675,Omit,false,true,Expansion,Q2 2024,Q3 2024,2024-07-19,21
-OPP-00286,Prospect,HighSpot Systems,Prospect,67000,2026-01-25,Caleb Nguyen,Mid-Market,East,2025-11-13,2026-06-02,16,Omit,false,false,New,Q4 2025,Q1 2026,2025-11-13,217
-OPP-00287,Proposal,Secoda Data,Closed Lost,9717,2024-03-07,Mia Torres,SMB,West,2024-02-05,2024-03-08,832,Omit,false,true,Expansion,Q1 2024,Q1 2024,2024-02-26,10
-OPP-00288,Commit,Catalyst Platform,Closed Won,35067,2025-02-05,Ethan Brooks,Mid-Market,West,2024-12-07,2025-02-08,495,Closed,true,true,Expansion,Q4 2024,Q1 2025,2025-01-24,12
-OPP-00289,Commit,Retool Software,Closed Won,48000,2025-07-03,Aria Stephens,Mid-Market,East,2025-04-16,2025-07-05,348,Closed,true,true,New,Q2 2025,Q3 2025,2025-06-18,15
-OPP-00290,Commit,Fivetran Systems,Closed Won,30340,2024-08-19,Aria Stephens,Mid-Market,East,2024-06-04,2024-08-21,666,Closed,true,true,Expansion,Q2 2024,Q3 2024,2024-08-04,15
-OPP-00291,Commit,Planhat Systems,Closed Won,5346,2024-09-20,Avery Singh,SMB,Central,2024-08-04,2024-09-20,636,Closed,true,true,Expansion,Q3 2024,Q3 2024,2024-09-10,10
-OPP-00292,Demo,Catalyst Platform,Demo,66000,2026-06-23,Aria Stephens,Mid-Market,East,2026-05-08,2026-06-16,2,Best Case,false,false,Renewal,Q2 2026,Q2 2026,2026-05-24,25
-OPP-00293,Demo,Freshdesk Systems,Demo,56000,2026-07-30,Liam Chen,Mid-Market,West,2026-05-22,2026-06-16,2,Best Case,false,false,New,Q2 2026,Q3 2026,2026-06-25,0
-OPP-00294,Commit,Paddle Analytics,Closed Won,138226,2024-11-29,Zara Mitchell,Enterprise,East,2024-06-30,2024-12-01,564,Closed,true,true,Expansion,Q2 2024,Q4 2024,2024-11-01,28
-OPP-00295,Commit,dbt Labs,Commit,8078,2026-09-01,Aria Stephens,SMB,East,2026-07-23,2026-05-26,23,Commit,false,false,Expansion,Q3 2026,Q3 2026,2026-09-23,0
-OPP-00296,Prospect,TaxJar Cloud,Closed Lost,122000,2025-05-18,Aria Stephens,Mid-Market,East,2025-04-28,2025-05-19,395,Omit,false,true,Churn,Q2 2025,Q2 2025,2025-04-28,20
-OPP-00297,Prospect,Salesloft Platform,Closed Lost,9440,2025-09-20,Mia Torres,SMB,West,2025-09-13,2025-09-22,269,Omit,false,true,Expansion,Q3 2025,Q3 2025,2025-09-13,7
-OPP-00298,Commit,Cognism Platform,Closed Won,719000,2025-09-25,Priya Kapoor,Enterprise,West,2025-06-22,2025-09-27,264,Closed,true,true,Renewal,Q2 2025,Q3 2025,2025-09-07,18
-OPP-00299,Prospect,Zuora Platform,Prospect,59000,2026-06-29,Elena Okafor,Mid-Market,East,2026-04-14,2026-04-27,52,Omit,false,false,New,Q2 2026,Q2 2026,2026-04-14,65
-OPP-00300,Proposal,Cognism Platform,Proposal,280000,2026-05-20,Marcus Webb,Enterprise,Central,2026-01-17,2026-06-10,8,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-02-24,114
-OPP-00301,Prospect,Totango Analytics,Closed Lost,533000,2025-09-06,Noah Patel,Enterprise,Central,2025-08-17,2025-09-08,283,Omit,false,true,New,Q3 2025,Q3 2025,2025-08-17,20
-OPP-00302,Prospect,Metaphor Networks,Prospect,30536,2026-06-18,Caleb Nguyen,Mid-Market,East,2026-03-06,2026-04-25,54,Omit,false,false,Expansion,Q1 2026,Q2 2026,2026-03-06,104
-OPP-00303,Commit,Kustomer Analytics,Commit,37000,2026-06-22,Aria Stephens,SMB,East,2026-05-28,2026-06-17,1,Commit,false,false,New,Q2 2026,Q2 2026,2026-08-02,0
-OPP-00304,Commit,Selectstar Inc,Closed Won,432000,2024-11-03,Ethan Brooks,Enterprise,West,2024-07-18,2024-11-05,590,Closed,true,true,New,Q3 2024,Q4 2024,2024-10-14,20
-OPP-00305,Proposal,GreatX Corp,Proposal,126000,2026-07-31,Diego Fernandez,Mid-Market,East,2026-05-08,2026-06-13,5,Best Case,false,false,Renewal,Q2 2026,Q3 2026,2026-06-22,0
-OPP-00306,Commit,Aha Software,Commit,17000,2026-06-22,Mia Torres,SMB,West,2026-05-17,2026-06-15,3,Commit,false,false,New,Q2 2026,Q2 2026,2026-07-09,0
-OPP-00307,Commit,Aha Software,Closed Won,31000,2024-01-13,Caleb Nguyen,SMB,East,2023-11-22,2024-01-14,886,Closed,true,true,Expansion,Q4 2023,Q1 2024,2024-01-03,10
-OPP-00308,Proposal,Temporal Cloud,Closed Lost,178445,2024-06-03,Ethan Brooks,Enterprise,West,2024-02-01,2024-06-05,743,Omit,false,true,Expansion,Q1 2024,Q2 2024,2024-04-27,37
-OPP-00309,Qualified,Aha Software,Qualified,148000,2026-07-03,Diego Fernandez,Mid-Market,East,2026-04-07,2026-06-16,2,Best Case,false,false,New,Q2 2026,Q3 2026,2026-04-23,56
-OPP-00310,Commit,Chartmogul Analytics,Closed Won,114000,2025-02-02,Priya Kapoor,Mid-Market,West,2024-11-16,2025-02-03,500,Closed,true,true,New,Q4 2024,Q1 2025,2025-01-18,15
-OPP-00311,Commit,Secoda Data,Commit,16000,2026-03-18,Avery Singh,SMB,Central,2026-01-27,2026-06-16,2,Commit,false,false,New,Q1 2026,Q1 2026,2026-03-25,85
-OPP-00312,Prospect,Planhat Systems,Prospect,118000,2026-06-20,Zara Mitchell,Mid-Market,East,2026-03-10,2026-04-29,50,Omit,false,false,Renewal,Q1 2026,Q2 2026,2026-03-10,100
-OPP-00313,Commit,ZoomInfo Data,Closed Won,79000,2024-07-31,Diego Fernandez,Mid-Market,East,2024-05-26,2024-08-02,685,Closed,true,true,New,Q2 2024,Q3 2024,2024-07-20,11
-OPP-00314,Prospect,Airfocus Cloud,Prospect,67998,2026-03-06,Ethan Brooks,Mid-Market,West,2025-12-15,2026-06-15,3,Omit,false,false,Expansion,Q4 2025,Q1 2026,2025-12-15,185
-OPP-00315,Demo,Correlated SaaS,Demo,29000,2026-09-02,Elena Okafor,SMB,East,2026-07-26,2026-06-09,9,Best Case,false,false,New,Q3 2026,Q3 2026,2026-08-27,0
-OPP-00316,Commit,Pulsar Systems,Closed Won,126594,2024-08-11,Ethan Brooks,Enterprise,West,2024-05-04,2024-08-14,673,Closed,true,true,Expansion,Q2 2024,Q3 2024,2024-07-25,17
-OPP-00317,Qualified,Chisel Analytics,Qualified,501000,2026-06-10,Ethan Brooks,Enterprise,West,2026-01-20,2026-04-30,49,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-06,132
-OPP-00318,Commit,Grafana Ops,Closed Won,85000,2025-04-30,Elena Okafor,Mid-Market,East,2025-02-13,2025-05-02,412,Closed,true,true,New,Q1 2025,Q2 2025,2025-04-15,15
-OPP-00319,Proposal,Lusha Analytics,Proposal,5000,2026-04-08,Marcus Webb,SMB,Central,2026-03-07,2026-05-25,24,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-14,65
-OPP-00320,Qualified,Gong Revenue,Closed Lost,37000,2025-10-24,Elena Okafor,SMB,East,2025-09-30,2025-10-27,234,Omit,false,true,New,Q3 2025,Q4 2025,2025-10-14,10
-OPP-00321,Demo,Temporal Cloud,Demo,141725,2026-05-03,Priya Kapoor,Enterprise,West,2025-12-18,2026-06-12,6,Best Case,false,false,Expansion,Q4 2025,Q2 2026,2026-01-14,155
-OPP-00322,Commit,Secoda Data,Closed Won,199311,2024-03-25,Aria Stephens,Enterprise,East,2023-10-22,2024-03-26,814,Closed,true,true,Expansion,Q4 2023,Q1 2024,2024-02-27,27
-OPP-00323,Prospect,Roadmunk Analytics,Prospect,28000,2026-09-18,Elena Okafor,SMB,East,2026-08-06,2026-06-11,7,Omit,false,false,New,Q3 2026,Q3 2026,2026-08-06,0
-OPP-00324,Qualified,Sovos Analytics,Qualified,138505,2026-09-17,Zara Mitchell,Enterprise,East,2026-04-03,2026-06-05,13,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-04-11,68
-OPP-00325,Proposal,Castor Analytics,Closed Lost,76898,2024-10-10,Sofia Ramirez,Mid-Market,West,2024-08-15,2024-10-12,614,Omit,false,true,Expansion,Q3 2024,Q4 2024,2024-09-23,17
-OPP-00326,Qualified,Warmly Cloud,Qualified,12000,2026-04-09,Zara Mitchell,SMB,East,2026-03-14,2026-05-22,27,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-04-02,77
-OPP-00327,Qualified,Velo Systems,Closed Lost,82000,2025-02-24,Aria Stephens,Mid-Market,East,2025-01-21,2025-02-25,478,Omit,false,true,New,Q1 2025,Q1 2025,2025-02-10,14
-OPP-00328,Prospect,Ironclad Platforms,Prospect,112000,2026-06-02,Priya Kapoor,Mid-Market,West,2026-02-23,2026-05-16,33,Omit,false,false,New,Q1 2026,Q2 2026,2026-02-23,115
-OPP-00329,Qualified,Metaphor Networks,Closed Lost,114000,2025-05-13,Caleb Nguyen,Mid-Market,East,2025-04-10,2025-05-14,400,Omit,false,true,New,Q2 2025,Q2 2025,2025-04-29,14
-OPP-00330,Qualified,ProfitWell Systems,Closed Lost,20000,2024-10-25,Elena Okafor,SMB,East,2024-10-06,2024-10-26,600,Omit,false,true,Churn,Q4 2024,Q4 2024,2024-10-17,8
-OPP-00331,Proposal,Lattice Software,Proposal,14304,2026-07-27,Avery Singh,SMB,Central,2026-06-02,2026-05-26,23,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-07-23,0
-OPP-00332,Demo,ProfitWell Systems,Demo,19000,2026-05-19,Elena Okafor,SMB,East,2026-04-05,2026-06-11,7,Best Case,false,false,Renewal,Q2 2026,Q2 2026,2026-04-27,52
-OPP-00333,Qualified,Torii Platform,Qualified,9500,2026-04-09,Caleb Nguyen,SMB,East,2026-03-14,2026-06-07,11,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-02,77
-OPP-00334,Prospect,Avalara Systems,Prospect,21354,2026-06-02,Sofia Ramirez,Mid-Market,West,2026-03-27,2026-05-28,21,Omit,false,false,Expansion,Q1 2026,Q2 2026,2026-03-27,83
-OPP-00335,Prospect,Roadmunk Analytics,Prospect,146000,2026-06-22,Diego Fernandez,Mid-Market,East,2026-04-01,2026-06-12,6,Omit,false,false,Renewal,Q2 2026,Q2 2026,2026-04-01,78
-OPP-00336,Demo,Atlan Platform,Closed Lost,269000,2025-07-18,Priya Kapoor,Enterprise,West,2025-05-12,2025-07-18,335,Omit,false,true,Churn,Q2 2025,Q3 2025,2025-07-01,17
-OPP-00337,Commit,Secoda Data,Closed Won,253947,2025-04-06,Ethan Brooks,Enterprise,West,2024-10-29,2025-04-08,436,Closed,true,true,Expansion,Q4 2024,Q2 2025,2025-03-08,29
-OPP-00338,Commit,Bombora Systems,Closed Won,860000,2025-02-07,Aria Stephens,Enterprise,East,2024-10-16,2025-02-09,494,Closed,true,true,Renewal,Q4 2024,Q1 2025,2025-01-17,21
-OPP-00339,Proposal,Ironclad Platforms,Closed Lost,797000,2024-08-05,Elena Okafor,Enterprise,East,2024-05-01,2024-08-08,679,Omit,false,true,New,Q2 2024,Q3 2024,2024-07-06,30
-OPP-00340,Demo,Fivetran Systems,Demo,16844,2026-04-18,Diego Fernandez,SMB,East,2026-03-04,2026-06-02,16,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-09,70
-OPP-00341,Prospect,dbt Labs,Closed Lost,244643,2025-06-23,Ethan Brooks,Enterprise,West,2025-05-27,2025-06-25,358,Omit,false,true,Expansion,Q2 2025,Q2 2025,2025-05-27,27
-OPP-00342,Commit,Velo Systems,Closed Won,350000,2025-12-25,Sofia Ramirez,Enterprise,West,2025-08-08,2025-12-26,174,Closed,true,true,New,Q3 2025,Q4 2025,2025-11-29,26
-OPP-00343,Prospect,Blissfully Cloud,Prospect,16374,2026-02-16,Diego Fernandez,Mid-Market,East,2025-11-17,2026-06-12,6,Omit,false,false,Expansion,Q4 2025,Q1 2026,2025-11-17,213
-OPP-00344,Prospect,Roadmunk Analytics,Prospect,46924,2026-03-10,Ethan Brooks,Mid-Market,West,2025-12-14,2026-06-13,5,Omit,false,false,Expansion,Q4 2025,Q1 2026,2025-12-14,186
-OPP-00345,Qualified,Totango Analytics,Qualified,64537,2026-04-09,Zara Mitchell,Enterprise,East,2025-11-12,2026-06-17,1,Best Case,false,false,Expansion,Q4 2025,Q2 2026,2025-12-06,194
-OPP-00346,Prospect,Chisel Analytics,Closed Lost,27000,2024-05-16,Liam Chen,SMB,West,2024-05-03,2024-05-16,763,Omit,false,true,New,Q2 2024,Q2 2024,2024-05-03,13
-OPP-00347,Commit,Apexon Digital,Closed Won,25000,2024-06-18,Ethan Brooks,SMB,West,2024-05-05,2024-06-19,729,Closed,true,true,Renewal,Q2 2024,Q2 2024,2024-06-10,8
-OPP-00348,Proposal,GreatX Corp,Proposal,12000,2026-03-27,Priya Kapoor,SMB,West,2026-02-15,2026-06-11,7,Best Case,false,false,New,Q1 2026,Q1 2026,2026-03-23,87
-OPP-00349,Commit,Drift Cloud,Closed Won,29489,2025-11-07,Sofia Ramirez,Mid-Market,West,2025-08-27,2025-11-08,222,Closed,true,true,Expansion,Q3 2025,Q4 2025,2025-10-24,14
-OPP-00350,Prospect,Soda Analytics,Closed Lost,33000,2025-11-08,Elena Okafor,SMB,East,2025-10-30,2025-11-11,219,Omit,false,true,New,Q4 2025,Q4 2025,2025-10-30,9
-OPP-00351,Prospect,ChurnZero Analytics,Closed Lost,49666,2025-02-12,Diego Fernandez,Mid-Market,East,2025-01-24,2025-02-14,489,Omit,false,true,Expansion,Q1 2025,Q1 2025,2025-01-24,19
-OPP-00352,Proposal,Intercom Platform,Proposal,14545,2026-06-26,Elena Okafor,SMB,East,2026-05-17,2026-05-11,38,Best Case,false,false,Expansion,Q2 2026,Q2 2026,2026-06-26,0
-OPP-00353,Prospect,Castor Analytics,Prospect,29489,2026-09-27,Jordan Kelly,Mid-Market,Central,2026-05-16,2026-05-27,22,Omit,false,false,Expansion,Q2 2026,Q3 2026,2026-05-16,33
-OPP-00354,Demo,Catalyst Platform,Demo,462000,2026-07-14,Avery Singh,Enterprise,Central,2026-03-14,2026-06-12,6,Best Case,false,false,New,Q1 2026,Q3 2026,2026-04-11,68
-OPP-00355,Prospect,Quolum SaaS,Closed Lost,99000,2024-12-01,Mia Torres,Mid-Market,West,2024-11-12,2024-12-04,561,Omit,false,true,New,Q4 2024,Q4 2024,2024-11-12,19
-OPP-00356,Commit,Qualified Platform,Closed Won,175133,2025-11-19,Noah Patel,Enterprise,Central,2025-07-25,2025-11-20,210,Closed,true,true,Expansion,Q3 2025,Q4 2025,2025-10-28,22
-OPP-00357,Qualified,Helix Data,Closed Lost,54783,2025-05-12,Noah Patel,Mid-Market,Central,2025-04-19,2025-05-13,401,Omit,false,true,Expansion,Q2 2025,Q2 2025,2025-05-02,10
-OPP-00358,Commit,Velo Systems,Closed Won,638000,2024-12-12,Noah Patel,Enterprise,Central,2024-07-11,2024-12-15,550,Closed,true,true,New,Q3 2024,Q4 2024,2024-11-16,26
-OPP-00359,Commit,Aha Software,Commit,20000,2026-03-07,Aria Stephens,SMB,East,2026-01-24,2026-06-03,15,Commit,false,false,Renewal,Q1 2026,Q1 2026,2026-03-13,97
-OPP-00360,Proposal,Tidio Platform,Proposal,28000,2026-06-19,Liam Chen,SMB,West,2026-05-10,2026-06-08,10,Best Case,false,false,New,Q2 2026,Q2 2026,2026-06-18,0
-OPP-00361,Commit,Pocus Systems,Closed Won,37006,2025-05-15,Caleb Nguyen,Mid-Market,East,2025-02-10,2025-05-17,397,Closed,true,true,Expansion,Q1 2025,Q2 2025,2025-04-27,18
-OPP-00362,Qualified,Notion Labs,Qualified,14011,2026-09-14,Elena Okafor,SMB,East,2026-07-28,2026-06-06,12,Best Case,false,false,Expansion,Q3 2026,Q3 2026,2026-08-19,0
-OPP-00363,Demo,Cognism Platform,Demo,44988,2026-01-18,Jordan Kelly,Mid-Market,Central,2025-10-29,2026-06-04,14,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-11-10,220
-OPP-00364,Commit,Mosaic Cloud,Closed Won,144457,2024-03-20,Noah Patel,Enterprise,Central,2023-12-06,2024-03-21,819,Closed,true,true,Expansion,Q4 2023,Q1 2024,2024-03-01,19
-OPP-00365,Proposal,Selectstar Inc,Proposal,354884,2026-06-07,Zara Mitchell,Enterprise,East,2026-01-06,2026-06-16,2,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-02-04,134
-OPP-00366,Qualified,Pulsar Systems,Closed Lost,329018,2025-04-02,Priya Kapoor,Enterprise,West,2025-02-13,2025-04-03,441,Omit,false,true,Expansion,Q1 2025,Q2 2025,2025-03-13,20
-OPP-00367,Prospect,Airfocus Cloud,Closed Lost,90000,2025-06-14,Jordan Kelly,Mid-Market,Central,2025-05-30,2025-06-15,368,Omit,false,true,New,Q2 2025,Q2 2025,2025-05-30,15
-OPP-00368,Proposal,HighSpot Systems,Proposal,646000,2026-05-29,Liam Chen,Enterprise,West,2026-01-06,2026-06-10,8,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-21,117
-OPP-00369,Proposal,Cognism Platform,Proposal,28811,2026-09-22,Jordan Kelly,Mid-Market,Central,2026-07-15,2026-06-11,7,Best Case,false,false,Expansion,Q3 2026,Q3 2026,2026-08-30,0
-OPP-00370,Qualified,Atlan Platform,Qualified,17000,2026-04-06,Caleb Nguyen,SMB,East,2026-02-04,2026-06-11,7,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-02-14,124
-OPP-00371,Proposal,Torii Platform,Closed Lost,41938,2024-04-26,Aria Stephens,Mid-Market,East,2024-02-16,2024-04-28,781,Omit,false,true,Expansion,Q1 2024,Q2 2024,2024-04-04,22
-OPP-00372,Demo,Endgame Platform,Demo,6740,2026-07-27,Noah Patel,SMB,Central,2026-06-27,2026-06-11,7,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-07-16,0
-OPP-00373,Commit,Salesloft Platform,Closed Won,7612,2025-06-18,Mia Torres,SMB,West,2025-05-06,2025-06-21,362,Closed,true,true,Expansion,Q2 2025,Q2 2025,2025-06-08,10
-OPP-00374,Qualified,Chorus Analytics,Closed Lost,50941,2024-11-04,Sofia Ramirez,Mid-Market,West,2024-09-25,2024-11-04,591,Omit,false,true,Expansion,Q3 2024,Q4 2024,2024-10-19,16
-OPP-00375,Proposal,Temporal Cloud,Proposal,12144,2026-03-13,Priya Kapoor,SMB,West,2026-02-12,2026-06-15,3,Best Case,false,false,Expansion,Q1 2026,Q1 2026,2026-03-21,89
-OPP-00376,Prospect,Cobalt Security,Prospect,117104,2026-02-15,Noah Patel,Enterprise,Central,2025-11-25,2026-06-11,7,Omit,false,false,Expansion,Q4 2025,Q1 2026,2025-11-25,205
-OPP-00377,Commit,Apollo Cloud,Closed Won,19000,2025-09-06,Mia Torres,SMB,West,2025-07-31,2025-09-09,282,Closed,true,true,New,Q3 2025,Q3 2025,2025-08-29,8
-OPP-00378,Proposal,Sovos Analytics,Proposal,483000,2026-04-17,Marcus Webb,Enterprise,Central,2026-01-23,2026-04-29,50,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-03-07,103
-OPP-00379,Prospect,Sovos Analytics,Closed Lost,493000,2024-10-25,Priya Kapoor,Enterprise,West,2024-10-04,2024-10-28,598,Omit,false,true,Churn,Q4 2024,Q4 2024,2024-10-04,21
-OPP-00380,Qualified,Lattice Software,Qualified,74000,2026-02-14,Aria Stephens,Mid-Market,East,2025-11-19,2026-06-15,3,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2025-12-02,198
-OPP-00381,Qualified,Mosaic Cloud,Qualified,175896,2026-03-09,Caleb Nguyen,Enterprise,East,2025-09-07,2026-04-29,50,Best Case,false,false,Expansion,Q3 2025,Q1 2026,2025-09-22,269
-OPP-00382,Proposal,Velo Systems,Proposal,6939,2026-05-25,Priya Kapoor,SMB,West,2026-04-11,2026-06-04,14,Best Case,false,false,Expansion,Q2 2026,Q2 2026,2026-05-17,32
-OPP-00383,Commit,Craft Platform,Closed Won,64229,2025-10-17,Sofia Ramirez,Mid-Market,West,2025-08-18,2025-10-18,243,Closed,true,true,Expansion,Q3 2025,Q4 2025,2025-10-05,12
-OPP-00384,Qualified,Craft Platform,Qualified,55000,2026-04-04,Diego Fernandez,Mid-Market,East,2026-01-14,2026-06-15,3,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-01-28,141
-OPP-00385,Proposal,Mosaic Cloud,Proposal,109000,2026-01-10,Jordan Kelly,Mid-Market,Central,2025-10-14,2026-06-06,12,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2025-11-30,200
-OPP-00386,Prospect,Correlated SaaS,Prospect,92000,2026-03-03,Caleb Nguyen,Mid-Market,East,2025-12-23,2026-06-15,3,Omit,false,false,New,Q4 2025,Q1 2026,2025-12-23,177
-OPP-00387,Commit,Craft Platform,Commit,230678,2026-07-18,Marcus Webb,Enterprise,Central,2026-03-20,2026-06-15,3,Commit,false,false,Expansion,Q1 2026,Q3 2026,2026-05-05,44
-OPP-00388,Prospect,Anomalo Systems,Closed Lost,18000,2025-03-10,Avery Singh,SMB,Central,2025-03-03,2025-03-10,465,Omit,false,true,New,Q1 2025,Q1 2025,2025-03-03,7
-OPP-00389,Proposal,Qualified Platform,Proposal,210424,2026-09-20,Noah Patel,Enterprise,Central,2026-06-05,2026-04-25,54,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-07-18,0
-OPP-00390,Qualified,Apollo Cloud,Qualified,9540,2026-05-01,Liam Chen,SMB,West,2026-03-22,2026-06-08,10,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-08,71
-OPP-00391,Demo,Mutiny Systems,Closed Lost,48421,2025-03-03,Jordan Kelly,Mid-Market,Central,2025-01-16,2025-03-04,471,Omit,false,true,Expansion,Q1 2025,Q1 2025,2025-02-20,11
-OPP-00392,Qualified,Roadmunk Analytics,Qualified,77000,2026-02-22,Jordan Kelly,Mid-Market,Central,2025-12-01,2026-06-15,3,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2025-12-28,172
-OPP-00393,Commit,Avalara Systems,Closed Lost,8430,2025-11-16,Ethan Brooks,SMB,West,2025-10-23,2025-11-18,212,Omit,false,true,Expansion,Q4 2025,Q4 2025,2025-11-10,6
-OPP-00394,Commit,Blissfully Cloud,Closed Won,34000,2024-10-25,Liam Chen,SMB,West,2024-09-14,2024-10-28,598,Closed,true,true,New,Q3 2024,Q4 2024,2024-10-16,9
-OPP-00395,Demo,Catalyst Platform,Demo,37746,2026-05-17,Caleb Nguyen,Mid-Market,East,2026-02-18,2026-06-13,5,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-03-12,98
-OPP-00396,Commit,Kinetica Labs,Closed Won,433000,2024-01-25,Aria Stephens,Enterprise,East,2023-09-25,2024-01-27,873,Closed,true,true,New,Q3 2023,Q1 2024,2024-01-03,22
-OPP-00397,Proposal,dbt Labs,Proposal,151457,2026-05-27,Jordan Kelly,Enterprise,Central,2026-02-27,2026-06-13,5,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-14,65
-OPP-00398,Prospect,Planhat Systems,Prospect,336000,2026-04-09,Priya Kapoor,Enterprise,West,2025-11-27,2026-06-10,8,Omit,false,false,Renewal,Q4 2025,Q2 2026,2025-11-27,203
-OPP-00399,Commit,Mosaic Cloud,Closed Won,45632,2025-03-14,Caleb Nguyen,Mid-Market,East,2025-01-05,2025-03-15,460,Closed,true,true,Expansion,Q1 2025,Q1 2025,2025-03-01,13
-OPP-00400,Proposal,Cobalt Security,Proposal,795000,2026-07-05,Priya Kapoor,Enterprise,West,2026-04-08,2026-05-26,23,Best Case,false,false,Renewal,Q2 2026,Q3 2026,2026-05-18,31
-OPP-00401,Demo,Outreach Systems,Closed Lost,603000,2024-10-05,Marcus Webb,Enterprise,Central,2024-07-08,2024-10-06,620,Omit,false,true,Churn,Q3 2024,Q4 2024,2024-09-14,21
-OPP-00402,Demo,Clearbit Technologies,Demo,5843,2026-07-10,Mia Torres,SMB,West,2026-06-10,2026-05-01,48,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-07-11,0
-OPP-00403,Demo,Devrev Systems,Demo,10664,2026-09-01,Avery Singh,SMB,Central,2026-07-21,2026-05-15,34,Best Case,false,false,Expansion,Q3 2026,Q3 2026,2026-08-21,0
-OPP-00404,Commit,Gong Revenue,Closed Won,273924,2025-02-17,Mia Torres,Enterprise,West,2024-09-28,2025-02-20,483,Closed,true,true,Expansion,Q3 2024,Q1 2025,2025-01-22,26
-OPP-00405,Commit,Temporal Cloud,Commit,125287,2026-07-20,Ethan Brooks,Enterprise,West,2026-03-18,2026-06-09,9,Commit,false,false,Expansion,Q1 2026,Q3 2026,2026-05-04,45
-OPP-00406,Commit,Anomalo Systems,Closed Won,95000,2024-09-06,Ethan Brooks,Mid-Market,West,2024-05-30,2024-09-06,650,Closed,true,true,Expansion,Q2 2024,Q3 2024,2024-08-20,17
-OPP-00407,Demo,Drift Cloud,Demo,12000,2026-04-21,Diego Fernandez,SMB,East,2026-03-11,2026-06-12,6,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-04-07,72
-OPP-00408,Proposal,Orbit Platform,Closed Lost,136000,2024-10-17,Sofia Ramirez,Mid-Market,West,2024-08-29,2024-10-20,606,Omit,false,true,New,Q3 2024,Q4 2024,2024-10-02,15
-OPP-00409,Qualified,Kustomer Analytics,Qualified,151000,2026-04-08,Aria Stephens,Mid-Market,East,2026-01-15,2026-06-17,1,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-10,128
-OPP-00410,Demo,Brex Platform,Demo,13000,2026-06-06,Avery Singh,SMB,Central,2026-04-25,2026-06-08,10,Best Case,false,false,New,Q2 2026,Q2 2026,2026-05-15,34
-OPP-00411,Demo,Paddle Analytics,Closed Lost,7325,2025-10-21,Mia Torres,SMB,West,2025-09-27,2025-10-22,239,Omit,false,true,Expansion,Q3 2025,Q4 2025,2025-10-15,6
-OPP-00412,Commit,Chargebee Cloud,Closed Won,20000,2025-08-16,Elena Okafor,SMB,East,2025-07-03,2025-08-18,304,Closed,true,true,New,Q3 2025,Q3 2025,2025-08-08,8
-OPP-00413,Prospect,Catalyst Platform,Prospect,60183,2026-03-31,Sofia Ramirez,Mid-Market,West,2026-01-02,2026-05-24,25,Omit,false,false,Expansion,Q1 2026,Q1 2026,2026-01-02,167
-OPP-00414,Demo,Blissfully Cloud,Demo,730000,2026-04-16,Avery Singh,Enterprise,Central,2025-12-08,2026-05-13,36,Best Case,false,false,New,Q4 2025,Q2 2026,2026-01-07,162
-OPP-00415,Commit,Airfocus Cloud,Closed Won,88000,2025-02-14,Jordan Kelly,Mid-Market,Central,2024-11-13,2025-02-17,486,Closed,true,true,New,Q4 2024,Q1 2025,2025-01-27,18
-OPP-00416,Prospect,Temporal Cloud,Closed Lost,119000,2023-11-19,Noah Patel,Mid-Market,Central,2023-11-03,2023-11-22,939,Omit,false,true,Churn,Q4 2023,Q4 2023,2023-11-03,16
-OPP-00417,Qualified,Maxio Platform,Qualified,39814,2026-04-20,Priya Kapoor,Mid-Market,West,2026-01-14,2026-05-23,26,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-01-28,141
-OPP-00418,Commit,Notion Labs,Closed Won,335256,2025-12-09,Ethan Brooks,Enterprise,West,2025-07-15,2025-12-12,188,Closed,true,true,Expansion,Q3 2025,Q4 2025,2025-11-13,26
-OPP-00419,Prospect,Mutiny Systems,Prospect,13178,2026-03-27,Caleb Nguyen,SMB,East,2026-01-30,2026-06-10,8,Omit,false,false,Expansion,Q1 2026,Q1 2026,2026-01-30,139
-OPP-00420,Prospect,Blissfully Cloud,Closed Lost,16000,2024-10-03,Elena Okafor,SMB,East,2024-09-21,2024-10-06,620,Omit,false,true,Churn,Q3 2024,Q4 2024,2024-09-21,12
-OPP-00421,Proposal,Notion Labs,Proposal,128000,2026-04-26,Avery Singh,Mid-Market,Central,2026-02-27,2026-06-12,6,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-21,89
-OPP-00422,Demo,Orbit Platform,Demo,489000,2026-08-18,Noah Patel,Enterprise,Central,2026-05-08,2026-06-17,1,Best Case,false,false,New,Q2 2026,Q3 2026,2026-06-13,5
-OPP-00423,Commit,Mutiny Systems,Closed Won,27000,2024-01-12,Mia Torres,SMB,West,2023-12-02,2024-01-14,886,Closed,true,true,Renewal,Q4 2023,Q1 2024,2024-01-03,9
-OPP-00424,Prospect,Helix Data,Prospect,56000,2026-08-20,Jordan Kelly,Mid-Market,Central,2026-05-21,2026-05-11,38,Omit,false,false,New,Q2 2026,Q3 2026,2026-05-21,28
-OPP-00425,Prospect,Mosaic Cloud,Closed Lost,125000,2024-01-18,Sofia Ramirez,Mid-Market,West,2023-12-29,2024-01-21,879,Omit,false,true,Churn,Q4 2023,Q1 2024,2023-12-29,20
-OPP-00426,Demo,Mosaic Cloud,Demo,130689,2026-06-20,Ethan Brooks,Enterprise,West,2026-03-11,2026-05-25,24,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-13,66
-OPP-00427,Prospect,Mosaic Cloud,Prospect,244226,2026-03-17,Zara Mitchell,Enterprise,East,2025-11-06,2026-06-17,1,Omit,false,false,Expansion,Q4 2025,Q1 2026,2025-11-06,224
-OPP-00428,Qualified,dbt Labs,Closed Lost,96000,2025-11-02,Caleb Nguyen,Mid-Market,East,2025-10-02,2025-11-03,227,Omit,false,true,New,Q4 2025,Q4 2025,2025-10-20,13
-OPP-00429,Commit,HighSpot Systems,Closed Won,834000,2024-11-24,Noah Patel,Enterprise,Central,2024-07-08,2024-11-25,570,Closed,true,true,Expansion,Q3 2024,Q4 2024,2024-10-29,26
-OPP-00430,Commit,GreatX Corp,Closed Won,47117,2024-05-09,Caleb Nguyen,Mid-Market,East,2024-03-04,2024-05-11,768,Closed,true,true,Expansion,Q1 2024,Q2 2024,2024-04-28,11
-OPP-00431,Commit,Totango Analytics,Closed Won,30000,2025-10-09,Liam Chen,SMB,West,2025-08-23,2025-10-12,249,Closed,true,true,Renewal,Q3 2025,Q4 2025,2025-09-29,10
-OPP-00432,Commit,Atlan Platform,Commit,12446,2026-09-13,Elena Okafor,SMB,East,2026-08-03,2026-06-16,2,Commit,false,false,Expansion,Q3 2026,Q3 2026,2026-09-22,0
-OPP-00433,Qualified,Amplitude Systems,Qualified,158569,2026-06-21,Diego Fernandez,Enterprise,East,2026-03-27,2026-06-09,9,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-05,74
-OPP-00434,Qualified,Tidio Platform,Closed Lost,156000,2024-10-29,Jordan Kelly,Mid-Market,Central,2024-09-29,2024-10-29,597,Omit,false,true,Churn,Q3 2024,Q4 2024,2024-10-17,12
-OPP-00435,Proposal,Cognism Platform,Proposal,171651,2026-06-16,Marcus Webb,Enterprise,Central,2026-03-03,2026-06-08,10,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-09,70
-OPP-00436,Commit,Blissfully Cloud,Closed Won,109000,2024-10-25,Diego Fernandez,Mid-Market,East,2024-08-16,2024-10-25,601,Closed,true,true,New,Q3 2024,Q4 2024,2024-10-11,14
-OPP-00437,Commit,Mosaic Cloud,Closed Won,11123,2025-10-06,Jordan Kelly,SMB,Central,2025-08-30,2025-10-07,254,Closed,true,true,Expansion,Q3 2025,Q4 2025,2025-09-28,8
-OPP-00438,Commit,Craft Platform,Closed Won,210419,2025-07-11,Marcus Webb,Enterprise,Central,2025-02-16,2025-07-13,340,Closed,true,true,Expansion,Q1 2025,Q3 2025,2025-06-15,26
-OPP-00439,Demo,Notion Labs,Demo,178300,2026-09-17,Avery Singh,Enterprise,Central,2026-06-19,2026-06-12,6,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-07-28,0
-OPP-00440,Demo,Apexon Digital,Demo,453000,2026-03-28,Zara Mitchell,Enterprise,East,2025-11-21,2026-06-10,8,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2025-12-29,171
-OPP-00441,Commit,Rippling Networks,Closed Won,86000,2024-07-13,Ethan Brooks,Mid-Market,West,2024-04-19,2024-07-13,705,Closed,true,true,Renewal,Q2 2024,Q3 2024,2024-06-27,16
-OPP-00442,Proposal,Craft Platform,Proposal,471000,2026-06-12,Priya Kapoor,Enterprise,West,2026-02-11,2026-06-02,16,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-03-24,86
-OPP-00443,Demo,Grafana Ops,Demo,134803,2026-04-09,Ethan Brooks,Enterprise,West,2025-12-10,2026-05-01,48,Best Case,false,false,Expansion,Q4 2025,Q2 2026,2026-01-11,158
-OPP-00444,Commit,Cognism Platform,Closed Won,180953,2024-12-01,Noah Patel,Enterprise,Central,2024-07-23,2024-12-04,561,Closed,true,true,Expansion,Q3 2024,Q4 2024,2024-11-06,25
-OPP-00445,Commit,Torii Platform,Closed Won,576000,2025-05-18,Priya Kapoor,Enterprise,West,2025-01-08,2025-05-18,396,Closed,true,true,New,Q1 2025,Q2 2025,2025-04-24,24
-OPP-00446,Qualified,Gong Revenue,Closed Lost,23000,2024-02-08,Sofia Ramirez,SMB,West,2024-01-26,2024-02-08,861,Omit,false,true,New,Q1 2024,Q1 2024,2024-02-02,6
-OPP-00447,Demo,GreatX Corp,Closed Lost,6776,2025-02-18,Avery Singh,SMB,Central,2025-01-22,2025-02-19,484,Omit,false,true,Expansion,Q1 2025,Q1 2025,2025-02-11,7
-OPP-00448,Prospect,ZoomInfo Data,Closed Lost,5000,2025-09-09,Liam Chen,SMB,West,2025-09-02,2025-09-09,282,Omit,false,true,Expansion,Q3 2025,Q3 2025,2025-09-02,7
-OPP-00449,Qualified,Synder Platform,Qualified,43364,2026-05-22,Liam Chen,Mid-Market,West,2026-03-16,2026-05-19,30,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-07,72
-OPP-00450,Commit,Retool Software,Closed Won,5270,2025-10-03,Aria Stephens,SMB,East,2025-09-05,2025-10-05,256,Closed,true,true,Expansion,Q3 2025,Q4 2025,2025-09-26,7
-OPP-00451,Commit,Ironclad Platforms,Closed Won,113000,2025-09-27,Jordan Kelly,Mid-Market,Central,2025-07-05,2025-09-30,261,Closed,true,true,New,Q3 2025,Q3 2025,2025-09-11,16
-OPP-00452,Qualified,Cobalt Security,Qualified,275000,2026-04-07,Sofia Ramirez,Enterprise,West,2025-12-14,2026-06-11,7,Best Case,false,false,New,Q4 2025,Q2 2026,2026-01-05,164
-OPP-00453,Prospect,Secoda Data,Prospect,482000,2026-04-15,Elena Okafor,Enterprise,East,2025-11-30,2026-05-23,26,Omit,false,false,Renewal,Q4 2025,Q2 2026,2025-11-30,200
-OPP-00454,Proposal,Kinetica Labs,Proposal,8629,2026-01-18,Ethan Brooks,SMB,West,2025-11-23,2026-06-10,8,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2026-01-04,165
-OPP-00455,Prospect,Velo Systems,Prospect,555000,2026-05-06,Avery Singh,Enterprise,Central,2025-11-25,2026-06-12,6,Omit,false,false,New,Q4 2025,Q2 2026,2025-11-25,205
-OPP-00456,Commit,Tidio Platform,Commit,150956,2026-08-12,Marcus Webb,Enterprise,Central,2026-03-20,2026-05-24,25,Commit,false,false,Expansion,Q1 2026,Q3 2026,2026-05-19,30
-OPP-00457,Prospect,Warmly Cloud,Prospect,16000,2026-07-15,Avery Singh,SMB,Central,2026-05-31,2026-06-08,10,Omit,false,false,Renewal,Q2 2026,Q3 2026,2026-05-31,18
-OPP-00458,Prospect,Craft Platform,Prospect,107000,2026-05-17,Diego Fernandez,Mid-Market,East,2026-02-22,2026-06-14,4,Omit,false,false,Renewal,Q1 2026,Q2 2026,2026-02-22,116
-OPP-00459,Commit,Grafana Ops,Closed Won,58000,2025-01-25,Jordan Kelly,Mid-Market,Central,2024-10-25,2025-01-25,509,Closed,true,true,New,Q4 2024,Q1 2025,2025-01-08,17
-OPP-00460,Prospect,Synder Platform,Closed Lost,29000,2024-05-01,Mia Torres,SMB,West,2024-04-24,2024-05-03,776,Omit,false,true,New,Q2 2024,Q2 2024,2024-04-24,7
-OPP-00461,Proposal,Bombora Systems,Proposal,218639,2026-01-30,Jordan Kelly,Enterprise,Central,2025-08-30,2026-06-15,3,Best Case,false,false,Expansion,Q3 2025,Q1 2026,2025-10-08,253
-OPP-00462,Proposal,Runway Financial,Proposal,727000,2026-07-03,Jordan Kelly,Enterprise,Central,2026-02-10,2026-05-02,47,Best Case,false,false,Expansion,Q1 2026,Q3 2026,2026-03-13,97
-OPP-00463,Demo,Castor Analytics,Demo,182976,2026-06-08,Aria Stephens,Enterprise,East,2026-02-11,2026-06-09,9,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-03-09,101
-OPP-00464,Prospect,Paddle Analytics,Closed Lost,25000,2024-08-05,Mia Torres,SMB,West,2024-07-27,2024-08-07,680,Omit,false,true,Churn,Q3 2024,Q3 2024,2024-07-27,9
-OPP-00465,Proposal,dbt Labs,Proposal,72000,2026-04-25,Diego Fernandez,Mid-Market,East,2026-02-21,2026-06-14,4,Best Case,false,false,New,Q1 2026,Q2 2026,2026-04-02,77
-OPP-00466,Commit,Common Room,Closed Won,366000,2024-03-09,Marcus Webb,Enterprise,Central,2023-09-20,2024-03-12,828,Closed,true,true,Renewal,Q3 2023,Q1 2024,2024-02-08,30
-OPP-00467,Commit,Castor Analytics,Closed Won,6309,2024-03-09,Noah Patel,SMB,Central,2024-01-29,2024-03-10,830,Closed,true,true,Expansion,Q1 2024,Q1 2024,2024-02-29,9
-OPP-00468,Commit,Blissfully Cloud,Closed Won,7222,2024-05-12,Liam Chen,SMB,West,2024-04-06,2024-05-14,765,Closed,true,true,Expansion,Q2 2024,Q2 2024,2024-05-03,9
-OPP-00469,Qualified,Correlated SaaS,Closed Lost,37000,2025-09-05,Ethan Brooks,SMB,West,2025-08-19,2025-09-06,285,Omit,false,true,Expansion,Q3 2025,Q3 2025,2025-08-29,7
-OPP-00470,Commit,Cobalt Security,Closed Won,35000,2024-01-26,Elena Okafor,SMB,East,2023-12-22,2024-01-26,874,Closed,true,true,Renewal,Q4 2023,Q1 2024,2024-01-18,8
-OPP-00471,Qualified,Gong Revenue,Closed Lost,11489,2025-11-01,Elena Okafor,SMB,East,2025-10-19,2025-11-03,227,Omit,false,true,Expansion,Q4 2025,Q4 2025,2025-10-26,6
-OPP-00472,Prospect,Synder Platform,Prospect,10723,2026-05-11,Avery Singh,SMB,Central,2026-04-07,2026-06-08,10,Omit,false,false,Expansion,Q2 2026,Q2 2026,2026-04-07,72
-OPP-00473,Demo,Grafana Ops,Demo,44920,2026-02-10,Zara Mitchell,Mid-Market,East,2025-11-17,2026-06-11,7,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-12-15,185
-OPP-00474,Qualified,Selectstar Inc,Qualified,9441,2026-08-20,Avery Singh,SMB,Central,2026-06-29,2026-06-13,5,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-07-26,0
-OPP-00475,Qualified,Correlated SaaS,Closed Lost,74000,2024-10-03,Aria Stephens,Mid-Market,East,2024-09-02,2024-10-06,620,Omit,false,true,New,Q3 2024,Q4 2024,2024-09-20,13
-OPP-00476,Prospect,Secoda Data,Prospect,53459,2026-05-19,Aria Stephens,Mid-Market,East,2026-01-20,2026-06-15,3,Omit,false,false,Expansion,Q1 2026,Q2 2026,2026-01-20,149
-OPP-00477,Commit,Selectstar Inc,Commit,19000,2026-01-11,Elena Okafor,SMB,East,2025-11-29,2026-06-14,4,Commit,false,false,Renewal,Q4 2025,Q1 2026,2026-02-04,134
-OPP-00478,Prospect,Chisel Analytics,Prospect,17000,2026-05-16,Liam Chen,SMB,West,2026-03-29,2026-06-11,7,Omit,false,false,New,Q1 2026,Q2 2026,2026-03-29,81
-OPP-00479,Demo,Paddle Analytics,Closed Lost,271442,2024-11-11,Marcus Webb,Enterprise,Central,2024-08-19,2024-11-11,584,Omit,false,true,Expansion,Q3 2024,Q4 2024,2024-10-21,21
-OPP-00480,Commit,Cognism Platform,Closed Won,30000,2025-06-18,Diego Fernandez,SMB,East,2025-05-06,2025-06-19,364,Closed,true,true,Renewal,Q2 2025,Q2 2025,2025-06-08,10
-OPP-00481,Proposal,Chorus Analytics,Proposal,53162,2026-04-30,Aria Stephens,Mid-Market,East,2026-02-05,2026-06-06,12,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-03-13,97
-OPP-00482,Prospect,Temporal Cloud,Closed Lost,491000,2024-07-06,Marcus Webb,Enterprise,Central,2024-06-11,2024-07-09,709,Omit,false,true,New,Q2 2024,Q3 2024,2024-06-11,25
-OPP-00483,Commit,Vertex SaaS,Closed Won,112000,2024-06-26,Avery Singh,Mid-Market,Central,2024-04-07,2024-06-26,722,Closed,true,true,New,Q2 2024,Q2 2024,2024-06-10,16
-OPP-00484,Commit,ProfitWell Systems,Closed Won,61000,2024-06-04,Caleb Nguyen,Mid-Market,East,2024-03-21,2024-06-06,742,Closed,true,true,Renewal,Q1 2024,Q2 2024,2024-05-21,14
-OPP-00485,Commit,Bigeye Solutions,Closed Won,131000,2024-12-07,Liam Chen,Mid-Market,West,2024-09-18,2024-12-07,558,Closed,true,true,Renewal,Q3 2024,Q4 2024,2024-11-21,16
-OPP-00486,Commit,Synder Platform,Commit,263589,2026-09-21,Noah Patel,Enterprise,Central,2026-05-19,2026-06-07,11,Commit,false,false,Expansion,Q2 2026,Q3 2026,2026-07-05,0
-OPP-00487,Demo,Mosaic Cloud,Demo,356000,2026-06-21,Marcus Webb,Enterprise,Central,2026-03-19,2026-05-08,41,Best Case,false,false,New,Q1 2026,Q2 2026,2026-04-21,58
-OPP-00488,Qualified,Figment Cloud,Qualified,168501,2026-07-22,Marcus Webb,Enterprise,Central,2026-02-11,2026-05-24,25,Best Case,false,false,Expansion,Q1 2026,Q3 2026,2026-03-04,106
-OPP-00489,Qualified,Aha Software,Qualified,114000,2026-05-19,Aria Stephens,Mid-Market,East,2026-02-19,2026-06-17,1,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-06,104
-OPP-00490,Demo,Clearbit Technologies,Demo,18226,2026-03-26,Ethan Brooks,Mid-Market,West,2025-12-25,2026-06-17,1,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2026-01-31,138
-OPP-00491,Commit,Correlated SaaS,Closed Won,98000,2024-08-07,Sofia Ramirez,Mid-Market,West,2024-06-18,2024-08-10,677,Closed,true,true,New,Q2 2024,Q3 2024,2024-07-28,10
-OPP-00492,Demo,Brex Platform,Demo,96000,2026-04-28,Caleb Nguyen,Mid-Market,East,2026-02-25,2026-06-13,5,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-03-13,97
-OPP-00493,Prospect,Helix Data,Prospect,163000,2026-03-01,Liam Chen,Mid-Market,West,2025-12-14,2026-05-26,23,Omit,false,false,Renewal,Q4 2025,Q1 2026,2025-12-14,186
-OPP-00494,Commit,Grafana Ops,Closed Won,157538,2025-10-23,Zara Mitchell,Enterprise,East,2025-06-29,2025-10-24,237,Closed,true,true,Expansion,Q2 2025,Q4 2025,2025-10-02,21
-OPP-00495,Prospect,Vitally CS,Prospect,334000,2026-06-10,Mia Torres,Enterprise,West,2025-12-26,2026-06-11,7,Omit,false,false,New,Q4 2025,Q2 2026,2025-12-26,174
-OPP-00496,Commit,Ironclad Platforms,Closed Lost,266700,2025-02-17,Priya Kapoor,Enterprise,West,2024-10-23,2025-02-18,485,Omit,false,true,Expansion,Q4 2024,Q1 2025,2025-01-26,22
-OPP-00497,Commit,Chisel Analytics,Commit,18000,2026-09-17,Marcus Webb,SMB,Central,2026-08-05,2026-05-20,29,Commit,false,false,New,Q3 2026,Q3 2026,2026-10-05,0
-OPP-00498,Prospect,Freshdesk Systems,Prospect,38000,2026-05-06,Avery Singh,SMB,Central,2026-03-23,2026-06-14,4,Omit,false,false,Expansion,Q1 2026,Q2 2026,2026-03-23,87
-OPP-00499,Prospect,Chargebee Cloud,Prospect,63516,2026-05-21,Diego Fernandez,Mid-Market,East,2026-02-11,2026-04-26,53,Omit,false,false,Expansion,Q1 2026,Q2 2026,2026-02-11,127
-OPP-00500,Commit,Gainsight Cloud,Closed Won,111000,2025-09-08,Caleb Nguyen,Mid-Market,East,2025-07-03,2025-09-11,280,Closed,true,true,Renewal,Q3 2025,Q3 2025,2025-08-27,12
+OPP-00001,Commit,TaxJar Cloud,Closed Won,58000,2024-03-25,Jordan Kelly,Mid-Market,Central,2024-02-11,2024-03-27,813,Closed,true,true,New,Q1 2024,Q1 2024,2024-03-15,10
+OPP-00002,Prospect,Kinetica Labs,Closed Lost,560000,2023-10-21,Zara Mitchell,Enterprise,East,2023-10-13,2023-10-22,970,Omit,false,true,New,Q4 2023,Q4 2023,2023-10-13,8
+OPP-00003,Commit,Velo Systems,Commit,137000,2026-02-09,Ethan Brooks,Mid-Market,West,2025-11-29,2026-06-14,4,Commit,false,false,New,Q4 2025,Q1 2026,2025-12-31,169
+OPP-00004,Proposal,Chartmogul Analytics,Closed Lost,829000,2024-04-06,Priya Kapoor,Enterprise,West,2024-02-27,2024-04-08,801,Omit,false,true,New,Q1 2024,Q2 2024,2024-03-23,14
+OPP-00005,Proposal,Devrev Systems,Proposal,33000,2026-06-10,Elena Okafor,SMB,East,2026-05-01,2026-06-05,13,Best Case,false,false,Expansion,Q2 2026,Q2 2026,2026-05-28,21
+OPP-00006,Commit,Bigeye Solutions,Closed Won,315000,2025-01-02,Mia Torres,Enterprise,West,2024-11-08,2025-01-03,531,Closed,true,true,New,Q4 2024,Q1 2025,2024-12-20,13
+OPP-00007,Proposal,Chargebee Cloud,Closed Lost,116000,2025-04-30,Aria Stephens,Mid-Market,East,2025-03-25,2025-04-30,414,Omit,false,true,New,Q1 2025,Q2 2025,2025-04-14,16
+OPP-00008,Demo,Common Room,Demo,397000,2026-05-28,Priya Kapoor,Enterprise,West,2026-02-09,2026-06-17,1,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-19,119
+OPP-00009,Qualified,Endgame Platform,Qualified,96000,2026-09-14,Ethan Brooks,Mid-Market,West,2026-06-26,2026-06-15,3,Best Case,false,false,New,Q2 2026,Q3 2026,2026-06-29,0
+OPP-00010,Demo,Alation Analytics,Closed Lost,20000,2024-09-11,Liam Chen,SMB,West,2024-08-25,2024-09-13,643,Omit,false,true,Expansion,Q3 2024,Q3 2024,2024-09-05,6
+OPP-00011,Prospect,Craft Platform,Prospect,18000,2026-01-11,Elena Okafor,SMB,East,2025-12-05,2026-06-12,6,Omit,false,false,New,Q4 2025,Q1 2026,2025-12-05,195
+OPP-00012,Proposal,Gong Revenue,Proposal,73000,2026-05-18,Aria Stephens,Mid-Market,East,2026-02-28,2026-06-09,9,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-18,92
+OPP-00013,Commit,Sovos Analytics,Closed Won,37000,2024-07-31,Liam Chen,SMB,West,2024-06-13,2024-08-03,684,Closed,true,true,New,Q2 2024,Q3 2024,2024-07-19,12
+OPP-00014,Qualified,ClientSuccess Data,Closed Lost,30000,2024-12-28,Liam Chen,SMB,West,2024-12-14,2024-12-29,536,Omit,false,true,New,Q4 2024,Q4 2024,2024-12-18,10
+OPP-00015,Qualified,Gladly Cloud,Qualified,94000,2026-03-12,Diego Fernandez,Mid-Market,East,2025-12-02,2026-06-11,7,Best Case,false,false,New,Q4 2025,Q1 2026,2025-12-09,191
+OPP-00016,Proposal,Airfocus Cloud,Proposal,137000,2026-01-01,Caleb Nguyen,Mid-Market,East,2025-10-21,2026-06-13,5,Best Case,false,false,New,Q4 2025,Q1 2026,2025-11-17,213
+OPP-00017,Demo,Correlated SaaS,Demo,11000,2026-05-25,Mia Torres,SMB,West,2026-04-03,2026-06-12,6,Best Case,false,false,New,Q2 2026,Q2 2026,2026-04-27,52
+OPP-00018,Commit,Sovos Analytics,Closed Won,5000,2024-11-01,Avery Singh,SMB,Central,2024-09-09,2024-11-03,592,Closed,true,true,Expansion,Q3 2024,Q4 2024,2024-10-15,17
+OPP-00019,Qualified,Ada Support,Closed Lost,103000,2025-10-27,Jordan Kelly,Mid-Market,Central,2025-10-04,2025-10-29,232,Omit,false,true,New,Q4 2025,Q4 2025,2025-10-18,9
+OPP-00020,Commit,Craft Platform,Closed Won,32000,2024-04-02,Ethan Brooks,SMB,West,2024-02-12,2024-04-02,807,Closed,true,true,Expansion,Q1 2024,Q2 2024,2024-03-24,9
+OPP-00021,Commit,Apexon Digital,Closed Won,81000,2024-02-04,Jordan Kelly,Mid-Market,Central,2023-12-21,2024-02-04,865,Closed,true,true,New,Q4 2023,Q1 2024,2024-01-26,9
+OPP-00022,Commit,Grafana Ops,Closed Won,19000,2025-10-14,Elena Okafor,SMB,East,2025-08-24,2025-10-17,244,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-04,10
+OPP-00023,Prospect,Freshdesk Systems,Prospect,75000,2026-05-30,Diego Fernandez,Mid-Market,East,2026-03-31,2026-06-14,4,Omit,false,false,New,Q1 2026,Q2 2026,2026-03-31,79
+OPP-00024,Demo,Chorus Analytics,Demo,421000,2026-08-24,Noah Patel,Enterprise,Central,2026-04-14,2026-05-03,46,Best Case,false,false,New,Q2 2026,Q3 2026,2026-04-21,58
+OPP-00025,Commit,Craft Platform,Commit,583000,2026-04-17,Zara Mitchell,Enterprise,East,2025-12-16,2026-06-11,7,Commit,false,false,Renewal,Q4 2025,Q2 2026,2026-01-24,145
+OPP-00026,Prospect,Avalara Systems,Closed Lost,22000,2025-05-12,Jordan Kelly,SMB,Central,2025-05-01,2025-05-12,402,Omit,false,true,New,Q2 2025,Q2 2025,2025-05-01,11
+OPP-00027,Proposal,Helix Data,Proposal,497000,2026-06-10,Diego Fernandez,Enterprise,East,2026-02-02,2026-06-01,17,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-05,105
+OPP-00028,Proposal,Torii Platform,Closed Lost,14000,2025-07-20,Jordan Kelly,SMB,Central,2025-06-09,2025-07-20,333,Omit,false,true,New,Q2 2025,Q3 2025,2025-07-01,19
+OPP-00029,Qualified,ProfitWell Systems,Qualified,13000,2026-04-25,Elena Okafor,SMB,East,2026-03-12,2026-06-14,4,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-18,92
+OPP-00030,Qualified,Paddle Analytics,Qualified,27000,2026-03-23,Liam Chen,SMB,West,2026-02-06,2026-06-01,17,Best Case,false,false,New,Q1 2026,Q1 2026,2026-02-20,118
+OPP-00031,Proposal,Brex Platform,Proposal,70000,2026-04-04,Jordan Kelly,Mid-Market,Central,2026-01-13,2026-06-12,6,Best Case,false,false,New,Q1 2026,Q2 2026,2026-01-31,138
+OPP-00032,Commit,Blissfully Cloud,Commit,92000,2026-04-12,Zara Mitchell,Mid-Market,East,2026-01-27,2026-05-29,20,Commit,false,false,New,Q1 2026,Q2 2026,2026-03-02,108
+OPP-00033,Prospect,Avalara Systems,Closed Lost,97000,2025-06-10,Sofia Ramirez,Mid-Market,West,2025-06-02,2025-06-12,371,Omit,false,true,New,Q2 2025,Q2 2025,2025-06-02,8
+OPP-00034,Prospect,Aha Software,Closed Lost,95000,2024-02-06,Jordan Kelly,Mid-Market,Central,2024-01-23,2024-02-09,860,Omit,false,true,New,Q1 2024,Q1 2024,2024-01-23,14
+OPP-00035,Commit,Mosaic Cloud,Commit,98000,2026-06-04,Aria Stephens,Mid-Market,East,2026-03-11,2026-05-11,38,Commit,false,false,New,Q1 2026,Q2 2026,2026-04-19,60
+OPP-00036,Commit,Lusha Analytics,Closed Won,26000,2024-08-25,Liam Chen,SMB,West,2024-07-04,2024-08-26,661,Closed,true,true,New,Q3 2024,Q3 2024,2024-08-11,14
+OPP-00037,Commit,TaxJar Cloud,Commit,128000,2026-09-16,Jordan Kelly,Mid-Market,Central,2026-07-16,2026-06-03,15,Commit,false,false,Renewal,Q3 2026,Q3 2026,2026-08-26,0
+OPP-00038,Commit,ProfitWell Systems,Closed Won,16000,2024-07-07,Elena Okafor,SMB,East,2024-05-14,2024-07-08,710,Closed,true,true,Expansion,Q2 2024,Q3 2024,2024-06-24,13
+OPP-00039,Proposal,Ramp Analytics,Proposal,10000,2026-02-06,Elena Okafor,SMB,East,2025-12-27,2026-06-16,2,Best Case,false,false,New,Q4 2025,Q1 2026,2026-01-16,153
+OPP-00040,Prospect,Mutiny Systems,Closed Lost,15000,2024-10-25,Liam Chen,SMB,West,2024-10-12,2024-10-27,599,Omit,false,true,New,Q4 2024,Q4 2024,2024-10-12,13
+OPP-00041,Demo,Totango Analytics,Demo,592000,2026-03-11,Marcus Webb,Enterprise,Central,2025-10-06,2026-06-11,7,Best Case,false,false,New,Q4 2025,Q1 2026,2025-10-25,236
+OPP-00042,Proposal,Front Systems,Proposal,79000,2026-09-11,Ethan Brooks,Mid-Market,West,2026-06-25,2026-06-09,9,Best Case,false,false,New,Q2 2026,Q3 2026,2026-07-15,0
+OPP-00043,Commit,Notion Labs,Closed Won,121000,2025-04-25,Diego Fernandez,Mid-Market,East,2025-02-22,2025-04-26,418,Closed,true,true,New,Q1 2025,Q2 2025,2025-04-10,15
+OPP-00044,Prospect,Synder Platform,Closed Lost,101000,2025-02-08,Diego Fernandez,Mid-Market,East,2025-02-04,2025-02-10,493,Omit,false,true,New,Q1 2025,Q1 2025,2025-02-04,4
+OPP-00045,Proposal,Mutiny Systems,Proposal,83000,2026-05-19,Ethan Brooks,Mid-Market,West,2026-02-07,2026-06-11,7,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-11,99
+OPP-00046,Commit,Chargebee Cloud,Commit,531000,2026-09-19,Noah Patel,Enterprise,Central,2026-05-19,2026-05-28,21,Commit,false,false,New,Q2 2026,Q3 2026,2026-06-25,0
+OPP-00047,Qualified,Alation Analytics,Qualified,526000,2026-02-20,Noah Patel,Enterprise,Central,2025-10-29,2026-06-09,9,Best Case,false,false,New,Q4 2025,Q1 2026,2025-11-02,228
+OPP-00048,Commit,Baremetrics Cloud,Closed Won,155000,2025-01-20,Elena Okafor,Mid-Market,East,2024-11-25,2025-01-20,514,Closed,true,true,New,Q4 2024,Q1 2025,2025-01-05,15
+OPP-00049,Qualified,Planhat Systems,Closed Lost,30000,2025-09-21,Mia Torres,SMB,West,2025-09-05,2025-09-22,269,Omit,false,true,New,Q3 2025,Q3 2025,2025-09-13,8
+OPP-00050,Qualified,Chartmogul Analytics,Closed Lost,619000,2025-06-05,Diego Fernandez,Enterprise,East,2025-05-21,2025-06-06,377,Omit,false,true,New,Q2 2025,Q2 2025,2025-05-28,8
+OPP-00051,Prospect,Freshdesk Systems,Closed Lost,71000,2025-03-09,Diego Fernandez,Mid-Market,East,2025-02-27,2025-03-12,463,Omit,false,true,New,Q1 2025,Q1 2025,2025-02-27,10
+OPP-00052,Demo,Endgame Platform,Demo,24000,2026-08-17,Elena Okafor,SMB,East,2026-07-04,2026-06-01,17,Best Case,false,false,Expansion,Q3 2026,Q3 2026,2026-07-20,0
+OPP-00053,Commit,Ramp Analytics,Closed Won,599000,2025-09-20,Zara Mitchell,Enterprise,East,2025-08-09,2025-09-20,271,Closed,true,true,New,Q3 2025,Q3 2025,2025-09-13,7
+OPP-00054,Commit,Bigeye Solutions,Closed Won,31000,2024-05-10,Mia Torres,SMB,West,2024-03-28,2024-05-12,767,Closed,true,true,New,Q1 2024,Q2 2024,2024-04-28,12
+OPP-00055,Commit,Grafana Ops,Closed Won,219029,2024-11-26,Avery Singh,Enterprise,Central,2024-10-04,2024-11-29,566,Closed,true,true,Expansion,Q4 2024,Q4 2024,2024-11-11,15
+OPP-00056,Demo,ZoomInfo Data,Demo,18000,2026-05-07,Liam Chen,SMB,West,2026-03-21,2026-06-17,1,Best Case,false,false,New,Q1 2026,Q2 2026,2026-04-10,69
+OPP-00057,Commit,Chorus Analytics,Closed Won,557000,2025-04-18,Priya Kapoor,Enterprise,West,2025-02-27,2025-04-19,425,Closed,true,true,New,Q1 2025,Q2 2025,2025-04-05,13
+OPP-00058,Demo,Amplitude Systems,Demo,800000,2026-03-19,Marcus Webb,Enterprise,Central,2025-10-31,2026-06-08,10,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-11-13,217
+OPP-00059,Prospect,Avalara Systems,Closed Lost,85000,2024-05-26,Aria Stephens,Mid-Market,East,2024-05-16,2024-05-28,751,Omit,false,true,New,Q2 2024,Q2 2024,2024-05-16,10
+OPP-00060,Prospect,Outreach Systems,Closed Lost,469000,2024-12-04,Marcus Webb,Enterprise,Central,2024-11-20,2024-12-07,558,Omit,false,true,New,Q4 2024,Q4 2024,2024-11-20,14
+OPP-00061,Demo,ClientSuccess Data,Closed Lost,343000,2025-10-07,Marcus Webb,Enterprise,Central,2025-09-06,2025-10-08,253,Omit,false,true,New,Q3 2025,Q4 2025,2025-10-02,5
+OPP-00062,Commit,Roadmunk Analytics,Closed Won,118000,2025-02-15,Aria Stephens,Mid-Market,East,2024-12-22,2025-02-15,488,Closed,true,true,New,Q4 2024,Q1 2025,2025-02-05,10
+OPP-00063,Prospect,Monte Carlo Data,Prospect,514000,2026-06-11,Noah Patel,Enterprise,Central,2026-02-25,2026-05-31,18,Omit,false,false,Expansion,Q1 2026,Q2 2026,2026-02-25,113
+OPP-00064,Commit,Ramp Analytics,Closed Won,771000,2024-12-05,Noah Patel,Enterprise,Central,2024-10-22,2024-12-07,558,Closed,true,true,Renewal,Q4 2024,Q4 2024,2024-11-25,10
+OPP-00065,Prospect,Cobalt Security,Closed Lost,14000,2025-09-01,Caleb Nguyen,SMB,East,2025-08-20,2025-09-03,288,Omit,false,true,New,Q3 2025,Q3 2025,2025-08-20,12
+OPP-00066,Proposal,Bombora Systems,Proposal,23000,2026-01-12,Avery Singh,SMB,Central,2025-12-09,2026-06-16,2,Best Case,false,false,New,Q4 2025,Q1 2026,2025-12-30,170
+OPP-00067,Proposal,ProfitWell Systems,Proposal,13330,2026-06-12,Liam Chen,SMB,West,2026-05-13,2026-06-16,2,Best Case,false,false,Expansion,Q2 2026,Q2 2026,2026-05-31,18
+OPP-00068,Commit,Synder Platform,Closed Won,19000,2025-04-01,Caleb Nguyen,SMB,East,2025-02-20,2025-04-03,441,Closed,true,true,New,Q1 2025,Q2 2025,2025-03-21,11
+OPP-00069,Commit,Chorus Analytics,Closed Lost,9472,2025-09-22,Elena Okafor,SMB,East,2025-07-28,2025-09-23,268,Omit,false,true,Expansion,Q3 2025,Q3 2025,2025-09-02,20
+OPP-00070,Prospect,GreatX Corp,Prospect,32000,2026-01-30,Elena Okafor,SMB,East,2026-01-09,2026-05-24,25,Omit,false,false,New,Q1 2026,Q1 2026,2026-01-09,160
+OPP-00071,Prospect,ChurnZero Analytics,Prospect,107000,2026-05-08,Aria Stephens,Mid-Market,East,2026-02-24,2026-06-08,10,Omit,false,false,New,Q1 2026,Q2 2026,2026-02-24,114
+OPP-00072,Prospect,Atlan Platform,Closed Lost,36000,2024-12-06,Avery Singh,SMB,Central,2024-11-25,2024-12-08,557,Omit,false,true,New,Q4 2024,Q4 2024,2024-11-25,11
+OPP-00073,Qualified,Devrev Systems,Closed Lost,552000,2025-08-22,Noah Patel,Enterprise,Central,2025-08-05,2025-08-22,300,Omit,false,true,New,Q3 2025,Q3 2025,2025-08-16,6
+OPP-00074,Commit,Zuora Platform,Closed Won,27000,2025-01-22,Jordan Kelly,SMB,Central,2024-11-24,2025-01-23,511,Closed,true,true,New,Q4 2024,Q1 2025,2025-01-04,18
+OPP-00075,Commit,Paddle Analytics,Commit,124000,2026-05-26,Diego Fernandez,Mid-Market,East,2026-03-08,2026-05-29,20,Commit,false,false,New,Q1 2026,Q2 2026,2026-04-09,70
+OPP-00076,Demo,Fivetran Systems,Demo,221000,2026-06-09,Noah Patel,Enterprise,Central,2026-02-18,2026-05-17,32,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-05,105
+OPP-00077,Commit,Ironclad Platforms,Closed Won,25000,2024-08-30,Mia Torres,SMB,West,2024-07-11,2024-09-02,654,Closed,true,true,New,Q3 2024,Q3 2024,2024-08-16,14
+OPP-00078,Commit,ClientSuccess Data,Closed Won,59000,2025-10-31,Aria Stephens,Mid-Market,East,2025-09-07,2025-11-02,228,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-20,11
+OPP-00079,Commit,Amplitude Systems,Closed Won,72000,2025-08-16,Priya Kapoor,Mid-Market,West,2025-07-05,2025-08-19,303,Closed,true,true,New,Q3 2025,Q3 2025,2025-08-05,11
+OPP-00080,Demo,Recurly Systems,Closed Lost,30000,2024-09-08,Liam Chen,SMB,West,2024-08-14,2024-09-08,648,Omit,false,true,New,Q3 2024,Q3 2024,2024-08-30,9
+OPP-00081,Proposal,Avalara Systems,Proposal,19000,2026-08-02,Liam Chen,SMB,West,2026-06-30,2026-06-13,5,Best Case,false,false,New,Q2 2026,Q3 2026,2026-07-14,0
+OPP-00082,Commit,Blissfully Cloud,Commit,22000,2026-03-26,Liam Chen,SMB,West,2026-02-16,2026-05-23,26,Commit,false,false,New,Q1 2026,Q1 2026,2026-03-14,96
+OPP-00083,Commit,Blissfully Cloud,Closed Won,22000,2024-11-20,Mia Torres,SMB,West,2024-10-08,2024-11-20,575,Closed,true,true,New,Q4 2024,Q4 2024,2024-11-13,7
+OPP-00084,Commit,Ramp Analytics,Commit,30000,2026-02-06,Elena Okafor,SMB,East,2025-12-25,2026-06-16,2,Commit,false,false,New,Q4 2025,Q1 2026,2026-01-29,140
+OPP-00085,Commit,Correlated SaaS,Commit,319000,2026-01-03,Noah Patel,Enterprise,Central,2025-10-27,2026-06-06,12,Commit,false,false,New,Q4 2025,Q1 2026,2025-12-02,198
+OPP-00086,Prospect,ProfitWell Systems,Prospect,206472,2026-02-04,Priya Kapoor,Enterprise,West,2025-09-15,2026-05-26,23,Omit,false,false,Expansion,Q3 2025,Q1 2026,2025-09-15,276
+OPP-00087,Prospect,Salesloft Platform,Prospect,249000,2026-06-19,Priya Kapoor,Enterprise,West,2026-01-18,2026-06-14,4,Omit,false,false,New,Q1 2026,Q2 2026,2026-01-18,151
+OPP-00088,Commit,Fivetran Systems,Closed Won,158000,2024-07-26,Ethan Brooks,Mid-Market,West,2024-06-03,2024-07-29,689,Closed,true,true,Expansion,Q2 2024,Q3 2024,2024-07-10,16
+OPP-00089,Commit,Craft Platform,Closed Won,732000,2025-06-07,Marcus Webb,Enterprise,Central,2025-04-09,2025-06-09,374,Closed,true,true,New,Q2 2025,Q2 2025,2025-05-27,11
+OPP-00090,Proposal,Selectstar Inc,Proposal,149000,2026-04-15,Jordan Kelly,Mid-Market,Central,2026-01-20,2026-06-08,10,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-19,119
+OPP-00091,Commit,ChurnZero Analytics,Closed Won,11000,2025-05-13,Mia Torres,SMB,West,2025-03-15,2025-05-16,398,Closed,true,true,New,Q1 2025,Q2 2025,2025-04-26,17
+OPP-00092,Proposal,Vertex SaaS,Proposal,688000,2026-05-24,Jordan Kelly,Enterprise,Central,2025-12-28,2026-06-17,1,Best Case,false,false,New,Q4 2025,Q2 2026,2026-01-17,152
+OPP-00093,Prospect,HighSpot Systems,Closed Lost,198000,2025-08-13,Priya Kapoor,Enterprise,West,2025-08-07,2025-08-16,306,Omit,false,true,New,Q3 2025,Q3 2025,2025-08-07,6
+OPP-00094,Prospect,Runway Financial,Closed Lost,199000,2024-05-13,Priya Kapoor,Enterprise,West,2024-05-05,2024-05-13,766,Omit,false,true,New,Q2 2024,Q2 2024,2024-05-05,8
+OPP-00095,Proposal,Avalara Systems,Proposal,94000,2026-06-29,Aria Stephens,Mid-Market,East,2026-04-16,2026-06-10,8,Best Case,false,false,New,Q2 2026,Q2 2026,2026-05-16,33
+OPP-00096,Qualified,Blissfully Cloud,Qualified,33620,2026-09-19,Ethan Brooks,Mid-Market,West,2026-07-17,2026-05-21,28,Best Case,false,false,Expansion,Q3 2026,Q3 2026,2026-07-25,0
+OPP-00097,Prospect,Bigeye Solutions,Closed Lost,5000,2025-06-19,Jordan Kelly,SMB,Central,2025-06-04,2025-06-22,361,Omit,false,true,Expansion,Q2 2025,Q2 2025,2025-06-04,15
+OPP-00098,Commit,Amplitude Systems,Closed Won,23716,2024-05-05,Jordan Kelly,Mid-Market,Central,2024-03-20,2024-05-08,771,Closed,true,true,Expansion,Q1 2024,Q2 2024,2024-04-21,14
+OPP-00099,Commit,Lattice Software,Closed Lost,137000,2025-09-15,Noah Patel,Mid-Market,Central,2025-07-18,2025-09-18,273,Omit,false,true,Expansion,Q3 2025,Q3 2025,2025-08-26,20
+OPP-00100,Commit,Vitally CS,Closed Won,127000,2024-09-30,Ethan Brooks,Mid-Market,West,2024-08-15,2024-09-30,626,Closed,true,true,New,Q3 2024,Q3 2024,2024-09-20,10
+OPP-00101,Qualified,Roadmunk Analytics,Qualified,36000,2026-03-21,Ethan Brooks,SMB,West,2026-02-09,2026-06-04,14,Best Case,false,false,Renewal,Q1 2026,Q1 2026,2026-02-13,125
+OPP-00102,Prospect,Rippling Networks,Closed Lost,559000,2025-03-28,Marcus Webb,Enterprise,Central,2025-03-20,2025-03-31,444,Omit,false,true,New,Q1 2025,Q1 2025,2025-03-20,8
+OPP-00103,Prospect,Correlated SaaS,Closed Lost,145000,2025-02-22,Jordan Kelly,Mid-Market,Central,2025-02-08,2025-02-25,478,Omit,false,true,New,Q1 2025,Q1 2025,2025-02-08,14
+OPP-00104,Demo,Qualified Platform,Demo,460000,2026-05-23,Priya Kapoor,Enterprise,West,2025-12-03,2026-05-10,39,Best Case,false,false,New,Q4 2025,Q2 2026,2025-12-20,180
+OPP-00105,Commit,Craft Platform,Closed Won,40099,2024-06-10,Diego Fernandez,Mid-Market,East,2024-04-26,2024-06-10,738,Closed,true,true,Expansion,Q2 2024,Q2 2024,2024-06-03,7
+OPP-00106,Commit,Front Systems,Commit,579000,2026-03-26,Priya Kapoor,Enterprise,West,2025-11-04,2026-06-15,3,Commit,false,false,New,Q4 2025,Q1 2026,2025-12-21,179
+OPP-00107,Demo,Monte Carlo Data,Demo,106000,2026-01-07,Jordan Kelly,Mid-Market,Central,2025-10-04,2026-05-03,46,Best Case,false,false,New,Q4 2025,Q1 2026,2025-10-24,237
+OPP-00108,Prospect,Chartmogul Analytics,Prospect,453000,2026-01-29,Aria Stephens,Enterprise,East,2025-08-23,2026-06-06,12,Omit,false,false,New,Q3 2025,Q1 2026,2025-08-23,299
+OPP-00109,Commit,Maxio Platform,Closed Won,65000,2025-09-09,Aria Stephens,Mid-Market,East,2025-07-26,2025-09-11,280,Closed,true,true,New,Q3 2025,Q3 2025,2025-08-28,12
+OPP-00110,Commit,Front Systems,Closed Won,33000,2024-05-27,Elena Okafor,SMB,East,2024-04-07,2024-05-28,751,Closed,true,true,Expansion,Q2 2024,Q2 2024,2024-05-18,9
+OPP-00111,Prospect,Planhat Systems,Closed Lost,653000,2024-03-04,Priya Kapoor,Enterprise,West,2024-02-27,2024-03-07,833,Omit,false,true,New,Q1 2024,Q1 2024,2024-02-27,6
+OPP-00112,Proposal,Recurly Systems,Closed Lost,107000,2024-11-11,Diego Fernandez,Mid-Market,East,2024-09-28,2024-11-13,582,Omit,false,true,New,Q3 2024,Q4 2024,2024-10-24,18
+OPP-00113,Demo,Ironclad Platforms,Demo,58000,2026-01-27,Sofia Ramirez,Mid-Market,West,2025-11-06,2026-06-14,4,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2025-11-20,210
+OPP-00114,Prospect,ChurnZero Analytics,Closed Lost,551000,2025-08-31,Noah Patel,Enterprise,Central,2025-08-22,2025-08-31,291,Omit,false,true,Churn,Q3 2025,Q3 2025,2025-08-22,9
+OPP-00115,Commit,ChurnZero Analytics,Closed Won,107000,2025-01-07,Diego Fernandez,Mid-Market,East,2024-11-18,2025-01-09,525,Closed,true,true,Renewal,Q4 2024,Q1 2025,2024-12-26,12
+OPP-00116,Qualified,Qualified Platform,Qualified,733000,2026-06-01,Zara Mitchell,Enterprise,East,2025-12-30,2026-06-06,12,Best Case,false,false,New,Q4 2025,Q2 2026,2026-01-10,159
+OPP-00117,Commit,Correlated SaaS,Closed Won,117000,2024-02-13,Jordan Kelly,Mid-Market,Central,2023-12-17,2024-02-14,855,Closed,true,true,New,Q4 2023,Q1 2024,2024-01-24,20
+OPP-00118,Commit,Bombora Systems,Closed Won,145000,2024-02-29,Caleb Nguyen,Mid-Market,East,2024-01-21,2024-03-01,839,Closed,true,true,New,Q1 2024,Q1 2024,2024-02-20,9
+OPP-00119,Commit,Maxio Platform,Closed Won,10792,2025-11-21,Elena Okafor,SMB,East,2025-10-12,2025-11-24,206,Closed,true,true,Expansion,Q4 2025,Q4 2025,2025-11-11,10
+OPP-00120,Demo,TaxJar Cloud,Demo,76527,2026-03-16,Caleb Nguyen,Enterprise,East,2025-11-17,2026-05-24,25,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-12-01,199
+OPP-00121,Qualified,Metaphor Networks,Closed Lost,12000,2025-02-02,Avery Singh,SMB,Central,2025-01-14,2025-02-02,501,Omit,false,true,New,Q1 2025,Q1 2025,2025-01-21,12
+OPP-00122,Qualified,Lusha Analytics,Qualified,39588,2026-01-13,Liam Chen,Mid-Market,West,2025-11-24,2026-06-07,11,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-12-03,197
+OPP-00123,Proposal,Zuora Platform,Closed Lost,70688,2024-06-16,Diego Fernandez,Mid-Market,East,2024-05-08,2024-06-19,729,Omit,false,true,Expansion,Q2 2024,Q2 2024,2024-05-31,16
+OPP-00124,Qualified,Lattice Software,Closed Lost,317000,2024-07-28,Noah Patel,Enterprise,Central,2024-07-09,2024-07-29,689,Omit,false,true,New,Q3 2024,Q3 2024,2024-07-19,9
+OPP-00125,Commit,Recurly Systems,Closed Won,507000,2025-02-17,Zara Mitchell,Enterprise,East,2025-01-04,2025-02-19,484,Closed,true,true,New,Q1 2025,Q1 2025,2025-02-06,11
+OPP-00126,Proposal,Synder Platform,Proposal,82000,2026-05-28,Sofia Ramirez,Mid-Market,West,2026-03-10,2026-06-17,1,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-03-30,80
+OPP-00127,Prospect,ProfitWell Systems,Closed Lost,14690,2024-07-06,Mia Torres,SMB,West,2024-06-27,2024-07-08,710,Omit,false,true,Expansion,Q2 2024,Q3 2024,2024-06-27,9
+OPP-00128,Commit,Castor Analytics,Closed Won,147000,2025-10-14,Sofia Ramirez,Mid-Market,West,2025-09-01,2025-10-14,247,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-02,12
+OPP-00129,Commit,Lusha Analytics,Closed Won,225539,2025-05-22,Avery Singh,Enterprise,Central,2025-04-04,2025-05-23,391,Closed,true,true,Expansion,Q2 2025,Q2 2025,2025-05-18,4
+OPP-00130,Demo,Sovos Analytics,Demo,14326,2026-05-17,Jordan Kelly,Mid-Market,Central,2026-01-27,2026-06-13,5,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-02-11,127
+OPP-00131,Proposal,Vitally CS,Closed Lost,11045,2025-04-24,Elena Okafor,SMB,East,2025-03-18,2025-04-24,420,Omit,false,true,Expansion,Q1 2025,Q2 2025,2025-04-07,17
+OPP-00132,Proposal,Orbit Platform,Proposal,438000,2026-04-14,Mia Torres,Enterprise,West,2025-12-02,2026-05-28,21,Best Case,false,false,New,Q4 2025,Q2 2026,2025-12-26,174
+OPP-00133,Proposal,dbt Labs,Proposal,864000,2026-07-09,Avery Singh,Enterprise,Central,2026-04-11,2026-06-06,12,Best Case,false,false,New,Q2 2026,Q3 2026,2026-05-08,41
+OPP-00134,Commit,Tidio Platform,Closed Won,148000,2024-06-14,Sofia Ramirez,Mid-Market,West,2024-04-17,2024-06-14,734,Closed,true,true,New,Q2 2024,Q2 2024,2024-06-07,7
+OPP-00135,Proposal,Drift Cloud,Proposal,103000,2026-05-22,Aria Stephens,Mid-Market,East,2026-02-12,2026-05-26,23,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-11,99
+OPP-00136,Commit,Cognism Platform,Closed Won,64000,2025-12-18,Aria Stephens,Mid-Market,East,2025-10-26,2025-12-21,179,Closed,true,true,New,Q4 2025,Q4 2025,2025-12-07,11
+OPP-00137,Qualified,Torii Platform,Closed Lost,126000,2025-11-08,Sofia Ramirez,Mid-Market,West,2025-10-18,2025-11-09,221,Omit,false,true,Expansion,Q4 2025,Q4 2025,2025-10-30,9
+OPP-00138,Demo,Productboard Systems,Closed Lost,24000,2025-06-01,Jordan Kelly,SMB,Central,2025-05-06,2025-06-03,380,Omit,false,true,New,Q2 2025,Q2 2025,2025-05-28,4
+OPP-00139,Commit,Notion Labs,Closed Won,14000,2025-09-23,Liam Chen,SMB,West,2025-07-19,2025-09-23,268,Closed,true,true,Renewal,Q3 2025,Q3 2025,2025-09-06,17
+OPP-00140,Demo,Paddle Analytics,Demo,800000,2026-05-08,Zara Mitchell,Enterprise,East,2026-01-02,2026-05-04,45,Best Case,false,false,New,Q1 2026,Q2 2026,2026-01-22,147
+OPP-00141,Proposal,HighSpot Systems,Proposal,645000,2026-01-12,Mia Torres,Enterprise,West,2025-09-05,2026-06-09,9,Best Case,false,false,New,Q3 2025,Q1 2026,2025-09-29,262
+OPP-00142,Prospect,Baremetrics Cloud,Prospect,266066,2026-05-30,Liam Chen,Enterprise,West,2026-01-12,2026-06-11,7,Omit,false,false,Expansion,Q1 2026,Q2 2026,2026-01-12,157
+OPP-00143,Commit,Aha Software,Closed Won,74000,2025-12-08,Diego Fernandez,Mid-Market,East,2025-10-17,2025-12-11,189,Closed,true,true,New,Q4 2025,Q4 2025,2025-11-26,12
+OPP-00144,Proposal,dbt Labs,Proposal,579000,2026-06-05,Noah Patel,Enterprise,Central,2026-01-31,2026-04-29,50,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-22,116
+OPP-00145,Prospect,Atlan Platform,Prospect,388000,2026-02-03,Marcus Webb,Enterprise,Central,2025-11-02,2026-06-14,4,Omit,false,false,New,Q4 2025,Q1 2026,2025-11-02,228
+OPP-00146,Qualified,ClientSuccess Data,Closed Lost,51000,2025-02-22,Diego Fernandez,Mid-Market,East,2025-01-29,2025-02-22,481,Omit,false,true,Churn,Q1 2025,Q1 2025,2025-02-16,6
+OPP-00147,Proposal,Devrev Systems,Proposal,79000,2026-04-29,Sofia Ramirez,Mid-Market,West,2026-02-18,2026-05-30,19,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-14,96
+OPP-00148,Prospect,Cognism Platform,Closed Lost,7311,2025-09-11,Avery Singh,SMB,Central,2025-09-01,2025-09-12,279,Omit,false,true,Expansion,Q3 2025,Q3 2025,2025-09-01,10
+OPP-00149,Commit,Chartmogul Analytics,Closed Won,22000,2024-12-22,Noah Patel,SMB,Central,2024-10-27,2024-12-23,542,Closed,true,true,New,Q4 2024,Q4 2024,2024-12-08,14
+OPP-00150,Prospect,Intercom Platform,Closed Lost,595000,2025-09-05,Zara Mitchell,Enterprise,East,2025-08-22,2025-09-08,283,Omit,false,true,Expansion,Q3 2025,Q3 2025,2025-08-22,14
+OPP-00151,Prospect,Roadmunk Analytics,Closed Lost,698000,2024-08-06,Aria Stephens,Enterprise,East,2024-07-29,2024-08-07,680,Omit,false,true,Churn,Q3 2024,Q3 2024,2024-07-29,8
+OPP-00152,Commit,Helix Data,Closed Won,92000,2024-03-28,Sofia Ramirez,Mid-Market,West,2024-02-06,2024-03-29,811,Closed,true,true,New,Q1 2024,Q1 2024,2024-03-15,13
+OPP-00153,Qualified,Apollo Cloud,Qualified,153000,2026-03-25,Sofia Ramirez,Mid-Market,West,2026-01-14,2026-05-25,24,Best Case,false,false,New,Q1 2026,Q1 2026,2026-01-20,149
+OPP-00154,Prospect,Orbit Platform,Prospect,19000,2026-04-18,Avery Singh,SMB,Central,2026-03-10,2026-06-02,16,Omit,false,false,New,Q1 2026,Q2 2026,2026-03-10,100
+OPP-00155,Commit,Apollo Cloud,Closed Won,27000,2025-04-20,Mia Torres,SMB,West,2025-02-28,2025-04-23,421,Closed,true,true,New,Q1 2025,Q2 2025,2025-04-06,14
+OPP-00156,Prospect,Vitally CS,Closed Lost,39000,2025-01-15,Aria Stephens,SMB,East,2025-01-03,2025-01-15,519,Omit,false,true,Churn,Q1 2025,Q1 2025,2025-01-03,12
+OPP-00157,Commit,Castor Analytics,Closed Won,86000,2024-10-12,Aria Stephens,Mid-Market,East,2024-08-26,2024-10-12,614,Closed,true,true,Renewal,Q3 2024,Q4 2024,2024-09-29,13
+OPP-00158,Commit,ZoomInfo Data,Closed Won,149000,2025-09-09,Aria Stephens,Mid-Market,East,2025-08-03,2025-09-09,282,Closed,true,true,New,Q3 2025,Q3 2025,2025-09-04,5
+OPP-00159,Prospect,Intercom Platform,Closed Lost,416000,2025-03-22,Priya Kapoor,Enterprise,West,2025-03-14,2025-03-24,451,Omit,false,true,New,Q1 2025,Q1 2025,2025-03-14,8
+OPP-00160,Commit,Selectstar Inc,Closed Won,89000,2024-01-18,Priya Kapoor,Mid-Market,West,2023-12-03,2024-01-21,879,Closed,true,true,New,Q4 2023,Q1 2024,2024-01-10,8
+OPP-00161,Commit,Sovos Analytics,Closed Won,40086,2025-11-10,Aria Stephens,Mid-Market,East,2025-09-27,2025-11-12,218,Closed,true,true,Expansion,Q3 2025,Q4 2025,2025-10-27,14
+OPP-00162,Demo,Chargebee Cloud,Demo,80000,2026-05-26,Priya Kapoor,Mid-Market,West,2026-02-28,2026-05-30,19,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-19,91
+OPP-00163,Qualified,Maxio Platform,Qualified,20853,2026-03-18,Aria Stephens,Mid-Market,East,2026-01-07,2026-06-07,11,Best Case,false,false,Expansion,Q1 2026,Q1 2026,2026-01-17,152
+OPP-00164,Proposal,Orbit Platform,Proposal,159000,2026-09-17,Caleb Nguyen,Mid-Market,East,2026-07-12,2026-05-31,18,Best Case,false,false,New,Q3 2026,Q3 2026,2026-08-07,0
+OPP-00165,Demo,Chartmogul Analytics,Demo,22000,2026-01-09,Liam Chen,SMB,West,2025-11-19,2026-06-05,13,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2025-11-29,201
+OPP-00166,Prospect,Ironclad Platforms,Prospect,145815,2026-04-17,Zara Mitchell,Enterprise,East,2025-11-13,2026-06-14,4,Omit,false,false,Expansion,Q4 2025,Q2 2026,2025-11-13,217
+OPP-00167,Prospect,Gainsight Cloud,Prospect,22000,2026-05-21,Aria Stephens,SMB,East,2026-04-14,2026-06-08,10,Omit,false,false,New,Q2 2026,Q2 2026,2026-04-14,65
+OPP-00168,Demo,Selectstar Inc,Demo,111000,2026-01-13,Sofia Ramirez,Mid-Market,West,2025-10-19,2026-05-26,23,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2025-11-07,223
+OPP-00169,Commit,Orbit Platform,Commit,24000,2026-05-14,Mia Torres,SMB,West,2026-03-29,2026-06-08,10,Commit,false,false,Expansion,Q1 2026,Q2 2026,2026-05-01,48
+OPP-00170,Prospect,Soda Analytics,Prospect,621000,2026-01-21,Aria Stephens,Enterprise,East,2025-08-27,2026-06-16,2,Omit,false,false,New,Q3 2025,Q1 2026,2025-08-27,295
+OPP-00171,Commit,Airfocus Cloud,Closed Won,399000,2024-07-12,Noah Patel,Enterprise,Central,2024-05-23,2024-07-13,705,Closed,true,true,New,Q2 2024,Q3 2024,2024-06-30,12
+OPP-00172,Commit,ProfitWell Systems,Closed Won,254268,2025-08-02,Diego Fernandez,Enterprise,East,2025-06-14,2025-08-05,317,Closed,true,true,Expansion,Q2 2025,Q3 2025,2025-07-23,10
+OPP-00173,Commit,Tidio Platform,Closed Won,579000,2025-09-21,Priya Kapoor,Enterprise,West,2025-08-02,2025-09-21,270,Closed,true,true,Renewal,Q3 2025,Q3 2025,2025-09-09,12
+OPP-00174,Qualified,Clearbit Technologies,Qualified,68000,2026-06-17,Ethan Brooks,Mid-Market,West,2026-03-15,2026-06-04,14,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-27,83
+OPP-00175,Proposal,Pulsar Systems,Proposal,380000,2026-04-06,Marcus Webb,Enterprise,Central,2025-11-24,2026-06-08,10,Best Case,false,false,New,Q4 2025,Q2 2026,2025-12-19,181
+OPP-00176,Demo,Bombora Systems,Closed Lost,44036,2025-04-18,Ethan Brooks,Mid-Market,West,2025-03-22,2025-04-19,425,Omit,false,true,Expansion,Q1 2025,Q2 2025,2025-04-11,7
+OPP-00177,Proposal,Seismic Analytics,Proposal,122000,2026-03-29,Liam Chen,Mid-Market,West,2026-01-06,2026-06-11,7,Best Case,false,false,New,Q1 2026,Q1 2026,2026-01-30,139
+OPP-00178,Qualified,ChurnZero Analytics,Closed Lost,12226,2024-09-20,Elena Okafor,SMB,East,2024-09-08,2024-09-23,633,Omit,false,true,Expansion,Q3 2024,Q3 2024,2024-09-19,1
+OPP-00179,Prospect,Warmly Cloud,Closed Lost,427000,2025-08-05,Mia Torres,Enterprise,West,2025-07-26,2025-08-08,314,Omit,false,true,New,Q3 2025,Q3 2025,2025-07-26,10
+OPP-00180,Commit,Chargebee Cloud,Closed Won,767000,2025-06-02,Priya Kapoor,Enterprise,West,2025-04-10,2025-06-03,380,Closed,true,true,New,Q2 2025,Q2 2025,2025-05-21,12
+OPP-00181,Commit,Bombora Systems,Closed Won,117000,2024-07-25,Sofia Ramirez,Mid-Market,West,2024-06-08,2024-07-27,691,Closed,true,true,New,Q2 2024,Q3 2024,2024-07-13,12
+OPP-00182,Proposal,ProfitWell Systems,Proposal,298000,2026-03-01,Noah Patel,Enterprise,Central,2025-10-20,2026-06-03,15,Best Case,false,false,New,Q4 2025,Q1 2026,2025-11-08,222
+OPP-00183,Qualified,ClientSuccess Data,Closed Lost,163000,2024-05-31,Ethan Brooks,Mid-Market,West,2024-05-13,2024-05-31,748,Omit,false,true,New,Q2 2024,Q2 2024,2024-05-26,5
+OPP-00184,Prospect,Cobalt Security,Closed Lost,85000,2023-12-30,Jordan Kelly,Mid-Market,Central,2023-12-22,2023-12-30,901,Omit,false,true,New,Q4 2023,Q4 2023,2023-12-22,8
+OPP-00185,Commit,Pocus Systems,Closed Won,341000,2024-02-25,Sofia Ramirez,Enterprise,West,2024-01-01,2024-02-26,843,Closed,true,true,New,Q1 2024,Q1 2024,2024-02-14,11
+OPP-00186,Prospect,Monte Carlo Data,Closed Lost,533000,2025-03-26,Sofia Ramirez,Enterprise,West,2025-03-18,2025-03-26,449,Omit,false,true,New,Q1 2025,Q1 2025,2025-03-18,8
+OPP-00187,Qualified,Cobalt Security,Qualified,349000,2026-07-18,Jordan Kelly,Enterprise,Central,2026-03-26,2026-05-18,31,Best Case,false,false,New,Q1 2026,Q3 2026,2026-04-06,73
+OPP-00188,Demo,Catalyst Platform,Demo,17000,2026-03-18,Avery Singh,SMB,Central,2026-02-08,2026-05-01,48,Best Case,false,false,New,Q1 2026,Q1 2026,2026-03-05,105
+OPP-00189,Qualified,Seismic Analytics,Qualified,406000,2026-04-09,Liam Chen,Enterprise,West,2025-10-26,2026-06-07,11,Best Case,false,false,New,Q4 2025,Q2 2026,2025-11-04,226
+OPP-00190,Commit,ProfitWell Systems,Commit,33000,2026-03-11,Mia Torres,SMB,West,2026-01-30,2026-05-07,42,Commit,false,false,New,Q1 2026,Q1 2026,2026-03-10,100
+OPP-00191,Prospect,ClientSuccess Data,Prospect,38320,2026-09-12,Caleb Nguyen,Mid-Market,East,2026-07-10,2026-04-25,54,Omit,false,false,Expansion,Q3 2026,Q3 2026,2026-07-10,0
+OPP-00192,Commit,Freshdesk Systems,Closed Won,68000,2025-07-07,Sofia Ramirez,Mid-Market,West,2025-05-21,2025-07-09,344,Closed,true,true,New,Q2 2025,Q3 2025,2025-06-27,10
+OPP-00193,Commit,Seismic Analytics,Commit,19000,2026-06-28,Mia Torres,SMB,West,2026-06-01,2026-05-14,35,Commit,false,false,New,Q2 2026,Q2 2026,2026-07-15,0
+OPP-00194,Commit,Bombora Systems,Closed Won,45149,2025-01-03,Aria Stephens,Mid-Market,East,2024-11-03,2025-01-06,528,Closed,true,true,Expansion,Q4 2024,Q1 2025,2024-12-20,14
+OPP-00195,Prospect,Blissfully Cloud,Closed Lost,135644,2025-06-14,Noah Patel,Enterprise,Central,2025-06-06,2025-06-16,367,Omit,false,true,Expansion,Q2 2025,Q2 2025,2025-06-06,8
+OPP-00196,Commit,Devrev Systems,Closed Won,74000,2024-07-04,Jordan Kelly,Mid-Market,Central,2024-05-24,2024-07-07,711,Closed,true,true,New,Q2 2024,Q3 2024,2024-06-22,12
+OPP-00197,Proposal,Retool Software,Proposal,578000,2026-05-16,Elena Okafor,Enterprise,East,2026-01-09,2026-06-09,9,Best Case,false,false,New,Q1 2026,Q2 2026,2026-01-25,144
+OPP-00198,Prospect,Metaphor Networks,Prospect,613000,2026-07-02,Ethan Brooks,Enterprise,West,2026-04-04,2026-05-10,39,Omit,false,false,New,Q2 2026,Q3 2026,2026-04-04,75
+OPP-00199,Prospect,Gladly Cloud,Prospect,333000,2026-01-05,Priya Kapoor,Enterprise,West,2025-08-31,2026-05-25,24,Omit,false,false,Expansion,Q3 2025,Q1 2026,2025-08-31,291
+OPP-00200,Proposal,Chartmogul Analytics,Proposal,30000,2026-02-07,Elena Okafor,SMB,East,2025-12-28,2026-06-12,6,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2026-01-19,150
+OPP-00201,Commit,Zuora Platform,Closed Won,13061,2025-07-22,Avery Singh,SMB,Central,2025-06-09,2025-07-23,330,Closed,true,true,Expansion,Q2 2025,Q3 2025,2025-07-09,13
+OPP-00202,Qualified,Recurly Systems,Closed Lost,432000,2025-01-04,Priya Kapoor,Enterprise,West,2024-12-23,2025-01-04,530,Omit,false,true,Churn,Q4 2024,Q1 2025,2024-12-24,11
+OPP-00203,Demo,Mutiny Systems,Demo,115000,2026-08-24,Aria Stephens,Mid-Market,East,2026-06-13,2026-06-17,1,Best Case,false,false,New,Q2 2026,Q3 2026,2026-07-04,0
+OPP-00204,Commit,Front Systems,Closed Lost,360000,2025-09-17,Elena Okafor,Enterprise,East,2025-07-18,2025-09-18,273,Omit,false,true,Churn,Q3 2025,Q3 2025,2025-09-01,16
+OPP-00205,Prospect,Front Systems,Prospect,136000,2026-04-11,Jordan Kelly,Mid-Market,Central,2026-01-12,2026-06-08,10,Omit,false,false,Renewal,Q1 2026,Q2 2026,2026-01-12,157
+OPP-00206,Demo,Kustomer Analytics,Closed Lost,82000,2024-03-22,Aria Stephens,Mid-Market,East,2024-02-23,2024-03-24,816,Omit,false,true,Expansion,Q1 2024,Q1 2024,2024-03-15,7
+OPP-00207,Demo,Maxio Platform,Demo,27841,2026-07-11,Avery Singh,Mid-Market,Central,2026-04-30,2026-06-08,10,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-05-21,28
+OPP-00208,Proposal,Rippling Networks,Proposal,492000,2026-04-29,Diego Fernandez,Enterprise,East,2026-02-01,2026-06-11,7,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-27,111
+OPP-00209,Commit,Anomalo Systems,Closed Won,14000,2024-10-05,Avery Singh,SMB,Central,2024-08-13,2024-10-05,621,Closed,true,true,New,Q3 2024,Q4 2024,2024-09-22,13
+OPP-00210,Proposal,Outreach Systems,Closed Lost,102000,2025-09-18,Marcus Webb,Mid-Market,Central,2025-08-06,2025-09-21,270,Omit,false,true,Expansion,Q3 2025,Q3 2025,2025-09-03,15
+OPP-00211,Prospect,Secoda Data,Closed Lost,413000,2024-07-29,Sofia Ramirez,Enterprise,West,2024-07-19,2024-08-01,686,Omit,false,true,New,Q3 2024,Q3 2024,2024-07-19,10
+OPP-00212,Commit,Common Room,Closed Won,83000,2024-01-19,Diego Fernandez,Mid-Market,East,2023-11-29,2024-01-21,879,Closed,true,true,New,Q4 2023,Q1 2024,2024-01-06,13
+OPP-00213,Qualified,Chargebee Cloud,Qualified,160870,2026-04-07,Zara Mitchell,Enterprise,East,2025-12-03,2026-05-29,20,Best Case,false,false,Expansion,Q4 2025,Q2 2026,2025-12-12,188
+OPP-00214,Qualified,Cobalt Security,Closed Lost,25000,2025-03-27,Liam Chen,SMB,West,2025-03-09,2025-03-28,447,Omit,false,true,New,Q1 2025,Q1 2025,2025-03-17,10
+OPP-00215,Commit,Aha Software,Closed Won,108000,2024-03-19,Sofia Ramirez,Mid-Market,West,2024-01-28,2024-03-22,818,Closed,true,true,Renewal,Q1 2024,Q1 2024,2024-03-05,14
+OPP-00216,Demo,Seismic Analytics,Demo,116000,2026-03-01,Sofia Ramirez,Mid-Market,West,2025-12-23,2026-06-13,5,Best Case,false,false,New,Q4 2025,Q1 2026,2026-01-10,159
+OPP-00217,Demo,Chisel Analytics,Demo,87000,2026-05-29,Caleb Nguyen,Mid-Market,East,2026-02-06,2026-04-24,55,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-21,117
+OPP-00218,Commit,Castor Analytics,Closed Won,290430,2025-09-19,Priya Kapoor,Enterprise,West,2025-07-26,2025-09-22,269,Closed,true,true,Expansion,Q3 2025,Q3 2025,2025-09-03,16
+OPP-00219,Commit,Gladly Cloud,Closed Won,18000,2025-02-12,Noah Patel,SMB,Central,2024-12-21,2025-02-14,489,Closed,true,true,Expansion,Q4 2024,Q1 2025,2025-02-03,9
+OPP-00220,Commit,Mosaic Cloud,Closed Won,86000,2024-05-30,Ethan Brooks,Mid-Market,West,2024-04-17,2024-05-31,748,Closed,true,true,Expansion,Q2 2024,Q2 2024,2024-05-18,12
+OPP-00221,Commit,Mosaic Cloud,Closed Won,81000,2025-10-25,Ethan Brooks,Mid-Market,West,2025-09-06,2025-10-25,236,Closed,true,true,Renewal,Q3 2025,Q4 2025,2025-10-13,12
+OPP-00222,Commit,Brex Platform,Closed Won,461000,2024-02-03,Marcus Webb,Enterprise,Central,2023-12-24,2024-02-06,863,Closed,true,true,New,Q4 2023,Q1 2024,2024-01-23,11
+OPP-00223,Qualified,Alation Analytics,Closed Lost,19000,2024-03-13,Mia Torres,SMB,West,2024-02-20,2024-03-14,826,Omit,false,true,New,Q1 2024,Q1 2024,2024-03-04,9
+OPP-00224,Commit,Chorus Analytics,Commit,105000,2026-01-14,Avery Singh,Mid-Market,Central,2025-10-29,2026-06-07,11,Commit,false,false,Renewal,Q4 2025,Q1 2026,2025-12-14,186
+OPP-00225,Commit,Roadmunk Analytics,Closed Won,274436,2025-02-03,Noah Patel,Enterprise,Central,2024-12-17,2025-02-06,497,Closed,true,true,Expansion,Q4 2024,Q1 2025,2025-01-20,14
+OPP-00226,Commit,Intercom Platform,Closed Won,695000,2025-10-28,Marcus Webb,Enterprise,Central,2025-09-02,2025-10-28,233,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-11,17
+OPP-00227,Qualified,Airbyte Data,Qualified,19000,2026-02-05,Mia Torres,SMB,West,2025-12-21,2026-06-08,10,Best Case,false,false,New,Q4 2025,Q1 2026,2025-12-31,169
+OPP-00228,Commit,Gainsight Cloud,Closed Won,293000,2024-10-17,Avery Singh,Enterprise,Central,2024-09-06,2024-10-18,608,Closed,true,true,Expansion,Q3 2024,Q4 2024,2024-10-06,11
+OPP-00229,Commit,Catalyst Platform,Closed Won,19000,2025-01-13,Mia Torres,SMB,West,2024-11-20,2025-01-15,519,Closed,true,true,New,Q4 2024,Q1 2025,2025-01-01,12
+OPP-00230,Demo,Chorus Analytics,Demo,118107,2026-07-11,Marcus Webb,Enterprise,Central,2026-03-26,2026-05-31,18,Best Case,false,false,Expansion,Q1 2026,Q3 2026,2026-04-12,67
+OPP-00231,Commit,Figment Cloud,Closed Won,22000,2025-12-10,Sofia Ramirez,SMB,West,2025-10-15,2025-12-11,189,Closed,true,true,New,Q4 2025,Q4 2025,2025-11-23,17
+OPP-00232,Prospect,Lusha Analytics,Closed Lost,120237,2024-03-18,Noah Patel,Enterprise,Central,2024-03-15,2024-03-21,819,Omit,false,true,Expansion,Q1 2024,Q1 2024,2024-03-15,3
+OPP-00233,Proposal,Maxio Platform,Proposal,29000,2026-05-22,Elena Okafor,SMB,East,2026-04-14,2026-05-26,23,Best Case,false,false,Renewal,Q2 2026,Q2 2026,2026-05-05,44
+OPP-00234,Prospect,Ada Support,Closed Lost,536000,2025-09-13,Caleb Nguyen,Enterprise,East,2025-09-07,2025-09-15,276,Omit,false,true,Expansion,Q3 2025,Q3 2025,2025-09-07,6
+OPP-00235,Demo,Monte Carlo Data,Closed Lost,71000,2025-06-08,Sofia Ramirez,Mid-Market,West,2025-05-15,2025-06-10,373,Omit,false,true,New,Q2 2025,Q2 2025,2025-06-04,4
+OPP-00236,Demo,ZoomInfo Data,Demo,410000,2026-01-15,Marcus Webb,Enterprise,Central,2025-09-09,2026-06-16,2,Best Case,false,false,Renewal,Q3 2025,Q1 2026,2025-09-26,265
+OPP-00237,Commit,Figment Cloud,Closed Won,207292,2025-07-30,Aria Stephens,Enterprise,East,2025-06-08,2025-08-01,321,Closed,true,true,Expansion,Q2 2025,Q3 2025,2025-07-16,14
+OPP-00238,Demo,Airfocus Cloud,Demo,5358,2026-04-17,Marcus Webb,SMB,Central,2026-03-12,2026-04-29,50,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-04,75
+OPP-00239,Commit,Vitally CS,Commit,115000,2026-04-07,Jordan Kelly,Mid-Market,Central,2026-01-06,2026-06-14,4,Commit,false,false,Renewal,Q1 2026,Q2 2026,2026-02-07,131
+OPP-00240,Commit,Helix Data,Closed Won,254000,2024-12-06,Avery Singh,Enterprise,Central,2024-10-09,2024-12-08,557,Closed,true,true,Renewal,Q4 2024,Q4 2024,2024-11-22,14
+OPP-00241,Qualified,Orbit Platform,Qualified,19000,2026-08-13,Liam Chen,SMB,West,2026-06-30,2026-06-14,4,Best Case,false,false,New,Q2 2026,Q3 2026,2026-07-10,0
+OPP-00242,Proposal,Common Room,Proposal,30000,2026-02-27,Aria Stephens,SMB,East,2026-01-27,2026-05-27,22,Best Case,false,false,Renewal,Q1 2026,Q1 2026,2026-02-17,121
+OPP-00243,Qualified,Mutiny Systems,Closed Lost,693000,2024-10-22,Noah Patel,Enterprise,Central,2024-10-09,2024-10-23,603,Omit,false,true,New,Q4 2024,Q4 2024,2024-10-13,9
+OPP-00244,Commit,Kustomer Analytics,Closed Won,26000,2024-03-08,Ethan Brooks,SMB,West,2024-01-16,2024-03-08,832,Closed,true,true,New,Q1 2024,Q1 2024,2024-02-28,9
+OPP-00245,Qualified,Chorus Analytics,Qualified,133000,2026-02-15,Sofia Ramirez,Mid-Market,West,2025-11-15,2026-06-17,1,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2025-11-29,201
+OPP-00246,Proposal,Correlated SaaS,Proposal,15890,2026-04-11,Avery Singh,SMB,Central,2026-02-22,2026-06-16,2,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-03-11,99
+OPP-00247,Commit,Figment Cloud,Commit,52766,2026-08-02,Caleb Nguyen,Mid-Market,East,2026-04-24,2026-06-11,7,Commit,false,false,Expansion,Q2 2026,Q3 2026,2026-05-28,21
+OPP-00248,Qualified,Chorus Analytics,Qualified,515000,2026-01-26,Diego Fernandez,Enterprise,East,2025-10-02,2026-06-08,10,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2025-10-12,249
+OPP-00249,Commit,Torii Platform,Closed Won,52000,2025-01-25,Aria Stephens,Mid-Market,East,2024-12-05,2025-01-27,507,Closed,true,true,Expansion,Q4 2024,Q1 2025,2025-01-09,16
+OPP-00250,Commit,Planhat Systems,Closed Won,16000,2024-08-05,Avery Singh,SMB,Central,2024-06-10,2024-08-07,680,Closed,true,true,New,Q2 2024,Q3 2024,2024-07-20,16
+OPP-00251,Commit,Endgame Platform,Closed Won,96000,2025-11-09,Diego Fernandez,Mid-Market,East,2025-09-18,2025-11-10,220,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-30,10
+OPP-00252,Commit,HighSpot Systems,Closed Won,26000,2024-07-21,Elena Okafor,SMB,East,2024-05-27,2024-07-23,695,Closed,true,true,Expansion,Q2 2024,Q3 2024,2024-07-09,12
+OPP-00253,Prospect,Paddle Analytics,Closed Lost,356000,2024-08-27,Zara Mitchell,Enterprise,East,2024-08-25,2024-08-28,659,Omit,false,true,New,Q3 2024,Q3 2024,2024-08-25,2
+OPP-00254,Demo,Drift Cloud,Demo,91000,2026-09-01,Priya Kapoor,Mid-Market,West,2026-05-30,2026-06-16,2,Best Case,false,false,New,Q2 2026,Q3 2026,2026-06-15,3
+OPP-00255,Commit,Chorus Analytics,Closed Won,83000,2025-11-16,Sofia Ramirez,Mid-Market,West,2025-09-29,2025-11-19,211,Closed,true,true,Renewal,Q3 2025,Q4 2025,2025-11-04,12
+OPP-00256,Prospect,Gong Revenue,Prospect,135000,2026-05-06,Sofia Ramirez,Mid-Market,West,2026-03-02,2026-06-10,8,Omit,false,false,New,Q1 2026,Q2 2026,2026-03-02,108
+OPP-00257,Qualified,Zuora Platform,Qualified,94225,2026-09-17,Zara Mitchell,Enterprise,East,2026-05-01,2026-06-12,6,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-05-13,36
+OPP-00258,Prospect,Common Room,Prospect,262933,2026-05-26,Marcus Webb,Enterprise,Central,2026-01-26,2026-06-15,3,Omit,false,false,Expansion,Q1 2026,Q2 2026,2026-01-26,143
+OPP-00259,Prospect,Qualified Platform,Prospect,521000,2026-05-13,Noah Patel,Enterprise,Central,2025-10-27,2026-06-11,7,Omit,false,false,New,Q4 2025,Q2 2026,2025-10-27,234
+OPP-00260,Commit,Craft Platform,Closed Won,176358,2024-01-18,Priya Kapoor,Enterprise,West,2023-11-28,2024-01-20,880,Closed,true,true,Expansion,Q4 2023,Q1 2024,2023-12-29,20
+OPP-00261,Commit,Lusha Analytics,Commit,154000,2026-02-27,Diego Fernandez,Mid-Market,East,2025-12-04,2026-06-11,7,Commit,false,false,Renewal,Q4 2025,Q1 2026,2026-01-15,154
+OPP-00262,Commit,HighSpot Systems,Closed Lost,144151,2025-11-13,Sofia Ramirez,Enterprise,West,2025-09-24,2025-11-15,215,Omit,false,true,Expansion,Q3 2025,Q4 2025,2025-10-31,13
+OPP-00263,Demo,Secoda Data,Demo,25000,2026-06-29,Liam Chen,SMB,West,2026-06-01,2026-06-15,3,Best Case,false,false,Expansion,Q2 2026,Q2 2026,2026-06-10,8
+OPP-00264,Prospect,Aha Software,Prospect,31000,2026-01-13,Caleb Nguyen,SMB,East,2025-12-09,2026-06-05,13,Omit,false,false,Renewal,Q4 2025,Q1 2026,2025-12-09,191
+OPP-00265,Commit,Runway Financial,Closed Won,68000,2024-02-10,Diego Fernandez,Mid-Market,East,2023-12-17,2024-02-10,859,Closed,true,true,New,Q4 2023,Q1 2024,2024-01-24,17
+OPP-00266,Qualified,Airfocus Cloud,Closed Lost,103000,2024-01-19,Caleb Nguyen,Mid-Market,East,2023-12-28,2024-01-20,880,Omit,false,true,Churn,Q4 2023,Q1 2024,2024-01-10,9
+OPP-00267,Commit,Common Room,Closed Won,34389,2025-11-02,Aria Stephens,Mid-Market,East,2025-09-09,2025-11-03,227,Closed,true,true,Expansion,Q3 2025,Q4 2025,2025-10-20,13
+OPP-00268,Commit,Airbyte Data,Closed Won,147000,2024-09-29,Ethan Brooks,Mid-Market,West,2024-08-13,2024-10-02,624,Closed,true,true,New,Q3 2024,Q3 2024,2024-09-17,12
+OPP-00269,Commit,Temporal Cloud,Closed Won,24000,2025-08-27,Marcus Webb,SMB,Central,2025-07-05,2025-08-29,293,Closed,true,true,New,Q3 2025,Q3 2025,2025-08-12,15
+OPP-00270,Commit,Castor Analytics,Commit,7921,2026-05-14,Liam Chen,SMB,West,2026-03-30,2026-06-15,3,Commit,false,false,Expansion,Q1 2026,Q2 2026,2026-05-08,41
+OPP-00271,Commit,Freshdesk Systems,Closed Won,37065,2024-08-05,Aria Stephens,Mid-Market,East,2024-06-16,2024-08-06,681,Closed,true,true,Expansion,Q2 2024,Q3 2024,2024-07-23,13
+OPP-00272,Commit,Ada Support,Closed Won,104000,2025-12-18,Aria Stephens,Mid-Market,East,2025-10-28,2025-12-20,180,Closed,true,true,Expansion,Q4 2025,Q4 2025,2025-12-03,15
+OPP-00273,Commit,Chartmogul Analytics,Closed Won,7714,2025-03-12,Avery Singh,SMB,Central,2025-01-22,2025-03-13,462,Closed,true,true,Expansion,Q1 2025,Q1 2025,2025-02-24,16
+OPP-00274,Demo,Castor Analytics,Demo,109528,2026-06-09,Priya Kapoor,Enterprise,West,2026-01-20,2026-06-15,3,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-02-07,131
+OPP-00275,Qualified,Vitally CS,Qualified,250198,2026-07-12,Zara Mitchell,Enterprise,East,2026-03-12,2026-06-08,10,Best Case,false,false,Expansion,Q1 2026,Q3 2026,2026-03-16,94
+OPP-00276,Demo,Warmly Cloud,Demo,333000,2026-04-29,Zara Mitchell,Enterprise,East,2025-12-28,2026-05-03,46,Best Case,false,false,New,Q4 2025,Q2 2026,2026-01-20,149
+OPP-00277,Demo,Selectstar Inc,Demo,119305,2026-02-24,Noah Patel,Enterprise,Central,2025-10-19,2026-06-14,4,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-11-05,225
+OPP-00278,Commit,TaxJar Cloud,Closed Won,110283,2025-11-15,Noah Patel,Enterprise,Central,2025-09-21,2025-11-15,215,Closed,true,true,Expansion,Q3 2025,Q4 2025,2025-11-02,13
+OPP-00279,Qualified,Kinetica Labs,Qualified,127000,2026-02-01,Diego Fernandez,Mid-Market,East,2025-11-16,2026-06-17,1,Best Case,false,false,New,Q4 2025,Q1 2026,2025-11-24,206
+OPP-00280,Commit,Castor Analytics,Commit,380471,2026-04-24,Priya Kapoor,Enterprise,West,2026-01-02,2026-05-03,46,Commit,false,false,Expansion,Q1 2026,Q2 2026,2026-01-29,140
+OPP-00281,Commit,Vertex SaaS,Closed Won,390000,2024-07-03,Zara Mitchell,Enterprise,East,2024-05-06,2024-07-06,712,Closed,true,true,Expansion,Q2 2024,Q3 2024,2024-06-18,15
+OPP-00282,Demo,Retool Software,Demo,74000,2026-04-18,Diego Fernandez,Mid-Market,East,2026-01-13,2026-06-06,12,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-09,129
+OPP-00283,Commit,Paddle Analytics,Commit,114000,2026-09-21,Jordan Kelly,Mid-Market,Central,2026-07-03,2026-06-06,12,Commit,false,false,New,Q3 2026,Q3 2026,2026-08-19,0
+OPP-00284,Commit,Apexon Digital,Closed Won,166049,2024-08-18,Zara Mitchell,Enterprise,East,2024-07-03,2024-08-19,668,Closed,true,true,Expansion,Q3 2024,Q3 2024,2024-08-08,10
+OPP-00285,Qualified,Lattice Software,Closed Lost,29000,2025-07-04,Avery Singh,SMB,Central,2025-06-15,2025-07-05,348,Omit,false,true,New,Q2 2025,Q3 2025,2025-06-24,10
+OPP-00286,Proposal,Salesloft Platform,Proposal,17000,2026-08-15,Elena Okafor,SMB,East,2026-06-26,2026-06-11,7,Best Case,false,false,New,Q2 2026,Q3 2026,2026-07-16,0
+OPP-00287,Proposal,Alation Analytics,Closed Lost,632000,2024-01-30,Noah Patel,Enterprise,Central,2023-12-21,2024-01-30,870,Omit,false,true,Expansion,Q4 2023,Q1 2024,2024-01-15,15
+OPP-00288,Commit,Devrev Systems,Closed Won,5542,2025-01-29,Liam Chen,SMB,West,2024-12-06,2025-01-31,503,Closed,true,true,Expansion,Q4 2024,Q1 2025,2025-01-13,16
+OPP-00289,Commit,Kinetica Labs,Closed Won,26000,2025-05-12,Avery Singh,SMB,Central,2025-03-16,2025-05-12,402,Closed,true,true,New,Q1 2025,Q2 2025,2025-04-26,16
+OPP-00290,Commit,Torii Platform,Closed Won,22518,2024-09-07,Aria Stephens,Mid-Market,East,2024-07-28,2024-09-07,649,Closed,true,true,Expansion,Q3 2024,Q3 2024,2024-09-01,6
+OPP-00291,Commit,Secoda Data,Closed Won,734000,2024-09-25,Ethan Brooks,Enterprise,West,2024-07-28,2024-09-28,628,Closed,true,true,New,Q3 2024,Q3 2024,2024-09-10,15
+OPP-00292,Commit,Vertex SaaS,Commit,8845,2026-08-25,Elena Okafor,SMB,East,2026-07-26,2026-05-01,48,Commit,false,false,Expansion,Q3 2026,Q3 2026,2026-09-02,0
+OPP-00293,Demo,Endgame Platform,Demo,74000,2026-04-18,Ethan Brooks,Mid-Market,West,2026-03-12,2026-06-02,16,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-04-03,76
+OPP-00294,Commit,dbt Labs,Closed Won,466000,2025-12-22,Ethan Brooks,Enterprise,West,2025-11-07,2025-12-25,175,Closed,true,true,New,Q4 2025,Q4 2025,2025-12-09,13
+OPP-00295,Demo,Warmly Cloud,Demo,33000,2026-07-28,Mia Torres,SMB,West,2026-06-23,2026-05-21,28,Best Case,false,false,New,Q2 2026,Q3 2026,2026-07-09,0
+OPP-00296,Qualified,Vertex SaaS,Closed Lost,39116,2023-12-31,Marcus Webb,Mid-Market,Central,2023-12-10,2023-12-31,900,Omit,false,true,Expansion,Q4 2023,Q4 2023,2023-12-21,10
+OPP-00297,Commit,Pocus Systems,Closed Lost,13000,2024-03-25,Liam Chen,SMB,West,2024-01-28,2024-03-25,815,Omit,false,true,Churn,Q1 2024,Q1 2024,2024-03-11,14
+OPP-00298,Commit,Monte Carlo Data,Closed Won,91000,2024-12-09,Marcus Webb,Mid-Market,Central,2024-10-16,2024-12-10,555,Closed,true,true,New,Q4 2024,Q4 2024,2024-11-26,13
+OPP-00299,Demo,Helix Data,Demo,129000,2026-02-24,Ethan Brooks,Mid-Market,West,2025-12-07,2026-05-15,34,Best Case,false,false,New,Q4 2025,Q1 2026,2025-12-24,176
+OPP-00300,Prospect,Kustomer Analytics,Prospect,10337,2026-08-22,Liam Chen,SMB,West,2026-07-04,2026-06-14,4,Omit,false,false,Expansion,Q3 2026,Q3 2026,2026-07-04,0
+OPP-00301,Proposal,Bigeye Solutions,Closed Lost,480000,2024-07-09,Diego Fernandez,Enterprise,East,2024-06-08,2024-07-11,707,Omit,false,true,Churn,Q2 2024,Q3 2024,2024-06-21,18
+OPP-00302,Prospect,ChurnZero Analytics,Prospect,49666,2026-04-13,Avery Singh,Mid-Market,Central,2026-01-30,2026-06-10,8,Omit,false,false,Expansion,Q1 2026,Q2 2026,2026-01-30,139
+OPP-00303,Prospect,Quolum SaaS,Prospect,442000,2026-04-07,Marcus Webb,Enterprise,Central,2025-12-10,2026-05-11,38,Omit,false,false,Expansion,Q4 2025,Q2 2026,2025-12-10,190
+OPP-00304,Commit,Amplitude Systems,Closed Won,93000,2024-08-11,Sofia Ramirez,Mid-Market,West,2024-06-25,2024-08-13,674,Closed,true,true,Renewal,Q2 2024,Q3 2024,2024-08-02,9
+OPP-00305,Commit,Orbit Platform,Commit,122000,2026-04-04,Ethan Brooks,Mid-Market,West,2026-01-22,2026-05-08,41,Commit,false,false,New,Q1 2026,Q2 2026,2026-03-06,104
+OPP-00306,Demo,Lattice Software,Demo,163000,2026-03-12,Aria Stephens,Mid-Market,East,2025-12-11,2026-06-10,8,Best Case,false,false,New,Q4 2025,Q1 2026,2025-12-27,173
+OPP-00307,Commit,Freshdesk Systems,Closed Won,125573,2025-02-09,Avery Singh,Enterprise,Central,2024-12-23,2025-02-12,491,Closed,true,true,Expansion,Q4 2024,Q1 2025,2025-01-30,10
+OPP-00308,Qualified,Avalara Systems,Closed Lost,77000,2025-07-05,Caleb Nguyen,Mid-Market,East,2025-06-20,2025-07-08,345,Omit,false,true,New,Q2 2025,Q3 2025,2025-06-27,8
+OPP-00309,Prospect,Aha Software,Prospect,20000,2026-03-07,Aria Stephens,SMB,East,2026-01-20,2026-05-24,25,Omit,false,false,Renewal,Q1 2026,Q1 2026,2026-01-20,149
+OPP-00310,Commit,Kinetica Labs,Closed Won,27724,2025-07-11,Caleb Nguyen,Mid-Market,East,2025-05-31,2025-07-12,341,Closed,true,true,Expansion,Q2 2025,Q3 2025,2025-07-01,10
+OPP-00311,Qualified,Endgame Platform,Qualified,19000,2026-09-10,Liam Chen,SMB,West,2026-07-29,2026-05-01,48,Best Case,false,false,Renewal,Q3 2026,Q3 2026,2026-08-10,0
+OPP-00312,Prospect,Castor Analytics,Prospect,35000,2026-03-28,Sofia Ramirez,SMB,West,2026-02-08,2026-06-08,10,Omit,false,false,Renewal,Q1 2026,Q1 2026,2026-02-08,130
+OPP-00313,Commit,Freshdesk Systems,Closed Won,290319,2025-01-24,Aria Stephens,Enterprise,East,2024-12-07,2025-01-25,509,Closed,true,true,Expansion,Q4 2024,Q1 2025,2025-01-13,11
+OPP-00314,Prospect,Notion Labs,Prospect,23000,2026-06-01,Elena Okafor,SMB,East,2026-04-14,2026-04-26,53,Omit,false,false,Renewal,Q2 2026,Q2 2026,2026-04-14,65
+OPP-00315,Proposal,Temporal Cloud,Proposal,355000,2026-01-16,Elena Okafor,Enterprise,East,2025-08-17,2026-06-09,9,Best Case,false,false,Renewal,Q3 2025,Q1 2026,2025-09-14,277
+OPP-00316,Commit,Sovos Analytics,Closed Won,12000,2025-06-20,Mia Torres,SMB,West,2025-05-06,2025-06-22,361,Closed,true,true,Renewal,Q2 2025,Q2 2025,2025-06-07,13
+OPP-00317,Commit,Freshdesk Systems,Commit,29000,2026-03-06,Avery Singh,SMB,Central,2026-01-26,2026-05-25,24,Commit,false,false,Renewal,Q1 2026,Q1 2026,2026-03-07,103
+OPP-00318,Commit,Kinetica Labs,Closed Won,73000,2024-11-19,Aria Stephens,Mid-Market,East,2024-09-25,2024-11-19,576,Closed,true,true,New,Q3 2024,Q4 2024,2024-11-04,15
+OPP-00319,Commit,Mutiny Systems,Commit,638000,2026-01-31,Diego Fernandez,Enterprise,East,2025-10-13,2026-06-16,2,Commit,false,false,New,Q4 2025,Q1 2026,2025-11-23,207
+OPP-00320,Demo,Orbit Platform,Closed Lost,135000,2024-08-16,Ethan Brooks,Mid-Market,West,2024-07-19,2024-08-16,671,Omit,false,true,New,Q3 2024,Q3 2024,2024-08-11,5
+OPP-00321,Commit,Cognism Platform,Commit,110894,2026-04-28,Noah Patel,Enterprise,Central,2026-01-13,2026-05-28,21,Commit,false,false,Expansion,Q1 2026,Q2 2026,2026-02-17,121
+OPP-00322,Commit,Paddle Analytics,Closed Won,148000,2025-02-24,Ethan Brooks,Mid-Market,West,2025-01-10,2025-02-26,477,Closed,true,true,New,Q1 2025,Q1 2025,2025-02-13,11
+OPP-00323,Proposal,ClientSuccess Data,Proposal,14000,2026-04-03,Mia Torres,SMB,West,2026-03-03,2026-06-17,1,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-03-15,95
+OPP-00324,Prospect,Planhat Systems,Prospect,495000,2026-02-01,Noah Patel,Enterprise,Central,2025-10-13,2026-06-10,8,Omit,false,false,Renewal,Q4 2025,Q1 2026,2025-10-13,248
+OPP-00325,Prospect,Mutiny Systems,Closed Lost,67000,2024-11-08,Jordan Kelly,Mid-Market,Central,2024-10-27,2024-11-11,584,Omit,false,true,New,Q4 2024,Q4 2024,2024-10-27,12
+OPP-00326,Demo,Brex Platform,Demo,340000,2026-05-17,Marcus Webb,Enterprise,Central,2025-12-21,2026-06-16,2,Best Case,false,false,New,Q4 2025,Q2 2026,2026-01-06,163
+OPP-00327,Prospect,Maxio Platform,Closed Lost,795000,2025-09-23,Caleb Nguyen,Enterprise,East,2025-09-20,2025-09-23,268,Omit,false,true,Churn,Q3 2025,Q3 2025,2025-09-20,3
+OPP-00328,Prospect,Sovos Analytics,Prospect,493000,2026-04-26,Priya Kapoor,Enterprise,West,2026-01-12,2026-06-15,3,Omit,false,false,Renewal,Q1 2026,Q2 2026,2026-01-12,157
+OPP-00329,Qualified,Chisel Analytics,Closed Lost,30000,2024-06-28,Avery Singh,SMB,Central,2024-06-09,2024-06-30,718,Omit,false,true,New,Q2 2024,Q2 2024,2024-06-19,9
+OPP-00330,Demo,Airbyte Data,Closed Lost,5000,2024-09-20,Mia Torres,SMB,West,2024-09-02,2024-09-21,635,Omit,false,true,Expansion,Q3 2024,Q3 2024,2024-09-16,4
+OPP-00331,Proposal,Avalara Systems,Proposal,17000,2026-05-25,Mia Torres,SMB,West,2026-04-01,2026-06-05,13,Best Case,false,false,New,Q2 2026,Q2 2026,2026-04-26,53
+OPP-00332,Proposal,Craft Platform,Proposal,64229,2026-07-17,Sofia Ramirez,Mid-Market,West,2026-04-02,2026-05-28,21,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-04-20,59
+OPP-00333,Qualified,Velo Systems,Qualified,21000,2026-03-02,Sofia Ramirez,SMB,West,2026-01-20,2026-05-23,26,Best Case,false,false,New,Q1 2026,Q1 2026,2026-01-30,139
+OPP-00334,Demo,Seismic Analytics,Demo,11000,2026-05-16,Mia Torres,SMB,West,2026-04-13,2026-06-16,2,Best Case,false,false,New,Q2 2026,Q2 2026,2026-04-30,49
+OPP-00335,Demo,Castor Analytics,Demo,295548,2026-07-26,Priya Kapoor,Enterprise,West,2026-03-02,2026-06-15,3,Best Case,false,false,Expansion,Q1 2026,Q3 2026,2026-03-17,93
+OPP-00336,Qualified,Castor Analytics,Closed Lost,9308,2024-08-15,Avery Singh,SMB,Central,2024-08-02,2024-08-16,671,Omit,false,true,Expansion,Q3 2024,Q3 2024,2024-08-08,7
+OPP-00337,Commit,Bombora Systems,Closed Won,21207,2025-12-23,Diego Fernandez,Mid-Market,East,2025-11-26,2025-12-24,176,Closed,true,true,Expansion,Q4 2025,Q4 2025,2025-12-18,5
+OPP-00338,Commit,Orbit Platform,Closed Won,21000,2025-07-28,Aria Stephens,SMB,East,2025-06-05,2025-07-29,324,Closed,true,true,New,Q2 2025,Q3 2025,2025-07-16,12
+OPP-00339,Demo,Aha Software,Closed Lost,623000,2024-09-04,Zara Mitchell,Enterprise,East,2024-08-05,2024-09-05,651,Omit,false,true,Churn,Q3 2024,Q3 2024,2024-08-27,8
+OPP-00340,Qualified,ZoomInfo Data,Qualified,689000,2026-04-22,Noah Patel,Enterprise,Central,2026-01-21,2026-06-08,10,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-02-01,137
+OPP-00341,Demo,Craft Platform,Closed Lost,22000,2025-09-25,Elena Okafor,SMB,East,2025-09-08,2025-09-26,265,Omit,false,true,Churn,Q3 2025,Q3 2025,2025-09-22,3
+OPP-00342,Commit,Soda Analytics,Closed Won,76000,2025-10-11,Avery Singh,Mid-Market,Central,2025-08-22,2025-10-14,247,Closed,true,true,New,Q3 2025,Q4 2025,2025-09-27,14
+OPP-00343,Prospect,Sovos Analytics,Prospect,99000,2026-06-05,Ethan Brooks,Mid-Market,West,2026-03-30,2026-06-12,6,Omit,false,false,Renewal,Q1 2026,Q2 2026,2026-03-30,80
+OPP-00344,Qualified,Vertex SaaS,Qualified,148253,2026-01-25,Noah Patel,Enterprise,Central,2025-10-08,2026-05-24,25,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-10-16,245
+OPP-00345,Demo,Endgame Platform,Demo,229525,2026-05-19,Marcus Webb,Enterprise,Central,2026-01-14,2026-06-11,7,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-02-05,133
+OPP-00346,Demo,Selectstar Inc,Closed Lost,455000,2024-11-19,Priya Kapoor,Enterprise,West,2024-10-27,2024-11-21,574,Omit,false,true,New,Q4 2024,Q4 2024,2024-11-15,4
+OPP-00347,Commit,Mosaic Cloud,Closed Won,45632,2025-03-14,Caleb Nguyen,Mid-Market,East,2025-01-15,2025-03-14,461,Closed,true,true,Expansion,Q1 2025,Q1 2025,2025-03-06,8
+OPP-00348,Qualified,Kustomer Analytics,Qualified,152317,2026-02-22,Noah Patel,Enterprise,Central,2025-10-05,2026-05-26,23,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-10-11,250
+OPP-00349,Commit,Roadmunk Analytics,Closed Won,362000,2024-03-08,Marcus Webb,Enterprise,Central,2024-01-25,2024-03-09,831,Closed,true,true,Renewal,Q1 2024,Q1 2024,2024-02-27,10
+OPP-00350,Qualified,Chisel Analytics,Closed Lost,136000,2024-10-26,Priya Kapoor,Mid-Market,West,2024-10-07,2024-10-29,597,Omit,false,true,New,Q4 2024,Q4 2024,2024-10-20,6
+OPP-00351,Prospect,Helix Data,Closed Lost,25000,2025-09-15,Liam Chen,SMB,West,2025-09-06,2025-09-17,274,Omit,false,true,New,Q3 2025,Q3 2025,2025-09-06,9
+OPP-00352,Prospect,Gong Revenue,Prospect,124000,2026-06-14,Diego Fernandez,Mid-Market,East,2026-03-10,2026-05-24,25,Omit,false,false,New,Q1 2026,Q2 2026,2026-03-10,100
+OPP-00353,Prospect,Clearbit Technologies,Prospect,169000,2026-04-11,Aria Stephens,Mid-Market,East,2026-01-12,2026-06-08,10,Omit,false,false,New,Q1 2026,Q2 2026,2026-01-12,157
+OPP-00354,Proposal,Grafana Ops,Proposal,7416,2026-04-15,Elena Okafor,SMB,East,2026-03-06,2026-04-25,54,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-04-06,73
+OPP-00355,Qualified,TaxJar Cloud,Closed Lost,71308,2025-11-27,Caleb Nguyen,Mid-Market,East,2025-11-10,2025-11-28,202,Omit,false,true,Expansion,Q4 2025,Q4 2025,2025-11-19,8
+OPP-00356,Commit,Airfocus Cloud,Closed Won,28612,2024-05-03,Elena Okafor,Mid-Market,East,2024-03-13,2024-05-03,776,Closed,true,true,Expansion,Q1 2024,Q2 2024,2024-04-23,10
+OPP-00357,Demo,Aha Software,Closed Lost,72000,2025-05-09,Avery Singh,Mid-Market,Central,2025-04-12,2025-05-11,403,Omit,false,true,New,Q2 2025,Q2 2025,2025-05-02,7
+OPP-00358,Commit,Paddle Analytics,Closed Won,150000,2024-12-17,Jordan Kelly,Mid-Market,Central,2024-11-02,2024-12-19,546,Closed,true,true,New,Q4 2024,Q4 2024,2024-12-04,13
+OPP-00359,Proposal,Front Systems,Proposal,96000,2026-08-08,Aria Stephens,Mid-Market,East,2026-05-18,2026-06-15,3,Best Case,false,false,Renewal,Q2 2026,Q3 2026,2026-06-06,12
+OPP-00360,Qualified,Outreach Systems,Qualified,13000,2026-06-22,Elena Okafor,SMB,East,2026-05-09,2026-06-16,2,Best Case,false,false,Expansion,Q2 2026,Q2 2026,2026-05-14,35
+OPP-00361,Commit,Blissfully Cloud,Closed Won,730000,2024-10-16,Avery Singh,Enterprise,Central,2024-09-01,2024-10-18,608,Closed,true,true,New,Q3 2024,Q4 2024,2024-10-05,11
+OPP-00362,Qualified,Airbyte Data,Qualified,19000,2026-04-11,Sofia Ramirez,SMB,West,2026-02-19,2026-05-26,23,Best Case,false,false,New,Q1 2026,Q2 2026,2026-03-02,108
+OPP-00363,Demo,Secoda Data,Demo,129000,2026-01-30,Caleb Nguyen,Mid-Market,East,2025-11-15,2026-06-10,8,Best Case,false,false,New,Q4 2025,Q1 2026,2025-12-02,198
+OPP-00364,Commit,Soda Analytics,Closed Won,7206,2024-03-20,Avery Singh,SMB,Central,2024-01-27,2024-03-23,817,Closed,true,true,Expansion,Q1 2024,Q1 2024,2024-03-09,11
+OPP-00365,Proposal,Mutiny Systems,Proposal,26000,2026-07-08,Caleb Nguyen,SMB,East,2026-05-26,2026-06-13,5,Best Case,false,false,New,Q2 2026,Q3 2026,2026-06-17,1
+OPP-00366,Demo,Endgame Platform,Closed Lost,6753,2025-02-25,Liam Chen,SMB,West,2025-02-01,2025-02-25,478,Omit,false,true,Expansion,Q1 2025,Q1 2025,2025-02-20,5
+OPP-00367,Demo,Monte Carlo Data,Closed Lost,45180,2023-12-15,Aria Stephens,Mid-Market,East,2023-11-19,2023-12-15,916,Omit,false,true,Expansion,Q4 2023,Q4 2023,2023-12-08,7
+OPP-00368,Qualified,Orbit Platform,Qualified,265412,2026-04-21,Sofia Ramirez,Enterprise,West,2026-01-24,2026-06-01,17,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-01-25,144
+OPP-00369,Proposal,Ramp Analytics,Proposal,85000,2026-04-04,Ethan Brooks,Mid-Market,West,2026-01-18,2026-06-04,14,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-02-09,129
+OPP-00370,Demo,Blissfully Cloud,Demo,81000,2026-09-11,Jordan Kelly,Mid-Market,Central,2026-05-23,2026-06-16,2,Best Case,false,false,Renewal,Q2 2026,Q3 2026,2026-06-10,8
+OPP-00371,Qualified,Freshdesk Systems,Closed Lost,22000,2024-11-28,Elena Okafor,SMB,East,2024-11-08,2024-12-01,564,Omit,false,true,New,Q4 2024,Q4 2024,2024-11-17,11
+OPP-00372,Qualified,Mosaic Cloud,Qualified,244226,2026-03-17,Zara Mitchell,Enterprise,East,2025-12-21,2026-06-05,13,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2026-01-01,168
+OPP-00373,Commit,dbt Labs,Closed Won,96000,2025-12-27,Caleb Nguyen,Mid-Market,East,2025-11-09,2025-12-28,172,Closed,true,true,New,Q4 2025,Q4 2025,2025-12-17,10
+OPP-00374,Qualified,Metaphor Networks,Closed Lost,36000,2025-10-07,Avery Singh,SMB,Central,2025-09-24,2025-10-10,251,Omit,false,true,New,Q3 2025,Q4 2025,2025-09-30,7
+OPP-00375,Prospect,Correlated SaaS,Prospect,7900,2026-07-03,Liam Chen,SMB,West,2026-05-19,2026-06-01,17,Omit,false,false,Expansion,Q2 2026,Q3 2026,2026-05-19,30
+OPP-00376,Prospect,Mosaic Cloud,Prospect,479000,2026-04-21,Zara Mitchell,Enterprise,East,2025-12-04,2026-06-06,12,Omit,false,false,New,Q4 2025,Q2 2026,2025-12-04,196
+OPP-00377,Commit,Qualified Platform,Closed Won,24000,2024-12-28,Sofia Ramirez,SMB,West,2024-11-07,2024-12-31,534,Closed,true,true,Expansion,Q4 2024,Q4 2024,2024-12-18,10
+OPP-00378,Proposal,Avalara Systems,Proposal,623000,2026-03-20,Noah Patel,Enterprise,Central,2025-12-04,2026-05-26,23,Best Case,false,false,New,Q4 2025,Q1 2026,2025-12-26,174
+OPP-00379,Qualified,Correlated SaaS,Closed Lost,548000,2025-09-25,Priya Kapoor,Enterprise,West,2025-09-07,2025-09-26,265,Omit,false,true,New,Q3 2025,Q3 2025,2025-09-15,10
+OPP-00380,Qualified,Front Systems,Qualified,23000,2026-02-09,Mia Torres,SMB,West,2025-12-29,2026-06-17,1,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2026-01-06,163
+OPP-00381,Qualified,Apexon Digital,Qualified,27000,2026-03-30,Avery Singh,SMB,Central,2026-02-23,2026-06-02,16,Best Case,false,false,Renewal,Q1 2026,Q1 2026,2026-03-03,107
+OPP-00382,Demo,GreatX Corp,Demo,559000,2026-05-15,Diego Fernandez,Enterprise,East,2025-12-06,2026-06-06,12,Best Case,false,false,New,Q4 2025,Q2 2026,2025-12-23,177
+OPP-00383,Commit,Quolum SaaS,Closed Won,127000,2024-06-29,Noah Patel,Mid-Market,Central,2024-05-02,2024-06-29,719,Closed,true,true,Expansion,Q2 2024,Q2 2024,2024-06-16,13
+OPP-00384,Prospect,Pulsar Systems,Prospect,69000,2026-06-25,Aria Stephens,Mid-Market,East,2026-03-08,2026-04-27,52,Omit,false,false,New,Q1 2026,Q2 2026,2026-03-08,102
+OPP-00385,Commit,Fivetran Systems,Commit,37409,2026-05-02,Ethan Brooks,Mid-Market,West,2026-01-27,2026-06-11,7,Commit,false,false,Expansion,Q1 2026,Q2 2026,2026-03-13,97
+OPP-00386,Demo,Zuora Platform,Demo,23000,2026-05-10,Avery Singh,SMB,Central,2026-03-25,2026-06-15,3,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-04-16,63
+OPP-00387,Demo,Aha Software,Demo,8385,2026-06-12,Sofia Ramirez,SMB,West,2026-05-01,2026-06-05,13,Best Case,false,false,Expansion,Q2 2026,Q2 2026,2026-05-16,33
+OPP-00388,Prospect,Apollo Cloud,Closed Lost,203108,2024-02-20,Noah Patel,Enterprise,Central,2024-02-10,2024-02-21,848,Omit,false,true,Expansion,Q1 2024,Q1 2024,2024-02-10,10
+OPP-00389,Demo,Bombora Systems,Demo,23000,2026-07-06,Priya Kapoor,SMB,West,2026-06-05,2026-06-09,9,Best Case,false,false,New,Q2 2026,Q3 2026,2026-06-23,0
+OPP-00390,Prospect,Recurly Systems,Prospect,32529,2026-01-02,Noah Patel,Mid-Market,Central,2025-09-29,2026-05-26,23,Omit,false,false,Expansion,Q3 2025,Q1 2026,2025-09-29,262
+OPP-00391,Demo,Mosaic Cloud,Closed Lost,153000,2024-02-11,Jordan Kelly,Mid-Market,Central,2024-01-16,2024-02-14,855,Omit,false,true,New,Q1 2024,Q1 2024,2024-02-04,7
+OPP-00392,Prospect,Correlated SaaS,Prospect,25000,2026-04-16,Elena Okafor,SMB,East,2026-03-02,2026-06-06,12,Omit,false,false,Renewal,Q1 2026,Q2 2026,2026-03-02,108
+OPP-00393,Prospect,Orbit Platform,Closed Lost,5842,2025-07-07,Marcus Webb,SMB,Central,2025-06-21,2025-07-07,346,Omit,false,true,Expansion,Q2 2025,Q3 2025,2025-06-21,16
+OPP-00394,Commit,ProfitWell Systems,Closed Won,40632,2025-06-06,Ethan Brooks,Mid-Market,West,2025-04-10,2025-06-06,377,Closed,true,true,Expansion,Q2 2025,Q2 2025,2025-05-28,9
+OPP-00395,Qualified,Chartmogul Analytics,Qualified,27945,2026-03-02,Aria Stephens,Mid-Market,East,2025-12-07,2026-05-24,25,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-12-13,187
+OPP-00396,Commit,Soda Analytics,Closed Won,41466,2024-09-15,Ethan Brooks,Mid-Market,West,2024-08-02,2024-09-15,641,Closed,true,true,Expansion,Q3 2024,Q3 2024,2024-09-06,9
+OPP-00397,Demo,Runway Financial,Demo,122779,2026-01-02,Zara Mitchell,Enterprise,East,2025-11-02,2026-06-07,11,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-11-18,212
+OPP-00398,Prospect,Warmly Cloud,Prospect,16000,2026-07-15,Avery Singh,SMB,Central,2026-05-31,2026-06-08,10,Omit,false,false,Expansion,Q2 2026,Q3 2026,2026-05-31,18
+OPP-00399,Commit,Craft Platform,Closed Won,107000,2025-05-17,Diego Fernandez,Mid-Market,East,2025-03-29,2025-05-18,396,Closed,true,true,Renewal,Q1 2025,Q2 2025,2025-05-04,13
+OPP-00400,Demo,Pocus Systems,Demo,99909,2026-06-25,Zara Mitchell,Enterprise,East,2026-01-10,2026-06-09,9,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-01-27,142
+OPP-00401,Commit,Aha Software,Closed Lost,42582,2025-10-27,Caleb Nguyen,Mid-Market,East,2025-08-31,2025-10-28,233,Omit,false,true,Expansion,Q3 2025,Q4 2025,2025-10-08,19
+OPP-00402,Commit,Totango Analytics,Commit,86000,2026-08-02,Noah Patel,Mid-Market,Central,2026-05-02,2026-05-02,47,Commit,false,false,Expansion,Q2 2026,Q3 2026,2026-05-29,20
+OPP-00403,Demo,Castor Analytics,Demo,182976,2026-06-08,Aria Stephens,Enterprise,East,2026-02-11,2026-06-09,9,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-02-28,110
+OPP-00404,Commit,Paddle Analytics,Closed Won,25000,2024-09-04,Mia Torres,SMB,West,2024-07-12,2024-09-05,651,Closed,true,true,Renewal,Q3 2024,Q3 2024,2024-08-20,15
+OPP-00405,Demo,Figment Cloud,Demo,249013,2026-02-04,Priya Kapoor,Enterprise,West,2025-11-20,2026-06-14,4,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-12-09,191
+OPP-00406,Commit,Ramp Analytics,Closed Won,61681,2025-07-23,Ethan Brooks,Mid-Market,West,2025-06-05,2025-07-24,329,Closed,true,true,Expansion,Q2 2025,Q3 2025,2025-07-15,8
+OPP-00407,Qualified,Blissfully Cloud,Qualified,7222,2026-02-11,Liam Chen,SMB,West,2026-01-06,2026-05-11,38,Best Case,false,false,Expansion,Q1 2026,Q1 2026,2026-01-13,156
+OPP-00408,Commit,Airfocus Cloud,Closed Lost,185686,2025-07-14,Aria Stephens,Enterprise,East,2025-05-17,2025-07-16,337,Omit,false,true,Expansion,Q2 2025,Q3 2025,2025-06-28,16
+OPP-00409,Qualified,Vitally CS,Qualified,21000,2026-08-25,Mia Torres,SMB,West,2026-07-20,2026-05-29,20,Best Case,false,false,Renewal,Q3 2026,Q3 2026,2026-07-28,0
+OPP-00410,Qualified,Lusha Analytics,Qualified,35730,2026-07-21,Diego Fernandez,Mid-Market,East,2026-04-29,2026-06-13,5,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-05-06,43
+OPP-00411,Qualified,TaxJar Cloud,Closed Lost,30000,2025-10-30,Priya Kapoor,SMB,West,2025-10-17,2025-11-02,228,Omit,false,true,New,Q4 2025,Q4 2025,2025-10-26,4
+OPP-00412,Commit,Endgame Platform,Closed Won,418000,2024-05-13,Priya Kapoor,Enterprise,West,2024-03-25,2024-05-16,763,Closed,true,true,Renewal,Q1 2024,Q2 2024,2024-04-28,15
+OPP-00413,Qualified,ZoomInfo Data,Qualified,113000,2026-08-02,Diego Fernandez,Mid-Market,East,2026-06-01,2026-05-25,24,Best Case,false,false,Renewal,Q2 2026,Q3 2026,2026-06-13,5
+OPP-00414,Qualified,Ramp Analytics,Qualified,143085,2026-04-25,Avery Singh,Enterprise,Central,2026-01-21,2026-05-20,29,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-01-31,138
+OPP-00415,Commit,Apollo Cloud,Closed Won,97000,2025-11-08,Elena Okafor,Mid-Market,East,2025-09-04,2025-11-10,220,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-20,19
+OPP-00416,Qualified,Cobalt Security,Closed Lost,437000,2024-12-10,Marcus Webb,Enterprise,Central,2024-11-22,2024-12-12,553,Omit,false,true,New,Q4 2024,Q4 2024,2024-11-30,10
+OPP-00417,Proposal,Apexon Digital,Proposal,381000,2026-03-29,Zara Mitchell,Enterprise,East,2025-12-14,2026-05-01,48,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2026-01-15,154
+OPP-00418,Commit,Monte Carlo Data,Closed Won,32000,2025-09-07,Elena Okafor,SMB,East,2025-07-13,2025-09-07,284,Closed,true,true,Renewal,Q3 2025,Q3 2025,2025-08-23,15
+OPP-00419,Demo,Avalara Systems,Demo,26000,2026-08-12,Mia Torres,SMB,West,2026-07-01,2026-06-09,9,Best Case,false,false,Expansion,Q3 2026,Q3 2026,2026-07-21,0
+OPP-00420,Prospect,Monte Carlo Data,Closed Lost,13000,2024-02-23,Avery Singh,SMB,Central,2024-02-15,2024-02-25,844,Omit,false,true,Churn,Q1 2024,Q1 2024,2024-02-15,8
+OPP-00421,Proposal,Chorus Analytics,Proposal,38806,2026-07-25,Jordan Kelly,Mid-Market,Central,2026-04-22,2026-05-27,22,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-05-17,32
+OPP-00422,Demo,Freshdesk Systems,Demo,24000,2026-04-12,Zara Mitchell,SMB,East,2026-03-11,2026-06-17,1,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-03-23,87
+OPP-00423,Commit,Chorus Analytics,Closed Won,170481,2025-03-23,Ethan Brooks,Enterprise,West,2025-02-05,2025-03-26,449,Closed,true,true,Expansion,Q1 2025,Q1 2025,2025-03-13,10
+OPP-00424,Qualified,Figment Cloud,Qualified,168501,2026-07-22,Marcus Webb,Enterprise,Central,2026-02-18,2026-05-24,25,Best Case,false,false,Expansion,Q1 2026,Q3 2026,2026-03-01,109
+OPP-00425,Qualified,Aha Software,Closed Lost,114000,2025-03-23,Aria Stephens,Mid-Market,East,2025-03-07,2025-03-25,450,Omit,false,true,New,Q1 2025,Q1 2025,2025-03-15,8
+OPP-00426,Commit,Notion Labs,Commit,83000,2026-03-10,Aria Stephens,Mid-Market,East,2025-12-16,2026-06-04,14,Commit,false,false,Renewal,Q4 2025,Q1 2026,2026-01-29,140
+OPP-00427,Demo,Airbyte Data,Demo,35349,2026-02-07,Noah Patel,Mid-Market,Central,2025-11-12,2026-06-03,15,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-11-30,200
+OPP-00428,Commit,Mutiny Systems,Closed Lost,80000,2024-08-15,Jordan Kelly,Mid-Market,Central,2024-06-23,2024-08-18,669,Omit,false,true,New,Q2 2024,Q3 2024,2024-08-02,13
+OPP-00429,Commit,Roadmunk Analytics,Closed Won,20754,2025-03-14,Sofia Ramirez,Mid-Market,West,2025-01-22,2025-03-16,459,Closed,true,true,Expansion,Q1 2025,Q1 2025,2025-03-03,11
+OPP-00430,Commit,Roadmunk Analytics,Closed Won,90000,2024-02-01,Diego Fernandez,Mid-Market,East,2023-12-22,2024-02-02,867,Closed,true,true,Renewal,Q4 2023,Q1 2024,2024-01-22,10
+OPP-00431,Commit,Chorus Analytics,Closed Won,9577,2024-10-20,Liam Chen,SMB,West,2024-09-07,2024-10-22,604,Closed,true,true,Expansion,Q3 2024,Q4 2024,2024-10-09,11
+OPP-00432,Demo,Correlated SaaS,Demo,276008,2026-08-03,Marcus Webb,Enterprise,Central,2026-03-14,2026-06-05,13,Best Case,false,false,Expansion,Q1 2026,Q3 2026,2026-04-01,78
+OPP-00433,Qualified,Salesloft Platform,Qualified,72000,2026-02-26,Elena Okafor,Mid-Market,East,2025-12-03,2026-06-15,3,Best Case,false,false,New,Q4 2025,Q1 2026,2025-12-09,191
+OPP-00434,Proposal,Intercom Platform,Closed Lost,32114,2025-11-10,Sofia Ramirez,Mid-Market,West,2025-10-05,2025-11-11,219,Omit,false,true,Expansion,Q4 2025,Q4 2025,2025-10-29,12
+OPP-00435,Demo,Vitally CS,Demo,229109,2026-01-13,Noah Patel,Enterprise,Central,2025-10-19,2026-06-13,5,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-11-05,225
+OPP-00436,Commit,Grafana Ops,Closed Won,36939,2024-04-28,Sofia Ramirez,Mid-Market,West,2024-03-03,2024-04-28,781,Closed,true,true,Expansion,Q1 2024,Q2 2024,2024-04-14,14
+OPP-00437,Commit,Orbit Platform,Closed Won,176000,2025-05-04,Ethan Brooks,Mid-Market,West,2025-03-13,2025-05-05,409,Closed,true,true,Renewal,Q1 2025,Q2 2025,2025-04-22,12
+OPP-00438,Commit,Rippling Networks,Closed Won,26000,2025-10-30,Elena Okafor,SMB,East,2025-09-10,2025-11-01,229,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-17,13
+OPP-00439,Commit,Paddle Analytics,Commit,98000,2026-09-24,Caleb Nguyen,Mid-Market,East,2026-06-18,2026-06-07,11,Commit,false,false,Renewal,Q2 2026,Q3 2026,2026-07-26,0
+OPP-00440,Demo,Apollo Cloud,Demo,51167,2026-09-09,Caleb Nguyen,Mid-Market,East,2026-07-01,2026-06-14,4,Best Case,false,false,Expansion,Q3 2026,Q3 2026,2026-07-21,0
+OPP-00441,Commit,ClientSuccess Data,Closed Won,18000,2025-10-13,Liam Chen,SMB,West,2025-08-29,2025-10-16,245,Closed,true,true,Renewal,Q3 2025,Q4 2025,2025-10-03,10
+OPP-00442,Prospect,Fivetran Systems,Prospect,37517,2026-08-04,Sofia Ramirez,Mid-Market,West,2026-05-15,2026-06-17,1,Omit,false,false,Expansion,Q2 2026,Q3 2026,2026-05-15,34
+OPP-00443,Demo,Tidio Platform,Demo,153570,2026-09-23,Marcus Webb,Enterprise,Central,2026-05-23,2026-06-10,8,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-06-03,15
+OPP-00444,Commit,Chartmogul Analytics,Closed Won,17000,2024-07-20,Priya Kapoor,SMB,West,2024-05-25,2024-07-23,695,Closed,true,true,Renewal,Q2 2024,Q3 2024,2024-07-10,10
+OPP-00445,Commit,GreatX Corp,Closed Won,87000,2025-05-20,Aria Stephens,Mid-Market,East,2025-04-12,2025-05-21,393,Closed,true,true,Expansion,Q2 2025,Q2 2025,2025-05-12,8
+OPP-00446,Qualified,Bombora Systems,Closed Lost,86000,2024-04-17,Noah Patel,Mid-Market,Central,2024-03-28,2024-04-19,790,Omit,false,true,Churn,Q1 2024,Q2 2024,2024-04-07,10
+OPP-00447,Prospect,Soda Analytics,Closed Lost,259000,2023-12-10,Marcus Webb,Enterprise,Central,2023-11-25,2023-12-13,918,Omit,false,true,Churn,Q4 2023,Q4 2023,2023-11-25,15
+OPP-00448,Qualified,Ada Support,Closed Lost,171000,2025-03-15,Aria Stephens,Mid-Market,East,2025-03-04,2025-03-16,459,Omit,false,true,Churn,Q1 2025,Q1 2025,2025-03-09,6
+OPP-00449,Demo,GreatX Corp,Demo,550000,2026-07-08,Caleb Nguyen,Enterprise,East,2026-02-11,2026-06-16,2,Best Case,false,false,Renewal,Q1 2026,Q3 2026,2026-02-23,115
+OPP-00450,Commit,Bigeye Solutions,Closed Won,14541,2025-04-03,Mia Torres,SMB,West,2025-02-12,2025-04-03,441,Closed,true,true,Expansion,Q1 2025,Q2 2025,2025-03-24,10
+OPP-00451,Commit,Salesloft Platform,Closed Won,90000,2024-06-07,Noah Patel,Mid-Market,Central,2024-04-16,2024-06-09,739,Closed,true,true,New,Q2 2024,Q2 2024,2024-05-25,13
+OPP-00452,Commit,ChurnZero Analytics,Commit,25000,2026-09-01,Mia Torres,SMB,West,2026-07-30,2026-05-24,25,Commit,false,false,Renewal,Q3 2026,Q3 2026,2026-09-07,0
+OPP-00453,Proposal,Baremetrics Cloud,Proposal,34163,2026-02-21,Sofia Ramirez,Mid-Market,West,2025-10-31,2026-06-14,4,Best Case,false,false,Expansion,Q4 2025,Q1 2026,2025-11-18,212
+OPP-00454,Proposal,Runway Financial,Proposal,11232,2026-07-05,Mia Torres,SMB,West,2026-05-21,2026-05-31,18,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-06-08,10
+OPP-00455,Prospect,Airbyte Data,Prospect,138000,2026-06-23,Sofia Ramirez,Mid-Market,West,2026-04-02,2026-06-04,14,Omit,false,false,New,Q2 2026,Q2 2026,2026-04-02,77
+OPP-00456,Commit,Aha Software,Commit,133000,2026-02-11,Diego Fernandez,Mid-Market,East,2025-11-01,2026-05-25,24,Commit,false,false,New,Q4 2025,Q1 2026,2025-12-08,192
+OPP-00457,Commit,Tidio Platform,Commit,34568,2026-06-18,Caleb Nguyen,Mid-Market,East,2026-04-11,2026-06-16,2,Commit,false,false,Expansion,Q2 2026,Q2 2026,2026-05-27,22
+OPP-00458,Proposal,Roadmunk Analytics,Proposal,20000,2026-09-04,Zara Mitchell,SMB,East,2026-07-25,2026-06-14,4,Best Case,false,false,New,Q3 2026,Q3 2026,2026-08-14,0
+OPP-00459,Commit,Grafana Ops,Closed Won,323456,2025-11-27,Priya Kapoor,Enterprise,West,2025-10-01,2025-11-27,203,Closed,true,true,Expansion,Q4 2025,Q4 2025,2025-11-16,11
+OPP-00460,Prospect,Intercom Platform,Closed Lost,91000,2025-08-30,Aria Stephens,Mid-Market,East,2025-08-16,2025-08-31,291,Omit,false,true,Churn,Q3 2025,Q3 2025,2025-08-16,14
+OPP-00461,Proposal,Avalara Systems,Proposal,347000,2026-06-24,Zara Mitchell,Enterprise,East,2026-01-26,2026-06-17,1,Best Case,false,false,New,Q1 2026,Q2 2026,2026-02-20,118
+OPP-00462,Proposal,Synder Platform,Proposal,341000,2026-09-16,Zara Mitchell,Enterprise,East,2026-05-08,2026-06-13,5,Best Case,false,false,Renewal,Q2 2026,Q3 2026,2026-05-25,24
+OPP-00463,Prospect,Synder Platform,Prospect,30605,2026-04-15,Ethan Brooks,Mid-Market,West,2026-02-21,2026-05-13,36,Omit,false,false,Expansion,Q1 2026,Q2 2026,2026-02-21,117
+OPP-00464,Demo,Kustomer Analytics,Closed Lost,8610,2024-02-25,Liam Chen,SMB,West,2024-01-31,2024-02-28,841,Omit,false,true,Expansion,Q1 2024,Q1 2024,2024-02-19,6
+OPP-00465,Prospect,Cognism Platform,Prospect,85000,2026-05-03,Caleb Nguyen,Mid-Market,East,2026-01-20,2026-06-17,1,Omit,false,false,New,Q1 2026,Q2 2026,2026-01-20,149
+OPP-00466,Commit,Torii Platform,Closed Won,103000,2024-05-28,Aria Stephens,Mid-Market,East,2024-04-15,2024-05-30,749,Closed,true,true,New,Q2 2024,Q2 2024,2024-05-20,8
+OPP-00467,Commit,Gong Revenue,Closed Won,87000,2024-07-13,Caleb Nguyen,Mid-Market,East,2024-05-20,2024-07-16,702,Closed,true,true,New,Q2 2024,Q3 2024,2024-06-25,18
+OPP-00468,Commit,Chorus Analytics,Closed Won,5315,2025-05-26,Sofia Ramirez,SMB,West,2025-04-07,2025-05-28,386,Closed,true,true,Expansion,Q2 2025,Q2 2025,2025-05-16,10
+OPP-00469,Prospect,Retool Software,Closed Lost,270000,2025-03-27,Noah Patel,Enterprise,Central,2025-03-17,2025-03-27,448,Omit,false,true,New,Q1 2025,Q1 2025,2025-03-17,10
+OPP-00470,Commit,Planhat Systems,Closed Won,18355,2025-06-15,Mia Torres,SMB,West,2025-04-28,2025-06-17,366,Closed,true,true,Expansion,Q2 2025,Q2 2025,2025-06-05,10
+OPP-00471,Proposal,Roadmunk Analytics,Closed Lost,425000,2024-06-04,Noah Patel,Enterprise,Central,2024-04-23,2024-06-06,742,Omit,false,true,New,Q2 2024,Q2 2024,2024-05-19,16
+OPP-00472,Qualified,Pocus Systems,Qualified,14358,2026-05-17,Liam Chen,SMB,West,2026-04-14,2026-06-05,13,Best Case,false,false,Expansion,Q2 2026,Q2 2026,2026-04-26,53
+OPP-00473,Qualified,Bombora Systems,Qualified,94000,2026-05-03,Mia Torres,Mid-Market,West,2026-03-07,2026-06-12,6,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-03-16,94
+OPP-00474,Prospect,Zuora Platform,Prospect,10808,2026-09-05,Mia Torres,SMB,West,2026-07-30,2026-05-29,20,Omit,false,false,Expansion,Q3 2026,Q3 2026,2026-07-30,0
+OPP-00475,Prospect,Salesloft Platform,Closed Lost,135000,2024-06-19,Priya Kapoor,Mid-Market,West,2024-06-07,2024-06-22,726,Omit,false,true,New,Q2 2024,Q2 2024,2024-06-07,12
+OPP-00476,Commit,Brex Platform,Commit,128000,2026-02-26,Jordan Kelly,Mid-Market,Central,2025-12-05,2026-06-17,1,Commit,false,false,Renewal,Q4 2025,Q1 2026,2026-01-13,156
+OPP-00477,Demo,Apollo Cloud,Demo,245967,2026-06-20,Noah Patel,Enterprise,Central,2026-02-12,2026-04-26,53,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-03-08,102
+OPP-00478,Demo,Mutiny Systems,Demo,523000,2026-09-03,Priya Kapoor,Enterprise,West,2026-05-02,2026-05-07,42,Best Case,false,false,New,Q2 2026,Q3 2026,2026-05-20,29
+OPP-00479,Demo,Anomalo Systems,Closed Lost,39649,2024-06-13,Liam Chen,Mid-Market,West,2024-05-10,2024-06-14,734,Omit,false,true,Expansion,Q2 2024,Q2 2024,2024-06-05,8
+OPP-00480,Commit,Chisel Analytics,Closed Won,133000,2025-10-22,Zara Mitchell,Mid-Market,East,2025-09-04,2025-10-25,236,Closed,true,true,New,Q3 2025,Q4 2025,2025-10-09,13
+OPP-00481,Proposal,Gainsight Cloud,Proposal,152000,2026-06-15,Jordan Kelly,Mid-Market,Central,2026-03-22,2026-06-05,13,Best Case,false,false,New,Q1 2026,Q2 2026,2026-04-16,63
+OPP-00482,Prospect,Gong Revenue,Closed Lost,126000,2024-01-22,Diego Fernandez,Mid-Market,East,2024-01-11,2024-01-22,878,Omit,false,true,Churn,Q1 2024,Q1 2024,2024-01-11,11
+OPP-00483,Commit,Freshdesk Systems,Closed Won,89000,2024-01-04,Diego Fernandez,Mid-Market,East,2023-11-20,2024-01-07,893,Closed,true,true,Renewal,Q4 2023,Q1 2024,2023-12-27,8
+OPP-00484,Commit,Chargebee Cloud,Closed Won,118000,2025-05-20,Jordan Kelly,Mid-Market,Central,2025-03-27,2025-05-23,391,Closed,true,true,New,Q1 2025,Q2 2025,2025-05-02,18
+OPP-00485,Commit,Front Systems,Closed Won,19000,2025-11-10,Avery Singh,SMB,Central,2025-09-19,2025-11-12,218,Closed,true,true,Renewal,Q3 2025,Q4 2025,2025-10-26,15
+OPP-00486,Proposal,Kinetica Labs,Proposal,607000,2026-02-03,Noah Patel,Enterprise,Central,2025-09-24,2026-06-15,3,Best Case,false,false,Renewal,Q3 2025,Q1 2026,2025-10-15,246
+OPP-00487,Prospect,Roadmunk Analytics,Prospect,51775,2026-08-01,Marcus Webb,Mid-Market,Central,2026-05-05,2026-06-09,9,Omit,false,false,Expansion,Q2 2026,Q3 2026,2026-05-05,44
+OPP-00488,Proposal,Front Systems,Proposal,197422,2026-05-26,Priya Kapoor,Enterprise,West,2026-01-04,2026-04-28,51,Best Case,false,false,Expansion,Q1 2026,Q2 2026,2026-01-25,144
+OPP-00489,Proposal,ClientSuccess Data,Proposal,73000,2026-02-07,Caleb Nguyen,Mid-Market,East,2025-11-03,2026-05-31,18,Best Case,false,false,Renewal,Q4 2025,Q1 2026,2025-11-22,208
+OPP-00490,Prospect,ZoomInfo Data,Prospect,337120,2026-04-04,Zara Mitchell,Enterprise,East,2025-11-03,2026-06-15,3,Omit,false,false,Expansion,Q4 2025,Q2 2026,2025-11-03,227
+OPP-00491,Commit,Tidio Platform,Closed Won,107054,2025-04-18,Priya Kapoor,Enterprise,West,2025-03-09,2025-04-21,423,Closed,true,true,Expansion,Q1 2025,Q2 2025,2025-04-14,4
+OPP-00492,Qualified,Torii Platform,Qualified,80587,2026-07-01,Ethan Brooks,Mid-Market,West,2026-04-27,2026-05-09,40,Best Case,false,false,Expansion,Q2 2026,Q3 2026,2026-05-01,48
+OPP-00493,Proposal,Blissfully Cloud,Proposal,621000,2026-01-24,Ethan Brooks,Enterprise,West,2025-10-20,2026-05-07,42,Best Case,false,false,New,Q4 2025,Q1 2026,2025-11-18,212
+OPP-00494,Commit,Monte Carlo Data,Closed Won,102000,2024-11-30,Caleb Nguyen,Mid-Market,East,2024-10-07,2024-11-30,565,Closed,true,true,Renewal,Q4 2024,Q4 2024,2024-11-15,15
+OPP-00495,Demo,Fivetran Systems,Demo,80000,2026-05-02,Diego Fernandez,Mid-Market,East,2026-02-20,2026-05-14,35,Best Case,false,false,Renewal,Q1 2026,Q2 2026,2026-03-13,97
+OPP-00496,Prospect,TaxJar Cloud,Closed Lost,653000,2024-11-15,Caleb Nguyen,Enterprise,East,2024-11-09,2024-11-15,580,Omit,false,true,Churn,Q4 2024,Q4 2024,2024-11-09,6
+OPP-00497,Proposal,Chisel Analytics,Proposal,458000,2026-05-05,Diego Fernandez,Enterprise,East,2025-12-19,2026-05-08,41,Best Case,false,false,Renewal,Q4 2025,Q2 2026,2026-01-07,162
+OPP-00498,Prospect,Helix Data,Prospect,11006,2026-06-29,Liam Chen,SMB,West,2026-05-15,2026-06-09,9,Omit,false,false,Expansion,Q2 2026,Q2 2026,2026-05-15,34
+OPP-00499,Qualified,Temporal Cloud,Qualified,38000,2026-07-21,Mia Torres,SMB,West,2026-06-19,2026-05-30,19,Best Case,false,false,New,Q2 2026,Q3 2026,2026-06-26,0
+OPP-00500,Commit,Apollo Cloud,Closed Won,8035,2024-10-14,Noah Patel,SMB,Central,2024-08-28,2024-10-14,612,Closed,true,true,Expansion,Q3 2024,Q4 2024,2024-10-02,12

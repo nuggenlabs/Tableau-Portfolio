@@ -50,13 +50,14 @@ This dashboard replaces the weekly slide deck with a governed reporting layer. E
 
 ## Data Model
 
-Three CSV files. Connect in Tableau using the relationship canvas (not joins or blends).
+Four CSV files. Connect in Tableau using the relationship canvas (not joins or blends).
 
 ```
 opportunities.csv  ←─── primary table
        │
        ├── stage_history.csv   (on OpportunityID)
-       └── quotas.csv          (on Owner AND CloseQuarter = Quarter)
+       ├── quotas.csv          (on Owner AND CloseQuarter = Quarter)
+       └── quotas_by_segment.csv (on Segment AND CloseQuarter = Quarter)
 ```
 
 | File | Rows | Grain |
@@ -64,6 +65,7 @@ opportunities.csv  ←─── primary table
 | `opportunities.csv` | 500 | One row per opportunity |
 | `stage_history.csv` | ~1,675 | One row per stage per opportunity |
 | `quotas.csv` | 154 | One row per rep per quarter |
+| `quotas_by_segment.csv` | 33 | One row per segment per quarter |
 
 **Outcome mix:** 148 Closed Won · 112 Closed Lost · 240 Open pipeline  
 **Date range:** Q1 2024 – Q4 2025 (closed); Q1 – Q3 2026 (open pipeline close dates)  
@@ -83,8 +85,9 @@ python .\generate_mock_data.py
 | `FIXED` LOD expression | Pipeline Coverage scorecard — anchors ratio to Segment × Quarter so rep/region filters don't distort it |
 | Dashboard tooltips with mini-chart | Stage Funnel — hover shows win rate + avg days-in-stage per stage via a sheet-referenced tooltip |
 | Set action (rep drill-through) | Tab 1 — click a rep to show their individual deal list; click away to clear |
-| Dynamic reference band | Coverage scorecard — reference line at `[Coverage Target]` parameter, not hardcoded |
-| Corner radius (2026.1) | All KPI card containers, 8px |
+| Dynamic reference band | Coverage scorecard — reference line at `[p.Coverage Target]` parameter, not hardcoded |
+| Corner radius (2026.1) | All KPI and chart containers, 10px |
+| Custom shapes | Tab 1 Pipeline Coverage scorecard uses rounded badge PNGs from `tableau_shapes/pipeline_badges/` |
 
 ---
 
@@ -97,6 +100,8 @@ python .\generate_mock_data.py
 | `data_dictionary.md` | Done |
 | `tableau_build_guide.md` | Done — includes all calculated field formulas |
 | `wireframes/` | Done — ASCII wireframes for all 3 tabs |
+| `tab1_mockup_v3.html` | Done — recommended Tab 1 design direction |
+| `tableau_shapes/` | Done — custom coverage badges and status markers |
 | Tableau workbook build | Not started |
 | Published to Tableau Public | Not started |
 | LinkedIn post | Not started |
@@ -113,11 +118,18 @@ python .\generate_mock_data.py
 
 ## Design Standards
 
-- Background: `#1A1F2E` (dark navy)
-- Positive / on track: `#008C7A`
-- Negative / at risk: `#C0392B`
-- Monitor / watch: `#F2A900`
-- Accent (Commit forecast): `#5B6ABF`
-- KPI value: 28pt semibold white
+- Use the `dark chrome / light content` pattern from `workbook_formatting_guide.md`: dark navy tab navigation, light dashboard canvas, white KPI and chart cards.
+- Dashboard canvas: `#EEF1F8`
+- Tab/nav chrome: `#0D1B2E`
+- Card fill: `#FFFFFF`
+- Container border: `#DDE4F2`
+- Positive / on track: `#00A87A`
+- Negative / at risk: `#D63344`
+- Monitor / watch: `#E59300`
+- Brand accent: `#6B4FFF`
+- KPI value: 26pt semibold `#0F1C36`
+- Container radius: 10px for KPI and chart cards
+- Tab 1 primary visual: Pipeline Coverage by Segment. Funnel, stage duration, and stalled deals are supporting diagnostics.
+- Pipeline Coverage cells should use rounded badge shapes from `tableau_shapes/pipeline_badges/`, with live coverage value and status on the Label shelf.
 - No axis titles where the label is self-explanatory
 - Tooltip on every mark — no empty tooltips

@@ -1,5 +1,5 @@
 # Wireframe — Tab 3: ARR Performance
-# Dashboard: 1400 × 900 · Dark navy background
+# Dashboard: 1400 × 900 · dark chrome / light content canvas
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐

@@ -38,13 +38,15 @@ WIN_RATE = {
     "Commit":    0.80,
 }
 
-# (mean days, std dev) to transit through each stage
+# (mean days, std dev) to transit through each stage.
+# Tuned around benchmark thresholds so the stage-duration view has a mixed story:
+# Demo and Prospect are healthy, Qualified is close, Proposal and Commit need focus.
 STAGE_DURATION = {
-    "Prospect":  (18, 6),
-    "Qualified": (12, 4),
-    "Demo":      (9,  3),
-    "Proposal":  (16, 5),
-    "Commit":    (11, 4),
+    "Prospect":  (10, 3),
+    "Qualified": (9,  2),
+    "Demo":      (6,  2),
+    "Proposal":  (16, 3),
+    "Commit":    (13, 3),
 }
 
 REPS_BY_REGION = {
@@ -254,6 +256,7 @@ account_won_dates: dict[str, list[date]] = {}
 def build_opp(outcome: str):
     """Return a fully-populated opportunity dict + its stage_history rows."""
     global opp_id
+    closed_stage_alloc = None
 
     owner   = random.choice(ALL_REPS)
     region  = REP_REGION[owner]
@@ -313,6 +316,8 @@ def build_opp(outcome: str):
             final_arr_type   = "Churn" if arr_type_raw == "Renewal" else arr_type_raw
             stages_traversed = ALL_STAGES[: lost_stage_idx + 1]
 
+        closed_stage_alloc = [stage_dur(s) for s in stages_traversed]
+        created_date       = max(close_date - timedelta(days=sum(closed_stage_alloc)), date(2023, 1, 1))
         last_activity = close_date + timedelta(days=random.randint(0, 3))
 
     else:  # open
@@ -355,16 +360,7 @@ def build_opp(outcome: str):
     sh_rows = []
 
     if is_closed:
-        total_days = max((close_date - created_date).days, len(stages_traversed))
-        weights    = [STAGE_DURATION[s][0] for s in stages_traversed]
-        w_sum      = sum(weights)
-        stage_alloc = []
-        remaining  = total_days
-        for i, s in enumerate(stages_traversed[:-1]):
-            d = max(1, int(total_days * weights[i] / w_sum))
-            stage_alloc.append(d)
-            remaining -= d
-        stage_alloc.append(max(1, remaining))
+        stage_alloc = closed_stage_alloc[:]
     else:
         stage_alloc = [stage_dur(s) for s in stages_traversed]
 
@@ -385,7 +381,7 @@ def build_opp(outcome: str):
                 "EnteredDate":    cursor.isoformat(),
                 "ExitedDate":     exit_date.isoformat() if exit_date else "",
                 "DaysInStage":    days_in,
-                "IsCurrentStage": "true",
+                "IsCurrentStage": "false" if is_closed else "true",
             })
         else:
             exit_date = cursor + timedelta(days=days_in)

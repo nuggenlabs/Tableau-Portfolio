@@ -1,5 +1,17 @@
 # Wireframe — Tab 1: Pipeline Health
-# Dashboard: 1400 × 900 · Dark navy background
+# Dashboard: 1400 × 900 · dark chrome / light content canvas
+
+## Current design direction
+
+Use `../tab1_mockup_v3.html` as the visual build reference. The ASCII wireframe below is the original structure, but the final Tableau dashboard should use the v3 hierarchy:
+
+- Pipeline Coverage by Segment is the hero visual and should occupy the wider position in the first analytic row.
+- Manager Focus sits inside the Pipeline Coverage card as a right-side insight panel.
+- Open Pipeline by Stage is a supporting diagnostic, not the main focal point.
+- Avg Days in Stage and Stalled Deals Requiring Follow-Up sit in the secondary row.
+- Stalled deals should read as a manager action queue with a small summary strip, not as an equal-weight analytical chart.
+- Use the light canvas system from `../workbook_formatting_guide.md`, not a full dark-navy dashboard body.
+- Use rounded custom badge shapes from `../tableau_shapes/pipeline_badges/` for coverage status cells where practical.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
@@ -56,17 +68,28 @@
 | Funnel tooltip | Owner (COUNTD), DaysInCurrentStage (AVG), IsWon | [Win Rate per Stage LOD] |
 | Coverage scorecard cells | ACV, Quota, CloseQuarter, Segment | [Pipeline Coverage LOD] |
 | Coverage cell color | [Coverage Status] | [Coverage Status] |
+| Coverage badge shape | [Coverage Status] | custom PNGs in `tableau_shapes/pipeline_badges/` |
+| Coverage badge label | [Pipeline Coverage LOD], [Coverage Status] | centered Shape mark label |
+| Manager Focus numerator | quotas_by_segment.[Segment Quarter Key] filtered to At Risk | COUNTD([Segment Quarter Key]) |
+| Manager Focus denominator | quotas_by_segment.[Segment Quarter Key] without status filter | COUNTD([Segment Quarter Key]) |
+| Manager Focus narrative | Dashboard text object | Static action sentence |
+| Manager Focus segment averages | [Pipeline Coverage LOD], Segment, CloseQuarter | AVG or WINDOW_AVG of coverage |
 | Stage duration bars | stage_history.DaysInStage (AVG), StageName | [Stage Sort (History)] |
 | Stage benchmark line | [Stage Benchmark] (fixed constant) | [Stage Benchmark] |
+| Stage benchmark status | [Avg Days in Stage], [Stage Benchmark] | [Stage Benchmark Status] |
 | Deal aging rows | Owner, AccountName, ACV, DaysSinceActivity, StageName | [Days Since Activity] |
 | Deal aging row color | [Activity Status] | [Activity Status] |
 | Rep deal list | All fields | [Rep In Set] |
 
 ## Notes for Tableau build
 
-- Funnel filter: `[IsClosed] = "false"` applied to both funnel sheets. Do NOT filter stage_history at dashboard level — only filter on the stage duration sheet.
-- Coverage scorecard: hide row/column headers; show cell text only. Cell background color = Coverage Status.
-- Deal aging table: sort descending on `[Days Since Activity]`. Conditional background color on the Days column only.
+- Funnel filter: `[IsClosed] = FALSE` applied to both funnel sheets. Do NOT filter stage_history at dashboard level — only filter on the stage duration sheet.
+- Coverage scorecard: build as the hero visual. Hide row/column headers if they duplicate visible labels. Use custom rounded badge shapes by `[Coverage Status]`, then center the coverage value and status label over the shape.
+- Coverage labels: value should be bold semantic color, status should be small uppercase muted blue-gray.
+- Manager Focus: build as a compact vertical panel inside the Pipeline Coverage card. Use `quotas_by_segment.csv` as the Segment x Quarter scaffold. Count At Risk combinations only; Monitor combinations remain visible in the matrix but are not included in the focus count.
+- Manager Focus panel styling: `#F2F5FB` fill, `#DDE4F2` border, 8px corner radius, 12px inner padding.
+- Deal aging table: sort descending on `[Days Since Activity]`. Conditional color belongs on the Days column only. Include a small action-summary strip above the table if space allows.
+- Stage duration status: color bars by `[Stage Benchmark Status]`; Over = red, Slightly Over = amber, OK = teal. Use the benchmark line as the visual reference, not as a fourth color category.
 - Rep deal list: sits in a vertical layout container. Show/hide container using `COUNTD([Owner] in Rep Set) > 0` as a visibility condition (using a floating container approach or custom shape hack in Tableau 2026.1).
-- Corner radius: apply to all four KPI card containers — Inner Padding 12px, Corner Radius 8px.
+- Corner radius: apply 10px to KPI and chart containers. Use 12px inner padding on KPI cards.
 ```

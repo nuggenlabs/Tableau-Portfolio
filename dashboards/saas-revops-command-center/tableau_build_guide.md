@@ -11,11 +11,19 @@
 
 ### Step 1 — Connect to the data sources
 
+> v3 note: add `quotas_by_segment.csv` in addition to `opportunities.csv`, `stage_history.csv`, and `quotas.csv`. This table acts as a one-row-per-Segment-per-Quarter scaffold and avoids unnecessary table calculations for the Manager Focus count.
+
 1. Open Tableau Desktop. Connect → Text File → `opportunities.csv`
 2. On the data source canvas, drag in `stage_history.csv` and `quotas.csv`
 3. Tableau will open the relationship editor
 
 ### Step 2 — Define relationships
+
+For `quotas_by_segment.csv`, relate it to `opportunities.csv` using:
+- `Segment` = `Segment`
+- `CloseQuarter` = `Quarter`
+
+Use this relationship for the Pipeline Coverage scorecard and Manager Focus panel when you need one visible mark per Segment x Quarter combination.
 
 **opportunities → stage_history**  
 Relate on: `OpportunityID` = `OpportunityID`  
@@ -46,7 +54,7 @@ Create these parameters before building any calculated fields.
 
 | Property | Value |
 |----------|-------|
-| Name | `[Quarter Selector]` |
+| Name | `[p.Quarter Selector]` |
 | Data type | String |
 | Allowable values | List |
 | Values | Q1 2024, Q2 2024, Q3 2024, Q4 2024, Q1 2025, Q2 2025, Q3 2025, Q4 2025, Q1 2026, Q2 2026 |
@@ -56,7 +64,7 @@ Create these parameters before building any calculated fields.
 
 | Property | Value |
 |----------|-------|
-| Name | `[Coverage Target]` |
+| Name | `[p.Coverage Target]` |
 | Data type | Float |
 | Allowable values | Range: 1.0 – 5.0, step 0.5 |
 | Current value | 3.0 |
@@ -67,7 +75,7 @@ Create these parameters before building any calculated fields.
 
 | Property | Value |
 |----------|-------|
-| Name | `[Selected Rep]` |
+| Name | `[p.Selected Rep]` |
 | Data type | String |
 | Current value | (All) |
 
@@ -83,13 +91,13 @@ Create all fields in the `opportunities` data source unless noted otherwise.
 
 **[Is Open]**  
 ```
-[IsClosed] = "false"
+[IsClosed] = FALSE
 ```
 *Returns true for pipeline deals; false for resolved deals.*
 
 **[Is Won]**  
 ```
-[IsWon] = "true"
+[IsWon] = TRUE
 ```
 
 **[Days Since Activity]** ← use this instead of the pre-computed column  
@@ -126,6 +134,49 @@ CASE [StageName]
 END
 ```
 
+**[Stage Benchmark]**  
+Create in `stage_history` data source. This is the target number of days for each completed stage.
+```
+CASE [StageName]
+  WHEN "Prospect"  THEN 14
+  WHEN "Qualified" THEN 10
+  WHEN "Demo"      THEN 7
+  WHEN "Proposal"  THEN 14
+  WHEN "Commit"    THEN 10
+END
+```
+
+**[Avg Days in Stage]**  
+Create in `stage_history` data source.
+```
+AVG([DaysInStage])
+```
+
+**[Stage Benchmark Variance]**  
+Create in `stage_history` data source. Positive values mean the stage is taking longer than benchmark.
+```
+[Avg Days in Stage] - AVG([Stage Benchmark])
+```
+
+**[Stage Benchmark Status]**  
+Create in `stage_history` data source.
+```
+IF [Avg Days in Stage] <= AVG([Stage Benchmark]) THEN "OK"
+ELSEIF [Avg Days in Stage] <= AVG([Stage Benchmark]) * 1.15 THEN "Slightly Over"
+ELSE "Over"
+END
+```
+
+**[Stage Benchmark Status Sort]**  
+Optional helper if you need a consistent legend or table sort.
+```
+CASE [Stage Benchmark Status]
+  WHEN "Over" THEN 1
+  WHEN "Slightly Over" THEN 2
+  WHEN "OK" THEN 3
+END
+```
+
 ---
 
 ### Tab 1: Pipeline Health
@@ -142,7 +193,7 @@ IF [Is Won] THEN [ACV] ELSE 0 END
 
 **[Lost ACV]**  
 ```
-IF [IsClosed] = "true" AND [IsWon] = "false" THEN [ACV] ELSE 0 END
+IF [IsClosed] = TRUE AND [IsWon] = FALSE THEN [ACV] ELSE 0 END
 ```
 
 **[Pipeline Coverage LOD]**  
@@ -152,28 +203,85 @@ The key LOD expression. FIXED at Quarter × Segment so rep/region filters do not
     SUM(IF [Is Open] THEN [ACV] ELSE 0 END)
 }
 /
-NULLIF(
-  { FIXED [CloseQuarter], [Segment] :
-      SUM([Quota])
-  },
-  0
-)
+NULLIF(SUM([Quota]), 0)
 ```
-*`NULLIF(..., 0)` prevents divide-by-zero when a segment has no assigned quota.*
+*The numerator is a FIXED LOD (opportunities only — no fan-out risk). The denominator is a regular SUM so Tableau queries the quotas table independently at the view grain (Segment × Quarter), avoiding the fan-out that occurs when [Quota] is placed inside a FIXED LOD.*
 
-> **How to explain in an interview:** "The FIXED clause anchors the calculation to quarter and segment. If a viewer filters to see only Mia Torres's deals, the numerator correctly shows only her pipeline, and the denominator correctly shows only her quota — because both FIXED clauses share the same dimensions. The ratio stays meaningful at any filter granularity."
+> **How to explain in an interview:** "The FIXED clause anchors the numerator to quarter and segment so rep and region filters don't distort the pipeline total. The denominator uses a regular SUM so Tableau's relationship model queries quotas at the correct segment-quarter grain without duplicating values across opportunity rows."
 
 **[Coverage vs Target]** — for the reference band  
 ```
-[Pipeline Coverage LOD] / [Coverage Target]
+[Pipeline Coverage LOD] / [p.Coverage Target]
 ```
 *Use as the mark on a bar chart. A reference line at 1.0 = the 3x target.*
 
 **[Coverage Status]**  
 ```
-IF [Pipeline Coverage LOD] >= [Coverage Target] THEN "On Track"
-ELSEIF [Pipeline Coverage LOD] >= [Coverage Target] * 0.67 THEN "Monitor"
+IF [Pipeline Coverage LOD] >= [p.Coverage Target] THEN "On Track"
+ELSEIF [Pipeline Coverage LOD] >= [p.Coverage Target] * 0.67 THEN "Monitor"
 ELSE "At Risk"
+END
+```
+
+**[Segment Quarter Key]**  
+Create this in `quotas_by_segment.csv`. It gives Manager Focus a clean one-row-per-combination count.
+```
+[Quarter] + "|" + [Segment]
+```
+
+**[Coverage Status - Segment Quarter]**  
+Use this version on views built from the `quotas_by_segment.csv` scaffold.
+```
+IF SUM([Open ACV]) / SUM([Quota]) >= [p.Coverage Target] THEN "On Track"
+ELSEIF SUM([Open ACV]) / SUM([Quota]) >= [p.Coverage Target] * 0.67 THEN "Monitor"
+ELSE "At Risk"
+END
+```
+
+Manager Focus count note: do not force this into one table calculation. Build the numerator and denominator as two simple count sheets:
+- Numerator sheet: filter `[Coverage Status - Segment Quarter]` to `At Risk`, then show `COUNTD([Segment Quarter Key])`
+- Denominator sheet: same quarter filters, no status filter, then show `COUNTD([Segment Quarter Key])`
+- Dashboard text object between them: `of`
+
+This produces the At Risk count out of all visible Segment x Quarter combinations while excluding Monitor combinations from the numerator. With the current mock data shown in the debug table, the expected result is `6 of 9`.
+
+**[Segment Quarter Coverage Ratio]**  
+Use the exact quarter field name from your workbook. If your field is named `[Close Quarter]`, use that instead of `[CloseQuarter]`.
+```
+{ FIXED [Segment], [CloseQuarter] : SUM([Open ACV]) }
+/
+{ FIXED [Segment], [CloseQuarter] : SUM([Quota]) }
+```
+
+**[Is At Risk Segment Quarter]**  
+```
+[Segment Quarter Coverage Ratio] < ([p.Coverage Target] * 0.67)
+```
+
+**[At Risk Segment Quarter Count]**  
+```
+COUNTD(
+    IF [Is At Risk Segment Quarter]
+    THEN [Segment Quarter Key]
+    END
+)
+```
+
+**[Total Segment Quarter Count]**  
+```
+COUNTD([Segment Quarter Key])
+```
+
+**[Coverage Focus Narrative]**  
+Optional dynamic sentence for the Manager Focus panel. Use this only if you want a worksheet-driven narrative instead of a static dashboard text object.
+```
+IF [At Risk Segment Quarter Count] = 0 THEN
+    "No visible segment-quarter combinations are At Risk."
+ELSEIF [At Risk Segment Quarter Count] = [Total Segment Quarter Count] THEN
+    "All visible segment-quarter combinations are At Risk."
+ELSE
+    STR([At Risk Segment Quarter Count])
+    + " segment-quarter combinations are At Risk. Monitor combinations are excluded from this count."
 END
 ```
 
@@ -197,7 +305,7 @@ END
 
 **[Rep In Set]** — for the drill-through set action  
 ```
-[Owner] = [Selected Rep] OR [Selected Rep] = "(All)"
+[Owner] = [p.Selected Rep] OR [p.Selected Rep] = "(All)"
 ```
 *Drives visibility of the deal-detail sheet when a rep is clicked.*
 
@@ -208,7 +316,7 @@ END
 **[Commit ACV (Historical)]**  
 ACV of deals that reached Commit stage and then resolved (won or lost).  
 ```
-IF [IsClosed] = "true" AND [HighestStage] = "Commit"
+IF [IsClosed] = TRUE AND [HighestStage] = "Commit"
 THEN [ACV]
 ELSE 0
 END
@@ -217,7 +325,7 @@ END
 
 **[Best Case ACV (Historical)]**  
 ```
-IF [IsClosed] = "true" AND [HighestStage] IN ("Demo", "Proposal")
+IF [IsClosed] = TRUE AND [HighestStage] IN ("Demo", "Proposal")
 THEN [ACV]
 ELSE 0
 END
@@ -247,7 +355,7 @@ NULLIF({ FIXED [CloseQuarter] : SUM([Commit ACV (Historical)]) }, 0)
 ```
 SUM(IF [Is Won] THEN 1 ELSE 0 END)
 /
-NULLIF(SUM(IF [IsClosed] = "true" THEN 1 ELSE 0 END), 0)
+NULLIF(SUM(IF [IsClosed] = TRUE THEN 1 ELSE 0 END), 0)
 ```
 
 **[Win Rate Label]**  
@@ -276,7 +384,7 @@ IF [Is Won] AND [ARRType] = "Renewal" THEN [ACV] ELSE 0 END
 
 **[Churn ARR]** ← negative by convention  
 ```
-IF [IsClosed] = "true" AND [ARRType] = "Churn" THEN -[ACV] ELSE 0 END
+IF [IsClosed] = TRUE AND [ARRType] = "Churn" THEN -[ACV] ELSE 0 END
 ```
 
 **[Net New ARR]**  
@@ -353,7 +461,7 @@ END
 ```
 { FIXED [StageName] :
     SUM(IF [Is Won] THEN 1 ELSE 0 END)
-    / NULLIF(SUM(IF [IsClosed] = "true" THEN 1 ELSE 0 END), 0)
+    / NULLIF(SUM(IF [IsClosed] = TRUE THEN 1 ELSE 0 END), 0)
 }
 ```
 
@@ -367,14 +475,149 @@ END
 #### Sheet 1B — Pipeline Coverage Scorecard
 
 1. Rows: `[Segment]`, Columns: `[CloseQuarter]`
-2. Filter: `[IsClosed]` = false (pipeline only) + `[Quarter Selector]` parameter filter on CloseQuarter
+2. Filter: `[IsClosed]` = false (pipeline only) + `[p.Quarter Selector]` parameter filter on CloseQuarter
 3. Text: `[Pipeline Coverage LOD]` formatted as "0.0x"
 4. Color: `[Coverage Status]`
    - On Track → `#008C7A`
    - Monitor → `#F2A900`
    - At Risk → `#C0392B`
 5. Add `SUM([Open ACV])` as a secondary measure in the tooltip
-6. Reference line: set at `[Coverage Target]` (parameter) on the row axis
+6. Reference line: set at `[p.Coverage Target]` (parameter) on the row axis
+
+> Design update: for the current v3 dashboard direction, use the badge-based setup below instead of the older text-table scorecard instructions above.
+
+---
+
+#### Sheet 1B v3 — Pipeline Coverage Badge Scorecard
+
+Use this as the hero sheet on Tab 1.
+
+1. Columns: `[Segment]`
+2. Rows: `[CloseQuarter]`
+3. Filter: `[IsClosed]` = false (pipeline only)
+4. Optional filter: show the current and next two open quarters (`Q1 2026`, `Q2 2026`, `Q3 2026`) so the panel has 9 visible Segment x Quarter combinations
+5. Mark type: Shape
+6. Shape: assign the rounded badge PNGs from `tableau_shapes/pipeline_badges/` by `[Coverage Status]`
+   - On Track: `coverage-badge-on-track-blank.png`
+   - Monitor: `coverage-badge-monitor-blank.png`
+   - At Risk: `coverage-badge-at-risk-blank.png`
+7. Label: `[Pipeline Coverage LOD]` formatted as `0.00x`, plus `[Coverage Status]` on the second line
+8. Label alignment: center / middle
+9. Label font:
+   - Coverage value: 12-14pt, bold, semantic color
+   - Status label: 6-7pt, bold, uppercase, `#6C7B96`
+10. Tooltip: Quarter, Segment, Pipeline ACV, Quota, Coverage Ratio, Coverage Status
+11. Hide row/column headers if visible labels duplicate the view
+
+---
+
+#### Manager Focus v3 recommended count setup
+
+Use this setup instead of the single-sheet table calculation approach. It is simpler and more stable because `quotas_by_segment.csv` already gives one row per Segment x Quarter combination.
+
+Build the Manager Focus count display with two small worksheets and one dashboard text object:
+
+**Numerator sheet: `Manager Focus At Risk Count`**
+
+1. Use `quotas_by_segment.csv` as the scaffold table for the view.
+2. Filter to the same quarters used by Sheet 1B v3.
+3. Add `[Coverage Status - Segment Quarter]` to Filters and keep only `At Risk`.
+4. Marks: Text.
+5. Text: `COUNTD([Segment Quarter Key])`.
+6. Format: 26-30pt bold, `#D63344`.
+7. Tooltip: disabled.
+
+With the current mock data in the debug table, this sheet should return `6`.
+
+**Denominator sheet: `Manager Focus Total Count`**
+
+1. Use `quotas_by_segment.csv` as the scaffold table for the view.
+2. Filter to the same quarters used by Sheet 1B v3.
+3. Do not filter by `[Coverage Status - Segment Quarter]`.
+4. Marks: Text.
+5. Text: `COUNTD([Segment Quarter Key])`.
+6. Format: 26-30pt bold, `#0F1C36`.
+7. Tooltip: disabled.
+
+This sheet should return `9`.
+
+**Dashboard assembly**
+
+1. Place `Manager Focus At Risk Count`, a text object reading `of`, and `Manager Focus Total Count` in a horizontal container.
+2. Add the narrative below as a dashboard text object: `Segment-quarter combinations are At Risk. Review the weakest segment averages first.`
+3. With the current mock data, this produces `6 of 9` while excluding Monitor combinations from the numerator.
+
+#### Sheet 1B-1 — Manager Focus Count
+
+Fallback only. Prefer the v3 recommended count setup above.
+
+Purpose: the large At Risk count callout in the Manager Focus panel.
+
+1. New worksheet named `Manager Focus Count`
+2. Filter to the same quarters used by Sheet 1B v3
+3. Put `[Segment]` and `[CloseQuarter]` on Detail. These fields create the visible combinations that the table calculation counts.
+4. Marks: Text
+5. Text: `[Coverage Focus Label]`
+6. Add `[Manager Focus Single Mark Filter]` to Filters and keep `True`
+7. Edit Table Calculation for `[Coverage Focus Label]`, `[Coverage At Risk Count]`, `[Coverage Combo Count]`, and `[Manager Focus Single Mark Filter]`:
+   - Compute using: Specific Dimensions
+   - Check `[Segment]` and `[CloseQuarter]`
+   - Restarting every: None
+   - In the Nested Calculations dropdown, repeat this setting for every nested table calc listed
+8. Format:
+   - Font: 26-30pt, bold
+   - Color: `#D63344` if `[Coverage At Risk Count] > 0`, otherwise `#00A87A`
+   - Alignment: left / middle
+9. Tooltip: disabled or simple explanation: "Visible segment-quarter combinations with At Risk status."
+
+If Tableau does not allow the string calculation to format cleanly, place `[Coverage At Risk Count]`, literal text `of`, and `[Coverage Combo Count]` directly on the Text shelf and edit the label.
+
+Troubleshooting:
+- If the view shows repeated labels like `1 of 1 0 of 1 0 of 1`, Tableau is partitioning the numerator and denominator by each Segment x Quarter mark.
+- If the view shows `5 of 1` repeated 9 times, the numerator is computing across the full grid, but `[Coverage Combo Count]` and/or `[Manager Focus Single Mark Filter]` are still partitioned per mark.
+- Right-click each table-calc pill, including nested calculations, and set Specific Dimensions to address across both `[Segment]` and `[CloseQuarter]`.
+- For `[Manager Focus Single Mark Filter]`, use `LAST() = 0` and keep only `True`. This leaves one visible label after the table calculations have already computed across the full 3 x 3 grid.
+- The correct view should render one label such as `6 of 9` for the current mock data.
+
+---
+
+#### Sheet 1B-2 — Manager Focus Narrative
+
+Optional. Prefer the static dashboard text object in the v3 recommended setup unless you want this sentence to change dynamically.
+
+1. New worksheet named `Manager Focus Narrative`
+2. Apply the same quarter filter as Sheet 1B v3
+3. Marks: Text
+4. Text: `[Coverage Focus Narrative]`
+5. Format:
+   - Font: 9pt regular
+   - Color: `#3D4F6F`
+   - Alignment: left / top
+6. Fit: Entire View
+
+Keep this sentence short. It should explain where to look next, not repeat the whole chart.
+
+---
+
+#### Sheet 1B-3 — Manager Focus Segment Averages
+
+Purpose: the three-line list showing average coverage by segment in the Manager Focus panel.
+
+1. New worksheet named `Manager Focus Segment Averages`
+2. Rows: `[Segment]`
+3. Detail: `[CloseQuarter]`
+4. Text: `WINDOW_AVG(AVG([Pipeline Coverage LOD]))`, formatted as `0.00x`
+5. Filter to the same quarters used by Sheet 1B v3
+6. Sort segments in business order: SMB, Mid-Market, Enterprise
+7. Edit Table Calculation:
+   - Compute using: `[CloseQuarter]`
+   - Restart every: `[Segment]`
+8. Format:
+   - Segment label: 9-10pt, `#3D4F6F`
+   - Value: 9-10pt bold, `#0F1C36`
+   - Remove grid lines, row dividers, and headers where possible
+
+Build note: because `[Pipeline Coverage LOD]` is fixed at Segment x Quarter, keep `[CloseQuarter]` on Detail while computing the average. This prevents the average from being weighted by opportunity row count.
 
 ---
 
@@ -383,24 +626,18 @@ END
 Source: `stage_history.csv` (use this sheet's data source)
 
 1. Rows: `[StageName]` sorted by `[Stage Sort (History)]`
-2. Columns: `AVG([DaysInStage])`
-3. Filter: `IsCurrentStage` = "false" (exclude current open stage — only count completed stage transitions for accuracy)
-4. Mark type: Bar, color single teal
-5. Reference line: add a constant reference line per stage using `[Stage Sort (History)]` as band marker
-   - Values: Prospect=14, Qualified=10, Demo=7, Proposal=14, Commit=10
-   - Use a calculated field `[Stage Benchmark]`:  
-   ```
-   CASE [StageName]
-     WHEN "Prospect"  THEN 14
-     WHEN "Qualified" THEN 10
-     WHEN "Demo"      THEN 7
-     WHEN "Proposal"  THEN 14
-     WHEN "Commit"    THEN 10
-   END
-   ```
-   - Add `AVG([Stage Benchmark])` as a reference line with label "Benchmark"
-   - Color the reference line `#C0392B`
-6. Label: `AVG([DaysInStage])` formatted as "0.0d"
+2. Columns: `[Avg Days in Stage]`
+3. Filter: `IsCurrentStage` = FALSE (exclude current open stage — only count completed stage transitions for accuracy)
+4. Mark type: Bar
+5. Color: `[Stage Benchmark Status]`
+   - Over: `#D63344`
+   - Slightly Over: `#E59300`
+   - OK: `#00A87A`
+6. Reference line: add `AVG([Stage Benchmark])` with label "Benchmark"
+   - Color: `#8492B0`
+   - Line: 1pt dashed
+7. Label: `[Avg Days in Stage]` formatted as `0.0d`
+8. Tooltip: Stage, Avg Days in Stage, Stage Benchmark, Stage Benchmark Variance, Stage Benchmark Status
 
 ---
 
@@ -455,7 +692,7 @@ Purpose: Show how ACV moves from Best Case → Commit → Closed Won in a given 
    - Rows: `[ARR Waterfall Type]` filtered to funnel categories
    - Columns: running SUM with Gantt bar encoding
    - Alternatively: use a simple grouped bar chart comparing all three series side-by-side per quarter — simpler to build, still tells the story
-3. Filter: `[CloseQuarter]` = `[Quarter Selector]`
+3. Filter: `[CloseQuarter]` = `[p.Quarter Selector]`
 4. Color: Best Case=amber, Commit=indigo, Closed Won=teal
 
 ---
@@ -558,6 +795,33 @@ Build as a Gantt waterfall (the classic Tableau technique):
 │  [Rep Deal List — hidden until rep clicked] (1E)             │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+#### Tab 1 v3 assembly notes
+
+Use `tab1_mockup_v3.html` as the visual reference. The key change from the original sketch is that Pipeline Coverage becomes the hero object, and Manager Focus sits inside the same hero card as a right-side insight panel.
+
+Recommended container structure:
+
+1. Create a horizontal container for the hero row.
+2. Set the hero row width split to roughly 60/40:
+   - Left/wide card: Pipeline Coverage by Segment
+   - Right/narrow card: Open Pipeline by Stage
+3. Inside the Pipeline Coverage card, create a horizontal inner container:
+   - Left section, about 75% width: `Sheet 1B v3 - Pipeline Coverage Badge Scorecard`
+   - Right section, about 25% width: Manager Focus panel
+4. Build the Manager Focus panel as a vertical container:
+   - Text object: `MANAGER FOCUS`, 8pt bold uppercase, `#8492B0`
+   - `Sheet 1B-1 - Manager Focus Count`
+   - `Sheet 1B-2 - Manager Focus Narrative`
+   - `Sheet 1B-3 - Manager Focus Segment Averages`
+5. Manager Focus panel formatting:
+   - Background: `#F2F5FB`
+   - Border: `#DDE4F2`
+   - Corner radius: 8px
+   - Inner padding: 12px
+6. Keep the panel compact. It should summarize where managers should look, not compete with the coverage matrix.
+
+Manager Focus should answer: "How many visible segment-quarter combinations are At Risk, and which segment has the weakest average coverage?" Monitor combinations are not included in this count.
 
 ### Tab 2 — Forecast Accuracy layout
 

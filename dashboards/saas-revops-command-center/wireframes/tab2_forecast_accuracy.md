@@ -1,5 +1,5 @@
 # Wireframe — Tab 2: Forecast Accuracy
-# Dashboard: 1400 × 900 · Dark navy background
+# Dashboard: 1400 × 900 · dark chrome / light content canvas
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────────┐
@@ -59,7 +59,7 @@
 
 - 6-quarter rolling filter: use a relative date filter OR create a calculated field `[Last 6 Closed Quarters]` that returns true for the 6 most recent values of CloseQuarter. Sort CloseQuarter alphabetically does not work — use `[Quarter Start Date]` as the sort field.
 - Dual axis on forecast vs actual: left axis = ACV bars, right axis = Accuracy % line. Synchronize axes is NOT needed (different scales). Format right axis as percentage.
-- Win rate trend: filter `[IsClosed] = "true"`. Include only complete quarters (exclude current quarter in progress).
+- Win rate trend: filter `[IsClosed] = TRUE`. Include only complete quarters (exclude current quarter in progress).
 - Forecast flow chart: this is a simplified bar chart comparing three stages' ACV. A true Sankey requires extensions. For the portfolio, use a horizontal bar chart with segment labels "% that moved from Best Case to Commit" computed as `SUM([Commit ACV]) / SUM([Best Case ACV])`.
 - Quarter Selector parameter: drives the KPI row and the Forecast Category Flow chart. The rolling trend charts ignore the parameter and always show 6 most recent quarters.
 ```
