@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1400, initial-scale=1">
+<title>SaaS RevOps Command Center - Three Tab Interactive Mockup</title>
+<style>
+  :root {
+    --canvas: #EEF1F8;
+    --card: #FFFFFF;
+    --elevated: #F2F5FB;
+    --border: #DDE4F2;
+    --border-soft: #EAEEF8;
+    --text-h: #0F1C36;
+    --text-body: #3D4F6F;
+    --text-muted: #8492B0;
+    --text-sub: #A0ABC5;
+    --tab-bg: #0D1B2E;
+    --tab-border: #1E2F4A;
+    --tab-muted: #5E7292;
+    --blue: #1B96FF;
+    --teal: #00A87A;
+    --red: #D63344;
+    --amber: #E59300;
+    --indigo: #6B4FFF;
+    --navy: #163B66;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1400px;
+    min-height: 900px;
+    background: var(--canvas);
+    color: var(--text-h);
+    font-family: "Segoe UI", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .top-chrome {
+    height: 44px;
+    padding: 10px 20px 0;
+    background: var(--tab-bg);
+    border-bottom: 1px solid var(--tab-border);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .brand-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding-bottom: 8px;
+  }
+
+  .cn-mark {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #7B61FF, #00C49A);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  .workbook-title {
+    color: var(--tab-muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 2px;
+    align-items: flex-end;
+  }
+
+  .tab {
+    appearance: none;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    border-radius: 6px 6px 0 0;
+    background: transparent;
+    color: var(--tab-muted);
+    cursor: pointer;
+    font: 600 11px "Segoe UI", Arial, sans-serif;
+    letter-spacing: 0.3px;
+    padding: 6px 18px 7px;
+  }
+
+  .tab:hover {
+    background: #14233A;
+    color: #DDE4F2;
+  }
+
+  .tab.active {
+    background: var(--canvas);
+    color: var(--text-h);
+    border-color: var(--tab-border);
+    border-top: 2.5px solid var(--indigo);
+  }
+
+  .filter-bar {
+    height: 38px;
+    padding: 7px 20px;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 1px 0 var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .filter-pill {
+    padding: 3px 10px;
+    background: var(--elevated);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-body);
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .filter-pill .val { color: var(--indigo); font-weight: 700; }
+  .filter-pill .caret { color: var(--text-muted); font-size: 8px; margin-left: 4px; }
+
+  .data-freshness {
+    margin-left: auto;
+    color: var(--text-muted);
+    font-size: 9px;
+    letter-spacing: 0.3px;
+  }
+
+  .tab-panel {
+    display: none;
+    height: calc(900px - 82px);
+    padding: 12px 16px 14px;
+  }
+
+  .tab-panel.active { display: grid; }
+
+  .page-title {
+    color: var(--text-h);
+    font-size: 18px;
+    font-weight: 650;
+    letter-spacing: -0.2px;
+  }
+
+  .page-subtitle {
+    margin-top: 2px;
+    color: var(--text-muted);
+    font-size: 9.5px;
+  }
+
+  .title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+
+  .talk-track {
+    max-width: 430px;
+    padding: 8px 11px;
+    border: 1px solid rgba(107, 79, 255, 0.22);
+    border-radius: 8px;
+    background: rgba(107, 79, 255, 0.06);
+    color: var(--text-body);
+    font-size: 10px;
+    line-height: 1.35;
+  }
+
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .kpi-card,
+  .chart-card,
+  .story-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(15, 28, 54, 0.06);
+  }
+
+  .kpi-card {
+    min-height: 84px;
+    padding: 12px 16px 10px;
+    border-left: 3px solid var(--indigo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .kpi-card.alert { border-left-color: var(--red); }
+  .kpi-card.good { border-left-color: var(--teal); }
+  .kpi-card.watch { border-left-color: var(--amber); }
+
+  .kpi-label {
+    color: var(--text-muted);
+    font-size: 8.5px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+  }
+
+  .kpi-middle { display: flex; align-items: baseline; gap: 9px; }
+
+  .kpi-value {
+    color: var(--text-h);
+    font-size: 30px;
+    font-weight: 725;
+    line-height: 1;
+    letter-spacing: -0.6px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .kpi-sub {
+    margin-left: auto;
+    color: var(--text-muted);
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  .kpi-delta {
+    color: var(--text-body);
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .up { color: var(--teal); }
+  .down, .bad { color: var(--red); }
+  .warn { color: var(--amber); }
+
+  .chart-card {
+    padding: 14px 16px 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chart-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .chart-title {
+    color: var(--text-h);
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+  }
+
+  .chart-sub {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: var(--text-muted);
+    font-size: 9px;
+  }
+
+  .chart-body { flex: 1; min-height: 0; overflow: hidden; }
+
+  .target-badge {
+    padding: 3px 9px;
+    border: 1px solid rgba(107, 79, 255, 0.22);
+    border-radius: 4px;
+    background: rgba(107, 79, 255, 0.07);
+    color: var(--indigo);
+    font-size: 9px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .legend {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+    padding-top: 9px;
+    border-top: 1px solid var(--border);
+  }
+
+  .leg-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-muted);
+    font-size: 9px;
+  }
+
+  .dot { width: 8px; height: 8px; border-radius: 2px; }
+
+  #pipeline { grid-template-rows: 48px 88px 336px 1fr; gap: 10px; }
+  #forecast, #arr { grid-template-rows: 48px 88px 360px 1fr; gap: 10px; }
+
+  .hero-row { display: grid; grid-template-columns: 1.55fr 0.95fr; gap: 10px; }
+  .secondary-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .wide-row { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  .bottom-three { display: grid; grid-template-columns: 0.9fr 1.1fr 0.8fr; gap: 10px; }
+  .arr-bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+  .coverage-layout {
+    display: grid;
+    grid-template-columns: 1fr 210px;
+    gap: 14px;
+    height: 100%;
+  }
+
+  .cov-table {
+    display: grid;
+    grid-template-rows: 26px repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .cov-header,
+  .cov-row {
+    display: grid;
+    grid-template-columns: 86px repeat(3, 1fr);
+    gap: 6px;
+    align-items: stretch;
+  }
+
+  .cov-header div {
+    color: var(--text-muted);
+    font-size: 8.5px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cov-qtr {
+    color: var(--text-body);
+    font-size: 10.5px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+
+  .cov-cell {
+    border-radius: 7px;
+    padding: 10px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-weight: 700;
+  }
+
+  .cov-value { font-size: 20px; line-height: 1; letter-spacing: -0.4px; }
+  .cov-note { color: var(--text-muted); font-size: 8px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; }
+  .cov-cell.on-track { background: rgba(0, 168, 122, 0.08); color: var(--teal); border: 1px solid rgba(0, 168, 122, 0.22); }
+  .cov-cell.monitor { background: rgba(229, 147, 0, 0.08); color: var(--amber); border: 1px solid rgba(229, 147, 0, 0.22); }
+  .cov-cell.at-risk { background: rgba(214, 51, 68, 0.08); color: var(--red); border: 1px solid rgba(214, 51, 68, 0.22); }
+
+  .risk-panel,
+  .insight-panel {
+    background: var(--elevated);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .risk-eyebrow,
+  .panel-eyebrow {
+    color: var(--text-muted);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+  }
+
+  .risk-big {
+    margin-top: 6px;
+    color: var(--red);
+    font-size: 34px;
+    font-weight: 750;
+    line-height: 1;
+    letter-spacing: -0.7px;
+  }
+
+  .risk-copy,
+  .panel-copy {
+    margin-top: 6px;
+    color: var(--text-body);
+    font-size: 10px;
+    line-height: 1.35;
+  }
+
+  .risk-list { margin-top: 12px; display: grid; gap: 7px; }
+  .risk-item { display: flex; align-items: center; justify-content: space-between; color: var(--text-body); font-size: 10px; }
+  .risk-chip { min-width: 42px; text-align: center; padding: 2px 6px; border-radius: 3px; background: #fff; border: 1px solid var(--border); color: var(--text-h); font-weight: 700; }
+
+  .funnel-head,
+  .funnel-row {
+    display: grid;
+    grid-template-columns: 64px 1fr 30px 50px;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .funnel-head {
+    padding-bottom: 6px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  .funnel-row { margin-bottom: 11px; }
+  .f-label { color: var(--text-body); font-size: 10px; text-align: right; }
+  .f-track { height: 16px; border: 1px solid var(--border-soft); border-radius: 3px; background: var(--elevated); overflow: hidden; }
+  .f-bar { height: 100%; border-radius: 3px; background: var(--indigo); }
+  .f-count, .f-acv { color: var(--text-h); font-size: 10px; font-weight: 700; text-align: right; }
+  .f-acv { color: var(--text-body); font-weight: 600; }
+
+  .conversion-strip,
+  .action-summary {
+    display: grid;
+    gap: 8px;
+  }
+
+  .conversion-strip {
+    margin-top: 12px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--elevated);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .conv-label, .action-label {
+    color: var(--text-muted);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .conv-val { margin-top: 2px; color: var(--text-h); font-size: 12px; font-weight: 700; }
+
+  .dur-row {
+    display: grid;
+    grid-template-columns: 70px 1fr 74px;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .dur-label { color: var(--text-body); font-size: 10px; text-align: right; }
+  .dur-track { position: relative; height: 13px; border: 1px solid var(--border-soft); border-radius: 3px; background: var(--elevated); overflow: visible; }
+  .dur-fill { height: 100%; border-radius: 3px; }
+  .dur-bench { position: absolute; top: -3px; width: 2px; height: 19px; border-radius: 1px; background: #8492B0; }
+  .dur-val { font-size: 10px; font-weight: 700; }
+
+  .action-summary { grid-template-columns: repeat(3, 1fr); margin-bottom: 10px; }
+  .action-tile { padding: 8px 10px; border: 1px solid var(--border); border-radius: 7px; background: var(--elevated); }
+  .action-num { color: var(--text-h); font-size: 18px; font-weight: 750; line-height: 1; }
+  .aging-table { width: 100%; border-collapse: collapse; }
+  .aging-table th { padding: 0 8px 7px; border-bottom: 1px solid var(--border); color: var(--text-muted); font-size: 8.5px; font-weight: 700; letter-spacing: 0.8px; text-align: left; text-transform: uppercase; }
+  .aging-table td { padding: 6px 8px; border-bottom: 1px solid var(--border-soft); color: var(--text-body); font-size: 10.5px; }
+  .aging-table .bold, .aging-table .acv { color: var(--text-h); font-weight: 700; }
+  .days-badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 9.5px; font-weight: 700; }
+  .days-stale { background: rgba(214, 51, 68, 0.08); color: var(--red); border: 1px solid rgba(214, 51, 68, 0.22); }
+  .days-monitor { background: rgba(229, 147, 0, 0.08); color: var(--amber); border: 1px solid rgba(229, 147, 0, 0.22); }
+
+  .combo-chart {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 52px 1fr 54px;
+    grid-template-rows: 1fr 24px;
+    gap: 0 10px;
+  }
+
+  .y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 4px 0 26px;
+    color: var(--text-muted);
+    font-size: 8.5px;
+  }
+
+  .right-axis {
+    align-items: flex-start;
+    color: var(--amber);
+  }
+
+  .plot {
+    position: relative;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background:
+      linear-gradient(to top, var(--border-soft) 1px, transparent 1px) 0 0 / 100% 25%,
+      linear-gradient(to right, transparent, transparent);
+    overflow: hidden;
+  }
+
+  .bar-group {
+    position: absolute;
+    bottom: 0;
+    width: 86px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 7px;
+  }
+
+  .bar {
+    width: 20px;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .bar.commit { background: rgba(107, 79, 255, 0.74); }
+  .bar.won { background: rgba(0, 168, 122, 0.82); }
+
+  .line-point {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: var(--amber);
+    box-shadow: 0 0 0 1px rgba(229, 147, 0, 0.35);
+    z-index: 2;
+  }
+
+  .line-seg {
+    position: absolute;
+    height: 2px;
+    background: var(--amber);
+    transform-origin: left center;
+    z-index: 1;
+  }
+
+  .x-axis {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: var(--text-muted);
+    font-size: 8.5px;
+    text-align: center;
+    padding-top: 7px;
+  }
+
+  .flow-steps {
+    display: grid;
+    grid-template-columns: 1fr 34px 1fr 34px 1fr;
+    align-items: center;
+    height: 100%;
+    gap: 8px;
+  }
+
+  .flow-box {
+    min-height: 154px;
+    padding: 14px 12px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--elevated);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .flow-value {
+    font-size: 25px;
+    font-weight: 750;
+    letter-spacing: -0.5px;
+    color: var(--text-h);
+  }
+
+  .flow-label {
+    margin-top: 4px;
+    color: var(--text-muted);
+    font-size: 8.5px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+
+  .flow-note {
+    margin-top: 10px;
+    color: var(--text-body);
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  .arrow {
+    color: var(--text-sub);
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .spark-lines {
+    position: relative;
+    height: 100%;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(to top, var(--border-soft) 1px, transparent 1px) 0 0 / 100% 25%;
+  }
+
+  .series-point {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+
+  .series-seg {
+    position: absolute;
+    height: 2px;
+    transform-origin: left center;
+  }
+
+  .segment-row {
+    display: grid;
+    grid-template-columns: 82px 1fr 40px;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 13px;
+  }
+
+  .segment-name { color: var(--text-body); font-size: 10px; text-align: right; }
+  .h-track { height: 15px; border-radius: 4px; background: var(--elevated); border: 1px solid var(--border-soft); overflow: hidden; }
+  .h-fill { height: 100%; border-radius: 4px; }
+  .h-val { color: var(--text-h); font-size: 10px; font-weight: 700; text-align: right; }
+
+  .waterfall {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: 1fr 24px;
+    gap: 0 10px;
+  }
+
+  .water-plot {
+    position: relative;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background:
+      linear-gradient(to top, var(--border-soft) 1px, transparent 1px) 0 0 / 100% 20%,
+      linear-gradient(to top, transparent 49.5%, rgba(132, 146, 176, 0.45) 49.5%, rgba(132, 146, 176, 0.45) 50%, transparent 50%);
+    overflow: hidden;
+  }
+
+  .water-col {
+    position: absolute;
+    bottom: 47%;
+    width: 68px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .stack { width: 34px; border-radius: 3px 3px 0 0; margin-top: 1px; }
+  .stack.new { background: var(--teal); }
+  .stack.exp { background: var(--indigo); }
+  .stack.ren { background: #A0ABC5; }
+  .stack.churn { background: var(--red); border-radius: 0 0 3px 3px; }
+
+  .cum-line {
+    position: absolute;
+    height: 2px;
+    background: var(--navy);
+    transform-origin: left center;
+  }
+
+  .retention-plot {
+    position: relative;
+    height: 100%;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background:
+      linear-gradient(to bottom, rgba(0, 168, 122, 0.08) 0 28%, transparent 28%),
+      linear-gradient(to top, var(--border-soft) 1px, transparent 1px) 0 0 / 100% 25%;
+  }
+
+  .ref-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px dashed #A0ABC5;
+  }
+
+  .mix-bars {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    height: 182px;
+    align-items: end;
+    padding: 8px 6px 0;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mix-col {
+    height: var(--h);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+  }
+
+  .mix-ent { background: #163B66; }
+  .mix-mm { background: #2E6EA6; }
+  .mix-smb { background: #72A8D8; }
+
+  .x-small {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    color: var(--text-muted);
+    font-size: 8.5px;
+    text-align: center;
+    margin-top: 6px;
+    padding-left: 7px;
+  }
+
+  .story-card {
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #fff 0%, #F8FAFE 100%);
+  }
+
+  .story-num {
+    margin-top: 8px;
+    color: var(--indigo);
+    font-size: 30px;
+    font-weight: 760;
+    line-height: 1;
+    letter-spacing: -0.7px;
+  }
+
+  .story-list {
+    display: grid;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .story-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-body);
+    font-size: 10px;
+  }
+
+  .story-pill {
+    min-width: 48px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: var(--elevated);
+    border: 1px solid var(--border);
+    color: var(--text-h);
+    font-weight: 700;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="top-chrome">
+    <div class="brand-row">
+      <div class="cn-mark">CN</div>
+      <div class="workbook-title">SaaS RevOps Command Center</div>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Dashboard tabs">
+      <button class="tab active" type="button" data-tab="pipeline">Pipeline Health</button>
+      <button class="tab" type="button" data-tab="forecast">Forecast Accuracy</button>
+      <button class="tab" type="button" data-tab="arr">ARR Performance</button>
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-pill">Year <span class="val">2026</span><span class="caret">v</span></div>
+    <div class="filter-pill">Quarter <span class="val">All 2026</span><span class="caret">v</span></div>
+    <div class="filter-pill">Region <span class="val">All</span><span class="caret">v</span></div>
+    <div class="filter-pill">Segment <span class="val">All</span><span class="caret">v</span></div>
+    <div class="filter-pill">Owner <span class="val">All</span><span class="caret">v</span></div>
+    <div class="data-freshness">Mock data as of Jun 24, 2026</div>
+  </div>
+
+  <section id="pipeline" class="tab-panel active">
+    <div class="title-row">
+      <div>
+        <div class="page-title">Pipeline Health</div>
+        <div class="page-subtitle">Coverage, stale activity, and stage movement for open 2026 pipeline.</div>
+      </div>
+      <div class="talk-track">Talk track: I start with coverage because leaders need to know if there is enough pipeline, then move into execution risk: stale activity and late-stage movement.</div>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <div class="kpi-label">Open Pipeline</div>
+        <div class="kpi-middle"><div class="kpi-value">$42.3M</div><div class="kpi-sub">total ACV</div></div>
+        <div class="kpi-delta up">Healthy top-line coverage</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Open Deals</div>
+        <div class="kpi-middle"><div class="kpi-value">240</div><div class="kpi-sub">active opps</div></div>
+        <div class="kpi-delta">Q1-Q3 2026 close dates</div>
+      </div>
+      <div class="kpi-card watch">
+        <div class="kpi-label">ACV Exposed</div>
+        <div class="kpi-middle"><div class="kpi-value">$12.6M</div><div class="kpi-sub">15d+ stale</div></div>
+        <div class="kpi-delta warn">29.8% of open ACV</div>
+      </div>
+      <div class="kpi-card alert">
+        <div class="kpi-label">30d+ Stale</div>
+        <div class="kpi-middle"><div class="kpi-value bad">20</div><div class="kpi-sub">follow-ups</div></div>
+        <div class="kpi-delta bad">Manager action queue</div>
+      </div>
+    </div>
+
+    <div class="hero-row">
+      <div class="chart-card">
+        <div class="chart-head">
+          <div>
+            <div class="chart-title">Pipeline Coverage by Segment</div>
+            <div class="chart-sub">Open pipeline ACV divided by quota. Segment-quarter view exposes where coverage quality is uneven.</div>
+          </div>
+          <div class="target-badge">Target 3.0x</div>
+        </div>
+        <div class="chart-body">
+          <div class="coverage-layout">
+            <div>
+              <div class="cov-table">
+                <div class="cov-header"><div></div><div>SMB</div><div>Mid-Market</div><div>Enterprise</div></div>
+                <div class="cov-row">
+                  <div class="cov-qtr">Q1 2026</div>
+                  <div class="cov-cell at-risk"><div class="cov-value">0.93x</div><div class="cov-note">At Risk</div></div>
+                  <div class="cov-cell at-risk"><div class="cov-value">1.33x</div><div class="cov-note">At Risk</div></div>
+                  <div class="cov-cell monitor"><div class="cov-value">2.86x</div><div class="cov-note">Monitor</div></div>
+                </div>
+                <div class="cov-row">
+                  <div class="cov-qtr">Q2 2026</div>
+                  <div class="cov-cell at-risk"><div class="cov-value">1.16x</div><div class="cov-note">At Risk</div></div>
+                  <div class="cov-cell monitor"><div class="cov-value">2.30x</div><div class="cov-note">Monitor</div></div>
+                  <div class="cov-cell on-track"><div class="cov-value">4.70x</div><div class="cov-note">On Track</div></div>
+                </div>
+                <div class="cov-row">
+                  <div class="cov-qtr">Q3 2026</div>
+                  <div class="cov-cell at-risk"><div class="cov-value">0.74x</div><div class="cov-note">At Risk</div></div>
+                  <div class="cov-cell at-risk"><div class="cov-value">0.93x</div><div class="cov-note">At Risk</div></div>
+                  <div class="cov-cell on-track"><div class="cov-value">4.46x</div><div class="cov-note">On Track</div></div>
+                </div>
+              </div>
+              <div class="legend">
+                <div class="leg-item"><span class="dot" style="background:var(--teal)"></span>On track</div>
+                <div class="leg-item"><span class="dot" style="background:var(--amber)"></span>Monitor</div>
+                <div class="leg-item"><span class="dot" style="background:var(--red)"></span>At risk</div>
+              </div>
+            </div>
+            <div class="risk-panel">
+              <div>
+                <div class="risk-eyebrow">Manager Focus</div>
+                <div class="risk-big">5 of 9</div>
+                <div class="risk-copy">At-risk segment-quarter combinations. Monitor cells remain visible, but the count focuses only on true coverage gaps.</div>
+              </div>
+              <div class="risk-list">
+                <div class="risk-item"><span>SMB average</span><span class="risk-chip">0.94x</span></div>
+                <div class="risk-item"><span>Mid-Market average</span><span class="risk-chip">1.52x</span></div>
+                <div class="risk-item"><span>Enterprise average</span><span class="risk-chip">4.01x</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-title">Open Pipeline by Stage</div>
+        <div class="chart-sub">Count provides funnel shape; ACV shows where value is concentrated.</div>
+        <div class="chart-body">
+          <div class="funnel-head"><div></div><div>Count</div><div>#</div><div>ACV</div></div>
+          <div class="funnel-row"><div class="f-label">Demo</div><div class="f-track"><div class="f-bar" style="width:100%"></div></div><div class="f-count">60</div><div class="f-acv">$10.7M</div></div>
+          <div class="funnel-row"><div class="f-label">Proposal</div><div class="f-track"><div class="f-bar" style="width:90%"></div></div><div class="f-count">54</div><div class="f-acv">$11.1M</div></div>
+          <div class="funnel-row"><div class="f-label">Prospect</div><div class="f-track"><div class="f-bar" style="width:78%"></div></div><div class="f-count">47</div><div class="f-acv">$8.1M</div></div>
+          <div class="funnel-row"><div class="f-label">Qualified</div><div class="f-track"><div class="f-bar" style="width:75%"></div></div><div class="f-count">45</div><div class="f-acv">$6.7M</div></div>
+          <div class="funnel-row"><div class="f-label">Commit</div><div class="f-track"><div class="f-bar" style="width:57%"></div></div><div class="f-count">34</div><div class="f-acv">$5.6M</div></div>
+          <div class="conversion-strip">
+            <div><div class="conv-label">Prospect to Qual</div><div class="conv-val">72%</div></div>
+            <div><div class="conv-label">Qual to Demo</div><div class="conv-val">70%</div></div>
+            <div><div class="conv-label">Demo to Prop</div><div class="conv-val bad">66%</div></div>
+            <div><div class="conv-label">Prop to Commit</div><div class="conv-val bad">55%</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secondary-row">
+      <div class="chart-card">
+        <div class="chart-title">Avg Days in Stage vs Benchmark</div>
+        <div class="chart-sub">Completed stage transitions. Benchmark line separates healthy movement from execution drag.</div>
+        <div class="chart-body">
+          <div class="dur-row"><div class="dur-label">Prospect</div><div class="dur-track"><div class="dur-fill" style="width:43%;background:var(--teal)"></div><div class="dur-bench" style="left:67%"></div></div><div class="dur-val" style="color:var(--teal)">9.1d ok</div></div>
+          <div class="dur-row"><div class="dur-label">Qualified</div><div class="dur-track"><div class="dur-fill" style="width:40%;background:var(--teal)"></div><div class="dur-bench" style="left:48%"></div></div><div class="dur-val" style="color:var(--teal)">8.4d ok</div></div>
+          <div class="dur-row"><div class="dur-label">Demo</div><div class="dur-track"><div class="dur-fill" style="width:26%;background:var(--teal)"></div><div class="dur-bench" style="left:33%"></div></div><div class="dur-val" style="color:var(--teal)">5.4d ok</div></div>
+          <div class="dur-row"><div class="dur-label">Proposal</div><div class="dur-track"><div class="dur-fill" style="width:72%;background:var(--amber)"></div><div class="dur-bench" style="left:67%"></div></div><div class="dur-val" style="color:var(--amber)">15.1d slight</div></div>
+          <div class="dur-row"><div class="dur-label">Commit</div><div class="dur-track"><div class="dur-fill" style="width:59%;background:var(--red)"></div><div class="dur-bench" style="left:48%"></div></div><div class="dur-val" style="color:var(--red)">12.3d over</div></div>
+          <div class="legend"><div class="leg-item"><span class="dot" style="background:var(--teal)"></span>OK</div><div class="leg-item"><span class="dot" style="background:var(--amber)"></span>Slightly over</div><div class="leg-item"><span class="dot" style="background:var(--red)"></span>Over</div></div>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-title">Stalled Deals Requiring Follow-Up</div>
+        <div class="chart-sub">Action queue for sales managers. Open pipeline, sorted by days since last activity.</div>
+        <div class="chart-body">
+          <div class="action-summary">
+            <div class="action-tile"><div class="action-num bad">20</div><div class="action-label">30d+ stale</div></div>
+            <div class="action-tile"><div class="action-num warn">51</div><div class="action-label">15-29d stale</div></div>
+            <div class="action-tile"><div class="action-num">$12.6M</div><div class="action-label">ACV exposed</div></div>
+          </div>
+          <table class="aging-table">
+            <thead><tr><th>Rep</th><th>Account</th><th>Stage</th><th>ACV</th><th>Close Date</th><th>Last Activity</th></tr></thead>
+            <tbody>
+              <tr><td class="bold">P. Kapoor</td><td>Ironclad Platforms</td><td>Commit</td><td class="acv">$340K</td><td>Jun 30, 2026</td><td><span class="days-badge days-stale">41d ago</span></td></tr>
+              <tr><td class="bold">M. Webb</td><td>Temporal Cloud</td><td>Proposal</td><td class="acv">$220K</td><td>Jul 15, 2026</td><td><span class="days-badge days-stale">36d ago</span></td></tr>
+              <tr><td class="bold">D. Fernandez</td><td>Mosaic Cloud</td><td>Demo</td><td class="acv">$89K</td><td>Aug 30, 2026</td><td><span class="days-badge days-monitor">24d ago</span></td></tr>
+              <tr><td class="bold">A. Singh</td><td>Notion Labs</td><td>Qualified</td><td class="acv">$22K</td><td>Sep 18, 2026</td><td><span class="days-badge days-monitor">18d ago</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="forecast" class="tab-panel">
+    <div class="title-row">
+      <div>
+        <div class="page-title">Forecast Accuracy</div>
+        <div class="page-subtitle">How well committed pipeline converts to won ACV, and where forecast confidence changes by segment.</div>
+      </div>
+      <div class="talk-track">Talk track: This tab separates pipeline quantity from forecast quality. I compare commit forecast to actual won ACV, then show whether misses come from stage discipline or segment-level win-rate patterns.</div>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi-card good"><div class="kpi-label">Forecast Accuracy</div><div class="kpi-middle"><div class="kpi-value">94%</div><div class="kpi-sub">Q4 2025</div></div><div class="kpi-delta up">Recovered after Q3 softness</div></div>
+      <div class="kpi-card"><div class="kpi-label">Commit ACV</div><div class="kpi-middle"><div class="kpi-value">$3.1M</div><div class="kpi-sub">reached Commit</div></div><div class="kpi-delta">Historical closed quarter</div></div>
+      <div class="kpi-card good"><div class="kpi-label">Won ACV</div><div class="kpi-middle"><div class="kpi-value">$2.9M</div><div class="kpi-sub">closed won</div></div><div class="kpi-delta up">Strong conversion from Commit</div></div>
+      <div class="kpi-card watch"><div class="kpi-label">Win Rate</div><div class="kpi-middle"><div class="kpi-value">74%</div><div class="kpi-sub">closed deals</div></div><div class="kpi-delta warn">Volume is lower than Q2</div></div>
+    </div>
+
+    <div class="wide-row">
+      <div class="chart-card">
+        <div class="chart-head">
+          <div>
+            <div class="chart-title">Forecast vs Actual - 6-Quarter Rolling</div>
+            <div class="chart-sub">Commit ACV and Won ACV use the same close-quarter frame; accuracy line shows conversion from committed forecast to revenue.</div>
+          </div>
+          <div class="target-badge">Accuracy line: Won / Commit</div>
+        </div>
+        <div class="chart-body">
+          <div class="combo-chart">
+            <div class="y-axis"><span>$4M</span><span>$3M</span><span>$2M</span><span>$1M</span><span>$0</span></div>
+            <div class="plot">
+              <div class="bar-group" style="left:5%;"><div class="bar commit" style="height:214px"></div><div class="bar won" style="height:208px"></div></div>
+              <div class="bar-group" style="left:21%;"><div class="bar commit" style="height:215px"></div><div class="bar won" style="height:215px"></div></div>
+              <div class="bar-group" style="left:37%;"><div class="bar commit" style="height:184px"></div><div class="bar won" style="height:184px"></div></div>
+              <div class="bar-group" style="left:53%;"><div class="bar commit" style="height:238px"></div><div class="bar won" style="height:238px"></div></div>
+              <div class="bar-group" style="left:69%;"><div class="bar commit" style="height:238px"></div><div class="bar won" style="height:186px"></div></div>
+              <div class="bar-group" style="left:85%;"><div class="bar commit" style="height:233px"></div><div class="bar won" style="height:219px"></div></div>
+              <span class="line-seg" style="left:10%;top:23%;width:170px;transform:rotate(-2deg)"></span>
+              <span class="line-seg" style="left:25%;top:22%;width:170px;transform:rotate(0deg)"></span>
+              <span class="line-seg" style="left:41%;top:22%;width:170px;transform:rotate(0deg)"></span>
+              <span class="line-seg" style="left:57%;top:22%;width:170px;transform:rotate(12deg)"></span>
+              <span class="line-seg" style="left:73%;top:40%;width:170px;transform:rotate(-10deg)"></span>
+              <span class="line-point" style="left:10%;top:23%"></span>
+              <span class="line-point" style="left:26%;top:22%"></span>
+              <span class="line-point" style="left:42%;top:22%"></span>
+              <span class="line-point" style="left:58%;top:22%"></span>
+              <span class="line-point" style="left:74%;top:40%"></span>
+              <span class="line-point" style="left:90%;top:27%"></span>
+            </div>
+            <div class="y-axis right-axis"><span>100%</span><span>90%</span><span>80%</span><span>70%</span><span>60%</span></div>
+            <div class="x-axis"><span>Q3'24</span><span>Q4'24</span><span>Q1'25</span><span>Q2'25</span><span>Q3'25</span><span>Q4'25</span></div>
+          </div>
+          <div class="legend"><div class="leg-item"><span class="dot" style="background:var(--indigo)"></span>Commit ACV</div><div class="leg-item"><span class="dot" style="background:var(--teal)"></span>Won ACV</div><div class="leg-item"><span class="dot" style="background:var(--amber)"></span>Accuracy %</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-three">
+      <div class="chart-card">
+        <div class="chart-title">Win Rate Trend by Segment</div>
+        <div class="chart-sub">Closed deals only. Segment lines show where forecast confidence should be discounted.</div>
+        <div class="chart-body">
+          <div class="spark-lines">
+            <span class="series-seg" style="left:8%;top:49%;width:84px;background:#72A8D8;transform:rotate(5deg)"></span>
+            <span class="series-seg" style="left:31%;top:55%;width:84px;background:#72A8D8;transform:rotate(-8deg)"></span>
+            <span class="series-seg" style="left:55%;top:43%;width:84px;background:#72A8D8;transform:rotate(7deg)"></span>
+            <span class="series-seg" style="left:8%;top:40%;width:84px;background:#2E6EA6;transform:rotate(-3deg)"></span>
+            <span class="series-seg" style="left:31%;top:36%;width:84px;background:#2E6EA6;transform:rotate(11deg)"></span>
+            <span class="series-seg" style="left:55%;top:52%;width:84px;background:#2E6EA6;transform:rotate(-9deg)"></span>
+            <span class="series-seg" style="left:8%;top:28%;width:84px;background:#163B66;transform:rotate(4deg)"></span>
+            <span class="series-seg" style="left:31%;top:33%;width:84px;background:#163B66;transform:rotate(-5deg)"></span>
+            <span class="series-seg" style="left:55%;top:27%;width:84px;background:#163B66;transform:rotate(-1deg)"></span>
+          </div>
+          <div class="legend"><div class="leg-item"><span class="dot" style="background:#163B66"></span>Enterprise</div><div class="leg-item"><span class="dot" style="background:#2E6EA6"></span>Mid-Market</div><div class="leg-item"><span class="dot" style="background:#72A8D8"></span>SMB</div></div>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-title">Forecast Category Flow</div>
+        <div class="chart-sub">Selected historical quarter. Simple flow view shows compression from Best Case to Commit to Closed Won.</div>
+        <div class="chart-body">
+          <div class="flow-steps">
+            <div class="flow-box"><div><div class="flow-value">$5.4M</div><div class="flow-label">Best Case</div></div><div class="flow-note">Large enough top-of-forecast pool to support the quarter.</div></div>
+            <div class="arrow">></div>
+            <div class="flow-box"><div><div class="flow-value">$3.1M</div><div class="flow-label">Commit</div></div><div class="flow-note">58% of Best Case progressed into a committed forecast posture.</div></div>
+            <div class="arrow">></div>
+            <div class="flow-box"><div><div class="flow-value">$2.9M</div><div class="flow-label">Closed Won</div></div><div class="flow-note">94% of Commit converted, signaling good late-stage discipline.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-card">
+        <div>
+          <div class="panel-eyebrow">Interview Readout</div>
+          <div class="story-num">Q3 Dip</div>
+          <div class="panel-copy">The forecast story is not that Commit is unreliable. It is that one quarter showed leakage, then recovered in Q4.</div>
+        </div>
+        <div class="story-list">
+          <div class="story-item"><span>Q3 accuracy</span><span class="story-pill bad">78%</span></div>
+          <div class="story-item"><span>Q4 accuracy</span><span class="story-pill up">94%</span></div>
+          <div class="story-item"><span>Action</span><span class="story-pill">Coach stages</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="arr" class="tab-panel">
+    <div class="title-row">
+      <div>
+        <div class="page-title">ARR Performance</div>
+        <div class="page-subtitle">Revenue motion quality across new logo, expansion, renewal, and churn.</div>
+      </div>
+      <div class="talk-track">Talk track: This tab moves from sales execution to business quality. It explains whether growth is coming from new wins, expansion, retained renewals, or churn pressure.</div>
+    </div>
+
+    <div class="kpi-row">
+      <div class="kpi-card good"><div class="kpi-label">Net New ARR</div><div class="kpi-middle"><div class="kpi-value">$11.6M</div><div class="kpi-sub">8 qtrs</div></div><div class="kpi-delta up">Growth remains positive</div></div>
+      <div class="kpi-card good"><div class="kpi-label">NRR</div><div class="kpi-middle"><div class="kpi-value">118%</div><div class="kpi-sub">T4Q approx.</div></div><div class="kpi-delta up">Expansion offsets churn</div></div>
+      <div class="kpi-card watch"><div class="kpi-label">GRR</div><div class="kpi-middle"><div class="kpi-value">91%</div><div class="kpi-sub">T4Q approx.</div></div><div class="kpi-delta warn">Retention watchlist</div></div>
+      <div class="kpi-card alert"><div class="kpi-label">Churn ARR</div><div class="kpi-middle"><div class="kpi-value bad">$5.3M</div><div class="kpi-sub">lost renewals</div></div><div class="kpi-delta bad">Concentrated in two quarters</div></div>
+    </div>
+
+    <div class="wide-row">
+      <div class="chart-card">
+        <div class="chart-head">
+          <div>
+            <div class="chart-title">ARR Waterfall - Net New ARR by Quarter</div>
+            <div class="chart-sub">Positive bars show new and expansion ARR. Red below the zero line shows churn. Navy line traces cumulative net new ARR.</div>
+          </div>
+          <div class="target-badge">Churn is negative by convention</div>
+        </div>
+        <div class="chart-body">
+          <div class="waterfall">
+            <div class="y-axis"><span>$4M</span><span>$2M</span><span>$0</span><span>-$2M</span></div>
+            <div class="water-plot">
+              <div class="water-col" style="left:4%"><div class="stack new" style="height:98px"></div><div class="stack exp" style="height:12px"></div><div class="stack churn" style="height:16px"></div></div>
+              <div class="water-col" style="left:16%"><div class="stack new" style="height:24px"></div><div class="stack exp" style="height:26px"></div><div class="stack churn" style="height:6px"></div></div>
+              <div class="water-col" style="left:28%"><div class="stack new" style="height:112px"></div><div class="stack exp" style="height:54px"></div><div class="stack churn" style="height:112px"></div></div>
+              <div class="water-col" style="left:40%"><div class="stack new" style="height:70px"></div><div class="stack exp" style="height:35px"></div><div class="stack churn" style="height:41px"></div></div>
+              <div class="water-col" style="left:52%"><div class="stack new" style="height:81px"></div><div class="stack exp" style="height:66px"></div><div class="stack churn" style="height:43px"></div></div>
+              <div class="water-col" style="left:64%"><div class="stack new" style="height:149px"></div><div class="stack exp" style="height:31px"></div></div>
+              <div class="water-col" style="left:76%"><div class="stack new" style="height:62px"></div><div class="stack exp" style="height:53px"></div><div class="stack churn" style="height:114px"></div></div>
+              <div class="water-col" style="left:88%"><div class="stack new" style="height:130px"></div><div class="stack exp" style="height:40px"></div></div>
+              <span class="cum-line" style="left:8%;top:64%;width:150px;transform:rotate(-8deg)"></span>
+              <span class="cum-line" style="left:20%;top:55%;width:150px;transform:rotate(-10deg)"></span>
+              <span class="cum-line" style="left:32%;top:45%;width:150px;transform:rotate(-1deg)"></span>
+              <span class="cum-line" style="left:44%;top:43%;width:150px;transform:rotate(-7deg)"></span>
+              <span class="cum-line" style="left:56%;top:35%;width:150px;transform:rotate(-13deg)"></span>
+              <span class="cum-line" style="left:68%;top:22%;width:150px;transform:rotate(0deg)"></span>
+              <span class="cum-line" style="left:80%;top:23%;width:150px;transform:rotate(-12deg)"></span>
+            </div>
+            <div class="x-axis" style="grid-template-columns:repeat(8,1fr)"><span>Q1'24</span><span>Q2'24</span><span>Q3'24</span><span>Q4'24</span><span>Q1'25</span><span>Q2'25</span><span>Q3'25</span><span>Q4'25</span></div>
+          </div>
+          <div class="legend"><div class="leg-item"><span class="dot" style="background:var(--teal)"></span>New ARR</div><div class="leg-item"><span class="dot" style="background:var(--indigo)"></span>Expansion ARR</div><div class="leg-item"><span class="dot" style="background:#A0ABC5"></span>Renewal retained</div><div class="leg-item"><span class="dot" style="background:var(--red)"></span>Churn</div><div class="leg-item"><span class="dot" style="background:var(--navy)"></span>Cumulative net new</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="arr-bottom">
+      <div class="chart-card">
+        <div class="chart-title">GRR and NRR Trend</div>
+        <div class="chart-sub">Reference band above 110% highlights expansion-quality growth. Breakeven line anchors retention health.</div>
+        <div class="chart-body">
+          <div class="retention-plot">
+            <span class="ref-line" style="top:62%"></span>
+            <span class="series-seg" style="left:8%;top:28%;width:110px;background:var(--teal);transform:rotate(-4deg)"></span>
+            <span class="series-seg" style="left:27%;top:23%;width:110px;background:var(--teal);transform:rotate(8deg)"></span>
+            <span class="series-seg" style="left:47%;top:37%;width:110px;background:var(--teal);transform:rotate(-9deg)"></span>
+            <span class="series-seg" style="left:67%;top:24%;width:110px;background:var(--teal);transform:rotate(3deg)"></span>
+            <span class="series-seg" style="left:8%;top:70%;width:110px;background:var(--indigo);transform:rotate(-2deg)"></span>
+            <span class="series-seg" style="left:27%;top:67%;width:110px;background:var(--indigo);transform:rotate(9deg)"></span>
+            <span class="series-seg" style="left:47%;top:81%;width:110px;background:var(--indigo);transform:rotate(-5deg)"></span>
+            <span class="series-seg" style="left:67%;top:72%;width:110px;background:var(--indigo);transform:rotate(-2deg)"></span>
+          </div>
+          <div class="legend"><div class="leg-item"><span class="dot" style="background:var(--teal)"></span>NRR</div><div class="leg-item"><span class="dot" style="background:var(--indigo)"></span>GRR</div><div class="leg-item"><span class="dot" style="background:#A0ABC5"></span>100% breakeven</div></div>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-title">Closed ARR Mix by Segment</div>
+        <div class="chart-sub">Stacked bars show where won ACV is coming from. Use this to discuss growth concentration risk.</div>
+        <div class="chart-body">
+          <div class="mix-bars">
+            <div class="mix-col" style="--h:112px"><div class="mix-smb" style="height:18%"></div><div class="mix-mm" style="height:28%"></div><div class="mix-ent" style="height:54%"></div></div>
+            <div class="mix-col" style="--h:74px"><div class="mix-smb" style="height:25%"></div><div class="mix-mm" style="height:35%"></div><div class="mix-ent" style="height:40%"></div></div>
+            <div class="mix-col" style="--h:128px"><div class="mix-smb" style="height:16%"></div><div class="mix-mm" style="height:31%"></div><div class="mix-ent" style="height:53%"></div></div>
+            <div class="mix-col" style="--h:134px"><div class="mix-smb" style="height:12%"></div><div class="mix-mm" style="height:24%"></div><div class="mix-ent" style="height:64%"></div></div>
+            <div class="mix-col" style="--h:116px"><div class="mix-smb" style="height:20%"></div><div class="mix-mm" style="height:36%"></div><div class="mix-ent" style="height:44%"></div></div>
+            <div class="mix-col" style="--h:136px"><div class="mix-smb" style="height:14%"></div><div class="mix-mm" style="height:28%"></div><div class="mix-ent" style="height:58%"></div></div>
+          </div>
+          <div class="x-small"><span>Q3'24</span><span>Q4'24</span><span>Q1'25</span><span>Q2'25</span><span>Q3'25</span><span>Q4'25</span></div>
+          <div class="legend"><div class="leg-item"><span class="dot" style="background:#163B66"></span>Enterprise</div><div class="leg-item"><span class="dot" style="background:#2E6EA6"></span>Mid-Market</div><div class="leg-item"><span class="dot" style="background:#72A8D8"></span>SMB</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script>
+  const tabs = document.querySelectorAll(".tab");
+  const panels = document.querySelectorAll(".tab-panel");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const id = tab.dataset.tab;
+      tabs.forEach((item) => item.classList.toggle("active", item === tab));
+      panels.forEach((panel) => panel.classList.toggle("active", panel.id === id));
+    });
+  });
+</script>
+</body>
+</html>

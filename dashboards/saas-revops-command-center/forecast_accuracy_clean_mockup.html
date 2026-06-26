@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1400, initial-scale=1">
+<title>SaaS RevOps Command Center - Forecast Accuracy Clean Mockup</title>
+<style>
+  :root {
+    --canvas: #EEF1F8;
+    --card: #FFFFFF;
+    --elevated: #F2F5FB;
+    --border: #DDE4F2;
+    --border-soft: #EAEEF8;
+    --text-h: #0F1C36;
+    --text-body: #3D4F6F;
+    --text-muted: #8492B0;
+    --text-sub: #A0ABC5;
+    --tab-bg: #0D1B2E;
+    --tab-border: #1E2F4A;
+    --tab-muted: #5E7292;
+    --amber: #E59300;
+    --indigo: #6B4FFF;
+    --teal: #00A87A;
+    --red: #D63344;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1400px;
+    min-height: 900px;
+    background: var(--canvas);
+    color: var(--text-h);
+    font-family: "Segoe UI", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .top-chrome {
+    height: 44px;
+    padding: 10px 20px 0;
+    background: var(--tab-bg);
+    border-bottom: 1px solid var(--tab-border);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .brand-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding-bottom: 8px;
+  }
+
+  .cn-mark {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #7B61FF, #00C49A);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  .workbook-title {
+    color: var(--tab-muted);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+
+  .tabs { display: flex; gap: 2px; }
+
+  .tab {
+    padding: 6px 18px 7px;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    border-radius: 6px 6px 0 0;
+    color: var(--tab-muted);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+
+  .tab.active {
+    background: var(--canvas);
+    color: var(--text-h);
+    border-color: var(--tab-border);
+    border-top: 2.5px solid var(--indigo);
+  }
+
+  .filter-bar {
+    height: 38px;
+    padding: 7px 20px;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 1px 0 var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .filter-pill {
+    padding: 3px 10px;
+    background: var(--elevated);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-body);
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .filter-pill .val { color: var(--indigo); font-weight: 700; }
+  .filter-pill .caret { color: var(--text-muted); font-size: 8px; margin-left: 4px; }
+
+  .data-freshness {
+    margin-left: auto;
+    color: var(--text-muted);
+    font-size: 9px;
+    letter-spacing: 0.3px;
+  }
+
+  .dashboard {
+    height: calc(900px - 82px);
+    padding: 12px 16px 14px;
+    display: grid;
+    grid-template-rows: 48px 88px 428px 1fr;
+    gap: 10px;
+  }
+
+  .title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .page-title {
+    color: var(--text-h);
+    font-size: 18px;
+    font-weight: 650;
+    letter-spacing: -0.2px;
+  }
+
+  .page-subtitle {
+    margin-top: 2px;
+    color: var(--text-muted);
+    font-size: 9.5px;
+  }
+
+  .talk-track {
+    max-width: 454px;
+    padding: 8px 11px;
+    border: 1px solid rgba(107, 79, 255, 0.22);
+    border-radius: 8px;
+    background: rgba(107, 79, 255, 0.06);
+    color: var(--text-body);
+    font-size: 10px;
+    line-height: 1.35;
+  }
+
+  .kpi-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .kpi-card,
+  .chart-card,
+  .readout-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(15, 28, 54, 0.06);
+  }
+
+  .kpi-card {
+    padding: 12px 16px 10px;
+    border-left: 3px solid var(--indigo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .kpi-card.good { border-left-color: var(--teal); }
+  .kpi-card.watch { border-left-color: var(--amber); }
+
+  .kpi-label {
+    color: var(--text-muted);
+    font-size: 8.5px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+  }
+
+  .kpi-middle { display: flex; align-items: baseline; gap: 9px; }
+
+  .kpi-value {
+    color: var(--text-h);
+    font-size: 30px;
+    font-weight: 725;
+    line-height: 1;
+    letter-spacing: -0.6px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .kpi-sub {
+    margin-left: auto;
+    color: var(--text-muted);
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+  .kpi-delta {
+    color: var(--text-body);
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .up { color: var(--teal); }
+  .warn { color: var(--amber); }
+
+  .chart-card {
+    padding: 14px 16px 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chart-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .chart-title {
+    color: var(--text-h);
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+  }
+
+  .chart-sub {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    color: var(--text-muted);
+    font-size: 9px;
+  }
+
+  .target-badge {
+    padding: 3px 9px;
+    border: 1px solid rgba(107, 79, 255, 0.22);
+    border-radius: 4px;
+    background: rgba(107, 79, 255, 0.07);
+    color: var(--indigo);
+    font-size: 9px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .chart-body { flex: 1; min-height: 0; overflow: hidden; }
+
+  .trend-chart {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 52px 1fr 54px;
+    grid-template-rows: 1fr 24px;
+    gap: 0 10px;
+  }
+
+  .y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 8px 0 28px;
+    color: var(--text-muted);
+    font-size: 8.5px;
+  }
+
+  .right-axis {
+    align-items: flex-start;
+    color: var(--amber);
+  }
+
+  .plot {
+    position: relative;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(to top, var(--border-soft) 1px, transparent 1px) 0 0 / 100% 25%;
+    overflow: hidden;
+  }
+
+  .bar-group {
+    position: absolute;
+    bottom: 0;
+    width: 92px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .bar {
+    width: 22px;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .bar.commit { background: rgba(107, 79, 255, 0.75); }
+  .bar.won { background: rgba(0, 168, 122, 0.82); }
+
+  .line-seg {
+    position: absolute;
+    height: 2px;
+    background: var(--amber);
+    transform-origin: left center;
+    z-index: 2;
+  }
+
+  .line-point {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: var(--amber);
+    box-shadow: 0 0 0 1px rgba(229, 147, 0, 0.35);
+    z-index: 3;
+  }
+
+  .x-axis {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    color: var(--text-muted);
+    font-size: 8.5px;
+    text-align: center;
+    padding-top: 7px;
+  }
+
+  .legend {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+    padding-top: 9px;
+    border-top: 1px solid var(--border);
+  }
+
+  .leg-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-muted);
+    font-size: 9px;
+  }
+
+  .dot { width: 8px; height: 8px; border-radius: 2px; }
+
+  .bottom-row {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 10px;
+  }
+
+  .ladder {
+    display: grid;
+    grid-template-columns: 130px 1fr 64px 64px;
+    gap: 10px;
+    align-items: center;
+    margin-top: 4px;
+  }
+
+  .ladder-head {
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+  }
+
+  .stage-label {
+    color: var(--text-body);
+    font-size: 10.5px;
+    font-weight: 700;
+  }
+
+  .bar-track {
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--elevated);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .bar-text {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: var(--text-h);
+    font-size: 11.5px;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .metric {
+    color: var(--text-h);
+    font-size: 10.5px;
+    font-weight: 800;
+    text-align: right;
+  }
+
+  .callout-row {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .callout {
+    padding: 10px 11px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--elevated);
+  }
+
+  .callout-label {
+    color: var(--text-muted);
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+  }
+
+  .callout-value {
+    margin-top: 4px;
+    color: var(--text-h);
+    font-size: 22px;
+    font-weight: 780;
+  }
+
+  .readout-card {
+    padding: 14px 16px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFE 100%);
+  }
+
+  .readout-eyebrow {
+    color: var(--text-muted);
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  .readout-value {
+    margin-top: 7px;
+    color: var(--teal);
+    font-size: 34px;
+    font-weight: 780;
+    letter-spacing: -0.8px;
+  }
+
+  .readout-copy {
+    margin-top: 8px;
+    color: var(--text-body);
+    font-size: 10.5px;
+    line-height: 1.45;
+  }
+
+  .rule-list {
+    display: grid;
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .rule {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 9px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--elevated);
+    color: var(--text-body);
+    font-size: 10px;
+  }
+
+  .rule strong {
+    color: var(--text-h);
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+  <div class="top-chrome">
+    <div class="brand-row">
+      <div class="cn-mark">CN</div>
+      <div class="workbook-title">SaaS RevOps Command Center</div>
+    </div>
+    <div class="tabs">
+      <div class="tab">Pipeline Health</div>
+      <div class="tab active">Forecast Accuracy</div>
+      <div class="tab">ARR Performance</div>
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <div class="filter-pill">Year <span class="val">2025</span><span class="caret">v</span></div>
+    <div class="filter-pill">Quarter <span class="val">Q4 2025</span><span class="caret">v</span></div>
+    <div class="filter-pill">Segment <span class="val">All</span><span class="caret">v</span></div>
+    <div class="filter-pill">Region <span class="val">All</span><span class="caret">v</span></div>
+    <div class="data-freshness">Mock data as of Jun 24, 2026</div>
+  </div>
+
+  <main class="dashboard">
+    <div class="title-row">
+      <div>
+        <div class="page-title">Forecast Accuracy</div>
+        <div class="page-subtitle">Compare committed forecast to closed won ACV, then explain the selected quarter with a simple conversion ladder.</div>
+      </div>
+      <div class="talk-track">
+        Talk track: the trend shows forecast quality over time. The ladder answers what happened inside the selected quarter, without making the viewer decode a complex Sankey.
+      </div>
+    </div>
+
+    <section class="kpi-row">
+      <div class="kpi-card good">
+        <div class="kpi-label">Forecast Accuracy</div>
+        <div class="kpi-middle"><div class="kpi-value">94%</div><div class="kpi-sub">Q4 2025</div></div>
+        <div class="kpi-delta up">Commit converted strongly</div>
+      </div>
+      <div class="kpi-card watch">
+        <div class="kpi-label">Forecast Pool</div>
+        <div class="kpi-middle"><div class="kpi-value">$3.5M</div><div class="kpi-sub">Demo+</div></div>
+        <div class="kpi-delta warn">Pool includes Demo, Proposal, Commit</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Commit ACV</div>
+        <div class="kpi-middle"><div class="kpi-value">$3.1M</div><div class="kpi-sub">called</div></div>
+        <div class="kpi-delta">89% of forecast pool</div>
+      </div>
+      <div class="kpi-card good">
+        <div class="kpi-label">Won ACV</div>
+        <div class="kpi-middle"><div class="kpi-value">$2.9M</div><div class="kpi-sub">closed won</div></div>
+        <div class="kpi-delta up">94% of Commit</div>
+      </div>
+    </section>
+
+    <section class="chart-card">
+      <div class="chart-head">
+        <div>
+          <div class="chart-title">Forecast vs Actual - 6-Quarter Rolling</div>
+          <div class="chart-sub">Commit ACV and Won ACV by close quarter. Accuracy line uses Won ACV divided by Commit ACV.</div>
+        </div>
+        <div class="target-badge">Main visual</div>
+      </div>
+      <div class="chart-body">
+        <div class="trend-chart">
+          <div class="y-axis"><span>$4M</span><span>$3M</span><span>$2M</span><span>$1M</span><span>$0</span></div>
+          <div class="plot">
+            <div class="bar-group" style="left:5%;"><div class="bar commit" style="height:224px"></div><div class="bar won" style="height:218px"></div></div>
+            <div class="bar-group" style="left:21%;"><div class="bar commit" style="height:225px"></div><div class="bar won" style="height:225px"></div></div>
+            <div class="bar-group" style="left:37%;"><div class="bar commit" style="height:192px"></div><div class="bar won" style="height:192px"></div></div>
+            <div class="bar-group" style="left:53%;"><div class="bar commit" style="height:248px"></div><div class="bar won" style="height:248px"></div></div>
+            <div class="bar-group" style="left:69%;"><div class="bar commit" style="height:248px"></div><div class="bar won" style="height:194px"></div></div>
+            <div class="bar-group" style="left:85%;"><div class="bar commit" style="height:243px"></div><div class="bar won" style="height:228px"></div></div>
+            <span class="line-seg" style="left:10%;top:18%;width:178px;transform:rotate(-2deg)"></span>
+            <span class="line-seg" style="left:25%;top:17%;width:178px;transform:rotate(0deg)"></span>
+            <span class="line-seg" style="left:41%;top:17%;width:178px;transform:rotate(0deg)"></span>
+            <span class="line-seg" style="left:57%;top:17%;width:178px;transform:rotate(13deg)"></span>
+            <span class="line-seg" style="left:73%;top:38%;width:178px;transform:rotate(-9deg)"></span>
+            <span class="line-point" style="left:10%;top:18%"></span>
+            <span class="line-point" style="left:26%;top:17%"></span>
+            <span class="line-point" style="left:42%;top:17%"></span>
+            <span class="line-point" style="left:58%;top:17%"></span>
+            <span class="line-point" style="left:74%;top:38%"></span>
+            <span class="line-point" style="left:90%;top:24%"></span>
+          </div>
+          <div class="y-axis right-axis"><span>100%</span><span>90%</span><span>80%</span><span>70%</span><span>60%</span></div>
+          <div class="x-axis"><span>Q3'24</span><span>Q4'24</span><span>Q1'25</span><span>Q2'25</span><span>Q3'25</span><span>Q4'25</span></div>
+        </div>
+        <div class="legend">
+          <div class="leg-item"><span class="dot" style="background:var(--indigo)"></span>Commit ACV</div>
+          <div class="leg-item"><span class="dot" style="background:var(--teal)"></span>Won ACV</div>
+          <div class="leg-item"><span class="dot" style="background:var(--amber)"></span>Forecast Accuracy %</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-row">
+      <div class="chart-card">
+        <div class="chart-head">
+          <div>
+            <div class="chart-title">Selected Quarter Forecast Flow</div>
+            <div class="chart-sub">One-quarter explanation of the trend. Forecast Pool includes deals that reached Demo, Proposal, or Commit.</div>
+          </div>
+          <div class="target-badge">Q4 2025</div>
+        </div>
+        <div class="chart-body">
+          <div class="ladder">
+            <div class="ladder-head">Step</div>
+            <div class="ladder-head">ACV</div>
+            <div class="ladder-head">Share</div>
+            <div class="ladder-head">Value</div>
+            <div class="stage-label">Forecast Pool</div>
+            <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--amber);"></div><div class="bar-text">$3.5M</div></div>
+            <div class="metric">100%</div>
+            <div class="metric">$3.5M</div>
+            <div class="stage-label">Commit</div>
+            <div class="bar-track"><div class="bar-fill" style="width:89%;background:var(--indigo);"></div><div class="bar-text">$3.1M</div></div>
+            <div class="metric">89%</div>
+            <div class="metric">$3.1M</div>
+            <div class="stage-label">Closed Won</div>
+            <div class="bar-track"><div class="bar-fill" style="width:84%;background:var(--teal);"></div><div class="bar-text">$2.9M</div></div>
+            <div class="metric">84%</div>
+            <div class="metric">$2.9M</div>
+          </div>
+          <div class="callout-row">
+            <div class="callout"><div class="callout-label">Pool to Commit</div><div class="callout-value" style="color:var(--indigo)">89%</div></div>
+            <div class="callout"><div class="callout-label">Commit to Won</div><div class="callout-value" style="color:var(--teal)">94%</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="readout-card">
+        <div class="readout-eyebrow">Manager Readout</div>
+        <div class="readout-value">Strong</div>
+        <div class="readout-copy">
+          Q4 shows healthy late-stage discipline: most of the qualified forecast pool reached Commit, and nearly all committed ACV converted to Closed Won.
+        </div>
+        <div class="rule-list">
+          <div class="rule"><span>Trend signal</span><strong>Recovered from Q3 dip</strong></div>
+          <div class="rule"><span>Selected quarter</span><strong>94% Commit to Won</strong></div>
+          <div class="rule"><span>Interview point</span><strong>Readable over flashy</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
